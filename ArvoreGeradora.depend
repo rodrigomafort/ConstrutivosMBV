@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1666126198 source:d:\testesanderson\arvoregeradoracpp\arvoregeradora\src\andersonv4.cpp
+	"AndersonV4.h"
+
+1666126584 d:\testesanderson\arvoregeradoracpp\arvoregeradora\include\andersonv4.h
+	<set>
+	<vector>
+
+1666126536 source:d:\testesanderson\arvoregeradoracpp\arvoregeradora\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	"AndersonV4.h"
+
+1667436926 source:c:\users\anderson beltr√o\arvoregeradora\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	"AndersonV4.h"
+
+1667437299 c:\users\anderson beltr√o\arvoregeradora\include\andersonv4.h
+	<set>
+	<vector>
+
+1667443819 source:c:\users\anderson beltr√o\arvoregeradora\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+
+1667933978 source:d:\testesanderson\arvoregeradora\src\grafo.cpp
+	"Grafo.h"
+
+1667864226 d:\testesanderson\arvoregeradora\include\grafo.h
+	<set>
+	<vector>
+	<string>
+	<stdexcept>
+	<fstream>
+
+1667917396 source:d:\testesanderson\arvoregeradora\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	"AndersonV4.h"
+
+1667917060 d:\testesanderson\arvoregeradora\include\andersonv4.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1667917372 source:d:\testesanderson\arvoregeradora\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+
+1667915318 source:d:\testesanderson\arvoregeradora\src\listacontrolada.cpp
+	"ListaControlada.h"
+	<algorithm>
+
+1667915348 d:\testesanderson\arvoregeradora\include\listacontrolada.h
+	<vector>
+
