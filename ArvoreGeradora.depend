@@ -123,3 +123,48 @@
 	<algorithm>
 	<iostream>
 
+1668434648 source:c:\construtivosmbv\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	"AndersonV4.h"
+	"Rodrigo.h"
+
+1667954265 c:\construtivosmbv\include\andersonv4.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1667954265 c:\construtivosmbv\include\grafo.h
+	<set>
+	<vector>
+	<string>
+	<stdexcept>
+	<fstream>
+
+1668196503 c:\construtivosmbv\include\rodrigo.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1667954265 source:c:\construtivosmbv\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+
+1667954265 source:c:\construtivosmbv\src\grafo.cpp
+	"Grafo.h"
+	<iostream>
+
+1668434500 source:c:\construtivosmbv\src\rodrigo.cpp
+	"Rodrigo.h"
+	<algorithm>
+	<iostream>
+
