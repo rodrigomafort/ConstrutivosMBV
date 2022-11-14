@@ -71,3 +71,55 @@
 1667915348 d:\testesanderson\arvoregeradora\include\listacontrolada.h
 	<vector>
 
+1668428893 source:c:\users\anderson beltr√o\construtivosmbv-master\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	"AndersonV4.h"
+	"Rodrigo.h"
+
+1667954265 c:\users\anderson beltr√o\construtivosmbv-master\include\andersonv4.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1667954265 c:\users\anderson beltr√o\construtivosmbv-master\include\grafo.h
+	<set>
+	<vector>
+	<string>
+	<stdexcept>
+	<fstream>
+
+1668196503 c:\users\anderson beltr√o\construtivosmbv-master\include\rodrigo.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1667954265 source:c:\users\anderson beltr√o\construtivosmbv-master\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+
+1667954265 source:c:\users\anderson beltr√o\construtivosmbv-master\src\grafo.cpp
+	"Grafo.h"
+	<iostream>
+
+1667954265 source:c:\users\anderson beltr√o\construtivosmbv-master\src\listacontrolada.cpp
+	"ListaControlada.h"
+	<algorithm>
+
+1667954265 c:\users\anderson beltr√o\construtivosmbv-master\include\listacontrolada.h
+	<vector>
+
+1668434500 source:c:\users\anderson beltr√o\construtivosmbv-master\src\rodrigo.cpp
+	"Rodrigo.h"
+	<algorithm>
+	<iostream>
+

@@ -39,10 +39,12 @@
 		<Unit filename="include/AndersonV4.h" />
 		<Unit filename="include/Grafo.h" />
 		<Unit filename="include/ListaControlada.h" />
+		<Unit filename="include/Rodrigo.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AndersonV4.cpp" />
 		<Unit filename="src/Grafo.cpp" />
 		<Unit filename="src/ListaControlada.cpp" />
+		<Unit filename="src/Rodrigo.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

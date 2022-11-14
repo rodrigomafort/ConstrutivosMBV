@@ -8,6 +8,7 @@
 #include <string>
 
 #include "AndersonV4.h"
+#include "Rodrigo.h"
 
 using namespace std;
 
@@ -18,25 +19,35 @@ int main(int argc, char *argv[]){
 	}
 
 	Grafo G = Grafo::LerArquivo(argv[1]);
+	Grafo G2 = Grafo::LerArquivo(argv[1]);
 
     double time_spent = 0.0;
-    clock_t start = clock();
+    clock_t start1 = clock();
 
-    //cout << "INI" << endl;
     AndersonV4 alg = AndersonV4(G);
-
-    //cout << "ALG" << endl;
     alg.Oliveira();
 
-    //cout << "OK" << endl;
+    clock_t end1 = clock();
+    time_spent += (double)(end1 - start1) / CLOCKS_PER_SEC;
 
-    clock_t end = clock();
-    time_spent += (double)(end - start) / CLOCKS_PER_SEC;
+    double time_spent2 = 0.0;
+    clock_t start2 = clock();
+
+    Rodrigo alg2 = Rodrigo(G2);
+    alg2.Oliveira();
+
+    clock_t end2 = clock();
+    time_spent2 += (double)(end2 - start2) / CLOCKS_PER_SEC;
 
     Grafo T = alg.ObterArvore();
     vector<int> BT = alg.ObterBranches();
 
+    Grafo T2 = alg2.ObterArvore();
+    vector<int> BT2 = alg2.ObterBranches();
+
     vector<int> BV;
+    vector<int> BV2;
+
     int grau;
     for(int v : T.V)
     {
@@ -55,58 +66,41 @@ int main(int argc, char *argv[]){
             BV.push_back(v);
         }
     }
+    grau = 0;
+    for(int v : T2.V)
+    {
+        grau = 0;
+        for(pair<int,int> ij : T2.E)
+        {
+            int i = ij.first;
+            int j = ij.second;
+            if(i == v or j == v)
+            {
+                grau += 1;
+            }
+        }
+        if(grau > 2)
+        {
+            BV2.push_back(v);
+        }
+    }
 
     string verificado;
+    string verificado2;
+
     if(T.ValidarArvore() == true && T.V.size() == G.V.size() && BT.size() == BV.size())
         verificado = "True";
     else
        verificado = "False";
 
+    if(T2.ValidarArvore() == true && T2.V.size() == G2.V.size() && BT2.size() == BV2.size())
+        verificado2 = "True";
+    else
+       verificado2 = "False";
+
     cout << argv[1] << "\t " << BT.size() << "\t ";
-    cout << std::fixed << std::setprecision(10) << time_spent << "\t " << verificado << endl;
+    cout << std::fixed << std::setprecision(10) << time_spent << "\t " << verificado << "\t ";
+    cout << BT2.size() << "\t ";
+    cout << std::fixed << std::setprecision(10) << time_spent2 << "\t " << verificado2 << endl;
     return 0;
 }
-/*
-    vector<int> V;
-    for(int i=0; i < 20; i++){
-        V.push_back(i);
-    }
-
-    vector<pair<int,int>> E;
-
-    E.push_back(make_pair(1-1, 9-1));
-    E.push_back(make_pair(1-1, 13-1));
-    E.push_back(make_pair(1-1, 19-1));
-    E.push_back(make_pair(1-1, 20-1));
-    E.push_back(make_pair(2-1, 12-1));
-    E.push_back(make_pair(2-1, 13-1));
-    E.push_back(make_pair(2-1, 14-1));
-    E.push_back(make_pair(3-1, 12-1));
-    E.push_back(make_pair(3-1, 20-1));
-    E.push_back(make_pair(4-1, 13-1));
-    E.push_back(make_pair(4-1, 15-1));
-    E.push_back(make_pair(5-1, 9-1));
-    E.push_back(make_pair(5-1, 16-1));
-    E.push_back(make_pair(6-1,10-1));
-    E.push_back(make_pair(7-1, 12-1));
-    E.push_back(make_pair(7-1, 18-1));
-    E.push_back(make_pair(8-1, 13-1));
-    E.push_back(make_pair(8-1, 19-1));
-    E.push_back(make_pair(9-1, 10-1));
-    E.push_back(make_pair(9-1, 12-1));
-    E.push_back(make_pair(10-1, 15-1));
-    E.push_back(make_pair(10-1, 19-1));
-    E.push_back(make_pair(11-1, 12-1));
-    E.push_back(make_pair(12-1, 17-1));
-    E.push_back(make_pair(14-1, 20-1));
-    E.push_back(make_pair(15-1, 20-1));
-    E.push_back(make_pair(18-1, 20-1));
-
-    vector<vector<int>> adj(20);
-    for(pair<int,int> ij : E){
-        int i = ij.first;
-        int j = ij.second;
-        adj[i].push_back(j);
-        adj[j].push_back(i);
-    }
-    */
