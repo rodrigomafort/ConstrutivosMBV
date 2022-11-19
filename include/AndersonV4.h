@@ -32,6 +32,7 @@ class AndersonV4
 
         Grafo ObterArvore() const;
         vector<int> ObterBranches() const;
+        vector<int> ObterGrauBT() const;
 
 };
 

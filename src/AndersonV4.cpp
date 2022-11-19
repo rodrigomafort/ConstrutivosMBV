@@ -28,6 +28,16 @@ vector<int> AndersonV4::ObterBranches() const
     return BT;
 }
 
+vector<int> AndersonV4::ObterGrauBT() const
+{
+    vector<int> GrauBT;
+    for (int v : BT)
+    {
+        GrauBT.push_back(T.Grau(v));
+    }
+    return GrauBT;
+}
+
 //Algoritmo Árvore Geradora - V4.3
 void AndersonV4::Oliveira()
 {

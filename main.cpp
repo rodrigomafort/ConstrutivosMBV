@@ -41,9 +41,11 @@ int main(int argc, char *argv[]){
 
     Grafo T = alg.ObterArvore();
     vector<int> BT = alg.ObterBranches();
+    vector<int> GrauBT = alg.ObterGrauBT();
 
     Grafo T2 = alg2.ObterArvore();
     vector<int> BT2 = alg2.ObterBranches();
+    vector<int> GrauBT2 = alg2.ObterGrauBT();
 
     vector<int> BV;
     vector<int> BV2;
@@ -102,5 +104,15 @@ int main(int argc, char *argv[]){
     cout << std::fixed << std::setprecision(10) << time_spent << "\t " << verificado << "\t ";
     cout << BT2.size() << "\t ";
     cout << std::fixed << std::setprecision(10) << time_spent2 << "\t " << verificado2 << endl;
+    for (int v : GrauBT)
+    {
+        cout << v << " ";
+    }
+    cout << endl;
+    for (int v : GrauBT2)
+    {
+        cout << v << " ";
+    }
+    cout << endl;
     return 0;
 }

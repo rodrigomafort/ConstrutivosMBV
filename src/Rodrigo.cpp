@@ -25,6 +25,16 @@ vector<int> Rodrigo::ObterBranches() const
     return BT;
 }
 
+vector<int> Rodrigo::ObterGrauBT() const
+{
+    vector<int> GrauBT;
+    for (int v : BT)
+    {
+        GrauBT.push_back(T.Grau(v));
+    }
+    return GrauBT;
+}
+
 //Algoritmo Árvore Geradora - V4.3
 void Rodrigo::Oliveira()
 {

@@ -32,6 +32,7 @@ class Rodrigo
 
         Grafo ObterArvore() const;
         vector<int> ObterBranches() const;
+        vector<int> ObterGrauBT() const;
 
 };
 
