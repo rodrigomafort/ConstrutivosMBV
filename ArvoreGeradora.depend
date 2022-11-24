@@ -168,3 +168,48 @@
 	<algorithm>
 	<iostream>
 
+1669295750 source:d:\testesanderson\construtivosmbv\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<time.h>
+	<iomanip>
+	<sstream>
+	<fstream>
+	<string>
+	"AndersonV4.h"
+	"Rodrigo.h"
+
+1669294544 d:\testesanderson\construtivosmbv\include\andersonv4.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1669294544 d:\testesanderson\construtivosmbv\include\grafo.h
+	<set>
+	<vector>
+	<string>
+	<stdexcept>
+	<fstream>
+
+1669294544 d:\testesanderson\construtivosmbv\include\rodrigo.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1669294544 source:d:\testesanderson\construtivosmbv\src\andersonv4.cpp
+	"AndersonV4.h"
+	<algorithm>
+	<iostream>
+
+1669294544 source:d:\testesanderson\construtivosmbv\src\grafo.cpp
+	"Grafo.h"
+	<iostream>
+
+1669295174 source:d:\testesanderson\construtivosmbv\src\rodrigo.cpp
+	"Rodrigo.h"
+	<algorithm>
+	<iostream>
+

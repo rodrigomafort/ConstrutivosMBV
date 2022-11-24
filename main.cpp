@@ -100,18 +100,43 @@ int main(int argc, char *argv[]){
     else
        verificado2 = "False";
 
+    float somaGrau = 0;
+    /*
     cout << argv[1] << "\t " << BT.size() << "\t ";
     cout << std::fixed << std::setprecision(10) << time_spent << "\t " << verificado << "\t ";
-    cout << BT2.size() << "\t ";
-    cout << std::fixed << std::setprecision(10) << time_spent2 << "\t " << verificado2 << endl;
+
     for (int v : GrauBT)
     {
-        cout << v << " ";
+        //cout << v << " ";
+        somaGrau = somaGrau + v;
     }
-    cout << endl;
+    if (GrauBT.size() == 0)
+    {
+        cout << "0" << endl;
+    }
+    else
+    {
+        float mediaGrau = somaGrau / GrauBT.size();
+        cout << mediaGrau << endl;
+    }
+    */
+
+    cout << argv[1] << "\t " << BT2.size() << "\t ";
+    cout << std::fixed << std::setprecision(10) << time_spent2 << "\t " << verificado2 << "\t ";
+    somaGrau = 0;
     for (int v : GrauBT2)
     {
-        cout << v << " ";
+        //cout << v << " ";
+        somaGrau = somaGrau + v;
+    }
+    if (GrauBT2.size() == 0)
+    {
+        cout << "0" << endl;
+    }
+    else
+    {
+        float mediaGrau = somaGrau / GrauBT.size();
+        cout << mediaGrau << endl;
     }
     cout << endl;
     return 0;

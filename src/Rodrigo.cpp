@@ -159,22 +159,36 @@ void Rodrigo::Oliveira()
 
             if (v == -1) continue;
 
-            vector<pair<int,int>> Nv;
+            vector<pair<int,pair<int,int>>> Nv;
             for(int u : G.Adjacentes(v))
                 if(T.BuscarVertice(u) == false || (T.CConexa(u) != T.CConexa(v) && (InBT[u] == 1 || T.Grau(u) == 1)))
-                    Nv.push_back(make_pair(u, G.Grau(u)));
+                    Nv.push_back(make_pair(u, make_pair(G.Grau(u), T.Grau(u))));
 
             if(Nv.empty() == false)
             {
-                int du = G.n + 1;
+                int du_G = G.n + 1;
+                int du_T = G.n + 1;
                 int u;
 
-                for(pair<int,int> i : Nv)
+                for(pair<int,pair<int,int>> i : Nv)
                 {
-                    if(i.second < du)
+                    if(i.second.first < du_G)
                     {
                         u = i.first;
-                        du = i.second;
+                        du_G = i.second.first;
+                        du_T = i.second.second;
+                    }
+                    else
+                    {
+                        if(i.second.first == du_G)
+                        {
+                            if (i.second.second < du_T)
+                            {
+                                u = i.first;
+                                du_G = i.second.first;
+                                du_T = i.second.second;
+                            }
+                        }
                     }
                 }
 
