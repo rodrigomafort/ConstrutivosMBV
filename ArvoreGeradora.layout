@@ -2,39 +2,39 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Release" />
-	<File name="src\Rodrigo.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\AndersonV4.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="461" topLine="165" />
+			<Cursor1 position="712" topLine="2" />
 		</Cursor>
 	</File>
-	<File name="include\Rodrigo.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Rodrigo.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="697" topLine="19" />
+			<Cursor1 position="697" topLine="2" />
 		</Cursor>
 	</File>
-	<File name="include\Grafo.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1125" topLine="34" />
-		</Cursor>
-	</File>
-	<File name="src\AndersonV4.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\AndersonV4.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="491" topLine="22" />
 		</Cursor>
 	</File>
-	<File name="include\AndersonV4.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Grafo.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="712" topLine="18" />
+			<Cursor1 position="2618" topLine="120" />
+		</Cursor>
+	</File>
+	<File name="src\Rodrigo.cpp" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="903" topLine="42" />
 		</Cursor>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2718" topLine="99" />
+			<Cursor1 position="2716" topLine="105" />
 		</Cursor>
 	</File>
-	<File name="src\Grafo.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Grafo.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2105" topLine="202" />
+			<Cursor1 position="1125" topLine="34" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

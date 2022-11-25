@@ -5,6 +5,7 @@ Grafo::Grafo()
 {
     n = 0;
     m = 0;
+    t = 0;
 }
 
 Grafo::Grafo(int pn, int pm):
@@ -21,7 +22,6 @@ Grafo::Grafo(int pn, int pm):
         mapaCConexa[i].push_back(i);
     }
 
-
     raiz = 0;
     t = 0;
     ListaCT[raiz] = -1;
@@ -33,6 +33,8 @@ Grafo::Grafo(const Grafo& G):
 {
     for (int i = 0; i < n; i++)
         mapaCConexa[i] = vector<int>(G.mapaCConexa[i]);
+
+    t = 0;
 }
 
 Grafo Grafo::LerArquivo(string nomeArquivo)
@@ -51,7 +53,8 @@ Grafo Grafo::LerArquivo(string nomeArquivo)
         for (int i = 0; i < n; i++)
             G.AdicionarVertice(i);
 
-        while (!arquivoGrafo.eof())
+        //while (!arquivoGrafo.eof())
+        for (int i = 0; i < m; i++)
         {
             int v, u;
             arquivoGrafo >> v >> u >> lixo;
@@ -83,28 +86,40 @@ void Grafo::DFS(int v)
     t = t + 1;
 	PE[v] = t;
 	BACK[v] = t;
+
 	for(int w : listaAdj[v])
 	{
         if(PE[w] == 0)
         {
             pai[w] = v;
 			DFS(w);
-			if(BACK[w] >= PE[v]){
+			if(BACK[w] >= PE[v])
+            {
                 ListaCT[v] = ListaCT[v] + 1;
-                if(ListaCT[v] == 2){
+                if(ListaCT[v] == 2)
+                {
                     ArticulacoesW2.push_back(v);
                 }
 			}
-			if(BACK[v] > BACK[w]){
+
+			if(BACK[v] > BACK[w])
+            {
                 BACK[v] = BACK[w];
 			}
-			if(BACK[w] == PE[w]){
+
+			if(BACK[w] == PE[w])
+            {
                 Pontes.push_back(make_pair(w, v));
 			}
         }
-        else if(PS[w] == 0 and w != pai[v]){
-            if(PE[w] < BACK[v]){
-                BACK[v] = PE[w];
+        else
+        {
+            if(PS[w] == 0 && w != pai[v])
+            {
+                if(PE[w] < BACK[v])
+                {
+                    BACK[v] = PE[w];
+                }
             }
         }
 	}

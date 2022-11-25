@@ -23,6 +23,7 @@
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option parameters="Instancias\Spd_RF2_20_27_211.txt" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
@@ -38,12 +39,10 @@
 		</Compiler>
 		<Unit filename="include/AndersonV4.h" />
 		<Unit filename="include/Grafo.h" />
-		<Unit filename="include/ListaControlada.h" />
 		<Unit filename="include/Rodrigo.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AndersonV4.cpp" />
 		<Unit filename="src/Grafo.cpp" />
-		<Unit filename="src/ListaControlada.cpp" />
 		<Unit filename="src/Rodrigo.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
