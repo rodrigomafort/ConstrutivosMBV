@@ -4,6 +4,8 @@
 #include <vector>
 #include <random>
 
+#include "Grafo.h"
+
 using namespace std;
 
 class ItemRoleta

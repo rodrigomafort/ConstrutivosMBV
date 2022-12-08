@@ -2,8 +2,10 @@
 #include <algorithm>
 #include <iostream>
 
+#include "Roleta.h"
+
 Rodrigo::Rodrigo(const Grafo& pG):
-    G(pG), T(pG.n,pG.m), InBT(G.n, false), InPontas(G.n, false), RemPontas(G.n, false)
+    G(pG), T(pG.n,pG.m), InBT(G.n, 0), InPontas(G.n, false)//, RemPontas(G.n, false)
 {
     //constructor
     G.nome = "G";
@@ -39,13 +41,13 @@ vector<int> Rodrigo::ObterGrauBT() const
 void Rodrigo::Oliveira()
 {
     BT.clear();
-    while (!Pontas.empty()) Pontas.pop();
+    //while (!Pontas.empty()) Pontas.pop();
 
     for (int i = 0; i < G.n; i++)
     {
-        InBT[i] = false;
+        InBT[i] = 0;
         InPontas[i] = false;
-        RemPontas[i] = false;
+        //RemPontas[i] = false;
     }
 
     //Tratar nova condição para articulações:
@@ -109,8 +111,9 @@ void Rodrigo::Oliveira()
 
         if(T.Grau(v) == 1 && G.Grau(v) > 1)
         {
-            Pontas.push(make_pair(-1 * G.Grau(v), v));
+            //Pontas.push(make_pair(-1 * G.Grau(v), v));
             InPontas[v] = true;
+            Pontas.insert(v);
         }
     }
 
@@ -124,11 +127,13 @@ void Rodrigo::Oliveira()
         T.AdicionarVertice(u);
         T.AdicionarAresta(v,u);
 
-        Pontas.push(make_pair(-1 * G.Grau(v), v));
+        //Pontas.push(make_pair(-1 * G.Grau(v), v));
         InPontas[v] = true;
+        Pontas.insert(v);
 
-        Pontas.push(make_pair(-1 * G.Grau(u), u));
+        //Pontas.push(make_pair(-1 * G.Grau(u), u));
         InPontas[u] = true;
+        Pontas.insert(u);
     }
 
     //Continuação
@@ -137,6 +142,17 @@ void Rodrigo::Oliveira()
         if(Pontas.empty() == false)
         {
             int v;
+            Roleta R = Roleta();
+            for(int p : Pontas)
+            {
+                double peso = G.n - G.Grau(p);
+                R.Adicionar(p, peso);
+            }
+            v = R.Sortear();
+            //Pontas.erase(v);
+            //InPontas[v] = false;
+
+            /*
             do
             {
                 pair<int,int> topo = Pontas.top();
@@ -157,7 +173,7 @@ void Rodrigo::Oliveira()
             }
             while(Pontas.empty() == false);
 
-            if (v == -1) continue;
+            if (v == -1) continue;*/
 
             vector<pair<int,pair<int,int>>> Nv;
             for(int u : G.Adjacentes(v))
@@ -169,9 +185,22 @@ void Rodrigo::Oliveira()
                 int du_G = G.n + 1;
                 int du_T = G.n + 1;
                 int u;
+                Roleta R = Roleta();
 
                 for(pair<int,pair<int,int>> i : Nv)
                 {
+                    u = i.first;
+                    du_G = i.second.first;
+                    du_T = i.second.second;
+
+                    if(du_T == 0)
+                    {
+                        du_G = du_G - 1;
+                    }
+                    double peso = G.n - du_G;
+                    R.Adicionar(u, peso);
+
+                    /*
                     if(i.second.first < du_G)
                     {
                         u = i.first;
@@ -189,29 +218,35 @@ void Rodrigo::Oliveira()
                                 du_T = i.second.second;
                             }
                         }
-                    }
+                    }*/
                 }
+                u = R.Sortear();
 
                 T.AdicionarVertice(u);
                 T.AdicionarAresta(v,u);
 				if (T.Grau(u) == 1)
                 {
-                    Pontas.push(make_pair(-1 * G.Grau(u), u));
+                    //Pontas.push(make_pair(-1 * G.Grau(u), u));
                     InPontas[u] = true;
+                    Pontas.insert(u);
                 }
 				else
                 {
                     if(InPontas[u] == true and InBT[u] == 0)
                     {
-                        RemPontas[u] = true; //Como pontas é lista de prioridade, não é possível remover diretamente
-						InPontas[v] = false;
+                        //RemPontas[u] = true; //Como pontas é lista de prioridade, não é possível remover diretamente
+                        Pontas.erase(u);
+						//InPontas[v] = false;
+						InPontas[u] = false;
                     }
                 }
             }
+
             if(InBT[v] == 0 or Nv.empty())
             {
-                RemPontas[v] = true;
+                //RemPontas[v] = true;
 				InPontas[v] = false;
+				Pontas.erase(v);
             }
         }
         else
@@ -250,8 +285,9 @@ void Rodrigo::Oliveira()
                 BT.push_back(v);
                 InBT[v] = 1;
 
-                Pontas.push(make_pair(-1 * G.Grau(v), v));
+                //Pontas.push(make_pair(-1 * G.Grau(v), v));
                 InPontas[v] = true;
+                Pontas.insert(v);
             }
             else
             {

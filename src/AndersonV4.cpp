@@ -2,9 +2,11 @@
 #include <algorithm>
 #include <iostream>
 
+#include "Roleta.h"
+
 
 AndersonV4::AndersonV4(const Grafo& pG):
-    G(pG), T(pG.n,pG.m), InBT(G.n, false), InPontas(G.n, false), RemPontas(G.n, false)
+    G(pG), T(pG.n,pG.m), InBT(G.n, 0), InPontas(G.n, false)//, RemPontas(G.n, false)
 {
     //constructor
     G.nome = "G";
@@ -42,13 +44,13 @@ vector<int> AndersonV4::ObterGrauBT() const
 void AndersonV4::Oliveira()
 {
     BT.clear();
-    while (!Pontas.empty()) Pontas.pop();
+    //while (!Pontas.empty()) Pontas.pop();
 
     for (int i = 0; i < G.n; i++)
     {
-        InBT[i] = false;
+        InBT[i] = 0;
         InPontas[i] = false;
-        RemPontas[i] = false;
+        //RemPontas[i] = false;
     }
 
     //Tratar nova condição para articulações:
@@ -112,8 +114,9 @@ void AndersonV4::Oliveira()
 
         if(T.Grau(v) == 1 && G.Grau(v) > 1)
         {
-            Pontas.push(make_pair(-1 * G.Grau(v), v));
+            //Pontas.push(make_pair(-1 * G.Grau(v), v));
             InPontas[v] = true;
+            Pontas.insert(v);
         }
     }
 
@@ -127,11 +130,13 @@ void AndersonV4::Oliveira()
         T.AdicionarVertice(u);
         T.AdicionarAresta(v,u);
 
-        Pontas.push(make_pair(-1 * G.Grau(v), v));
+        //Pontas.push(make_pair(-1 * G.Grau(v), v));
         InPontas[v] = true;
+        Pontas.insert(v);
 
-        Pontas.push(make_pair(-1 * G.Grau(u), u));
+        //Pontas.push(make_pair(-1 * G.Grau(u), u));
         InPontas[u] = true;
+        Pontas.insert(u);
     }
 
     //Continuação
@@ -139,11 +144,21 @@ void AndersonV4::Oliveira()
     {
         if(Pontas.empty() == false)
         {
+            Roleta R = Roleta();
             int v;
+            for(int p : Pontas)
+            {
+                double peso = G.n - G.Grau(p);
+                R.Adicionar(p, peso);
+            }
+            v = R.Sortear();
+            Pontas.erase(v);
+            InPontas[v] = false;
+            /*
             do
             {
                 pair<int,int> topo = Pontas.top();
-                v = topo.second;
+                int v = topo.second;
 
                 Pontas.pop();
                 InPontas[v] = false;
@@ -161,7 +176,7 @@ void AndersonV4::Oliveira()
             }
             while(Pontas.empty() == false);
 
-            if (v == -1) continue;
+            if (v == -1) continue;*/
 
             vector<pair<int,pair<int,int>>> Nv;
             for(int u : G.Adjacentes(v))
@@ -173,9 +188,22 @@ void AndersonV4::Oliveira()
                 int du_G = G.n + 1;
                 int du_T = G.n + 1;
                 int u;
+                Roleta R = Roleta();
 
                 for(pair<int,pair<int,int>> i : Nv)
                 {
+                    u = i.first;
+                    du_G = i.second.first;
+                    du_T = i.second.second;
+
+                    if(du_T == 0)
+                    {
+                        du_G = du_G - 1;
+                    }
+                    double peso = G.n - du_G;
+                    R.Adicionar(u, peso);
+
+                    /*
                     if(i.second.first < du_G)
                     {
                         u = i.first;
@@ -193,21 +221,25 @@ void AndersonV4::Oliveira()
                                 du_T = i.second.second;
                             }
                         }
-                    }
+                    }*/
                 }
+                u = R.Sortear();
 
                 T.AdicionarVertice(u);
                 T.AdicionarAresta(v,u);
 				if (T.Grau(u) == 1)
                 {
-                    Pontas.push(make_pair(-1 * G.Grau(u), u));
+                    //Pontas.push(make_pair(-1 * G.Grau(u), u));
                     InPontas[u] = true;
+                    Pontas.insert(u);
                 }
 				else
                 {
                     if(InPontas[u] == true)
                     {
-                        RemPontas[u] = true; //Como pontas é lista de prioridade, não é possível remover diretamente
+                        //RemPontas[u] = true; //Como pontas é lista de prioridade, não é possível remover diretamente
+                        Pontas.erase(u);
+                        InPontas[u] = false;
                     }
                 }
             }
@@ -215,8 +247,6 @@ void AndersonV4::Oliveira()
         else
         {
             //Não existe uma nova ponta para ser explorada: necessário converter um vértice da árvore em ramificação.
-
-
 
 			int v;
 			int nCC = -1;
@@ -259,8 +289,9 @@ void AndersonV4::Oliveira()
                         T.AdicionarAresta(v,u);
 						if(T.Grau(u) == 1)
                         {
-                            Pontas.push(make_pair(-1 * G.Grau(u), u));
+                            //Pontas.push(make_pair(-1 * G.Grau(u), u));
                             InPontas[u] = true;
+                            Pontas.insert(u);
 						}
                     }
                 }

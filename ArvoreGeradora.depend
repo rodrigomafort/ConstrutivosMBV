@@ -123,7 +123,7 @@
 	<algorithm>
 	<iostream>
 
-1669413053 source:c:\construtivosmbv\main.cpp
+1670353596 source:c:\construtivosmbv\main.cpp
 	<iostream>
 	<set>
 	<vector>
@@ -135,7 +135,7 @@
 	"AndersonV4.h"
 	"Rodrigo.h"
 
-1668893957 c:\construtivosmbv\include\andersonv4.h
+1670435890 c:\construtivosmbv\include\andersonv4.h
 	<set>
 	<vector>
 	<queue>
@@ -148,25 +148,27 @@
 	<stdexcept>
 	<fstream>
 
-1668893960 c:\construtivosmbv\include\rodrigo.h
+1670440072 c:\construtivosmbv\include\rodrigo.h
 	<set>
 	<vector>
 	<queue>
 	"Grafo.h"
 
-1669413053 source:c:\construtivosmbv\src\andersonv4.cpp
+1670440791 source:c:\construtivosmbv\src\andersonv4.cpp
 	"AndersonV4.h"
 	<algorithm>
 	<iostream>
+	"Roleta.h"
 
 1669408386 source:c:\construtivosmbv\src\grafo.cpp
 	"Grafo.h"
 	<iostream>
 
-1669413053 source:c:\construtivosmbv\src\rodrigo.cpp
+1670442133 source:c:\construtivosmbv\src\rodrigo.cpp
 	"Rodrigo.h"
 	<algorithm>
 	<iostream>
+	"Roleta.h"
 
 1669295750 source:d:\testesanderson\construtivosmbv\main.cpp
 	<iostream>
@@ -208,9 +210,8 @@
 	"Grafo.h"
 	<iostream>
 
-<<<<<<< HEAD
-1669336804 source:d:\testesanderson\construtivosmbv\src\rodrigo.cpp
-=======
+1669294544 D
+
 1669295174 source:d:\testesanderson\construtivosmbv\src\rodrigo.cpp
 	"Rodrigo.h"
 	<algorithm>
@@ -257,8 +258,17 @@
 	<iostream>
 
 1669298477 source:c:\users\anderson beltrÃo\desktop\construtivosmbv\src\rodrigo.cpp
->>>>>>> 8c8f845f02d3fde5b4c567ea6e6f05c50af2f33c
+
+1669298477 f845f02d3fde5b4c567ea6e6f05c50af2f33c
 	"Rodrigo.h"
 	<algorithm>
 	<iostream>
+
+1670347903 c:\construtivosmbv\include\roleta.h
+	<vector>
+	<random>
+	"Grafo.h"
+
+1670344723 source:c:\construtivosmbv\src\roleta.cpp
+	"Roleta.h"
 

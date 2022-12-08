@@ -40,10 +40,12 @@
 		<Unit filename="include/AndersonV4.h" />
 		<Unit filename="include/Grafo.h" />
 		<Unit filename="include/Rodrigo.h" />
+		<Unit filename="include/Roleta.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AndersonV4.cpp" />
 		<Unit filename="src/Grafo.cpp" />
 		<Unit filename="src/Rodrigo.cpp" />
+		<Unit filename="src/Roleta.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

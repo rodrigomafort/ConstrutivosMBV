@@ -20,9 +20,10 @@ class Rodrigo
 
     private:
         vector<bool> InBT;
-        priority_queue<pair<int, int>> Pontas; //Pontas indica caminhos possíveis
+        //priority_queue<pair<int, int>> Pontas; //Pontas indica caminhos possíveis
         vector<bool> InPontas;
-        vector<bool> RemPontas;
+        //vector<bool> RemPontas;
+        set<int> Pontas;
 
     public:
         Rodrigo(const Grafo& pG);
