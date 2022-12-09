@@ -123,7 +123,7 @@
 	<algorithm>
 	<iostream>
 
-1670353596 source:c:\construtivosmbv\main.cpp
+1670541770 source:c:\construtivosmbv\main.cpp
 	<iostream>
 	<set>
 	<vector>
@@ -134,6 +134,7 @@
 	<string>
 	"AndersonV4.h"
 	"Rodrigo.h"
+	"Algoritmo3.h"
 
 1670435890 c:\construtivosmbv\include\andersonv4.h
 	<set>
@@ -154,7 +155,7 @@
 	<queue>
 	"Grafo.h"
 
-1670440791 source:c:\construtivosmbv\src\andersonv4.cpp
+1670521407 source:c:\construtivosmbv\src\andersonv4.cpp
 	"AndersonV4.h"
 	<algorithm>
 	<iostream>
@@ -164,7 +165,7 @@
 	"Grafo.h"
 	<iostream>
 
-1670442133 source:c:\construtivosmbv\src\rodrigo.cpp
+1670525734 source:c:\construtivosmbv\src\rodrigo.cpp
 	"Rodrigo.h"
 	<algorithm>
 	<iostream>
@@ -271,4 +272,15 @@
 
 1670344723 source:c:\construtivosmbv\src\roleta.cpp
 	"Roleta.h"
+
+1670541305 source:c:\construtivosmbv\src\algoritmo3.cpp
+	"Algoritmo3.h"
+	<algorithm>
+	<iostream>
+
+1670528424 c:\construtivosmbv\include\algoritmo3.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
 

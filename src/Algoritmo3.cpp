@@ -1,33 +1,31 @@
-#include "Rodrigo.h"
+#include "Algoritmo3.h"
 #include <algorithm>
 #include <iostream>
 
-#include "Roleta.h"
-
-Rodrigo::Rodrigo(const Grafo& pG):
-    G(pG), T(pG.n,pG.m), InBT(G.n, 0), InPontas(G.n, false)//, RemPontas(G.n, false)
+Algoritmo3::Algoritmo3(const Grafo& pG):
+    G(pG), T(pG.n,pG.m), InBT(G.n, 0), InPontas(G.n, false)
 {
     //constructor
     G.nome = "G";
     T.nome = "T";
 }
 
-Rodrigo::~Rodrigo()
+Algoritmo3::~Algoritmo3()
 {
     //destructor
 }
 
-Grafo Rodrigo::ObterArvore() const
+Grafo Algoritmo3::ObterArvore() const
 {
     return T;
 }
 
-vector<int> Rodrigo::ObterBranches() const
+vector<int> Algoritmo3::ObterBranches() const
 {
     return BT;
 }
 
-vector<int> Rodrigo::ObterGrauBT() const
+vector<int> Algoritmo3::ObterGrauBT() const
 {
     vector<int> GrauBT;
     for (int v : BT)
@@ -37,17 +35,15 @@ vector<int> Rodrigo::ObterGrauBT() const
     return GrauBT;
 }
 
-//Algoritmo Árvore Geradora - Segunda Heurística
-void Rodrigo::Oliveira()
+//Algoritmo Árvore Geradora - Terceira Heurística
+void Algoritmo3::Oliveira()
 {
     BT.clear();
-    //while (!Pontas.empty()) Pontas.pop();
 
     for (int i = 0; i < G.n; i++)
     {
         InBT[i] = 0;
         InPontas[i] = false;
-        //RemPontas[i] = false;
     }
 
     //Tratar nova condição para articulações:
@@ -84,7 +80,6 @@ void Rodrigo::Oliveira()
         }
     }
 
-
     //Tratar vértices marcados como ramificações da árvore:
     for(int v : BT)
     {
@@ -108,10 +103,8 @@ void Rodrigo::Oliveira()
     //Verificar quais caminhos pode ser explorados:
     for(int v : T.V)
     {
-
         if(T.Grau(v) == 1 && G.Grau(v) > 1)
         {
-            //Pontas.push(make_pair(-1 * G.Grau(v), v));
             InPontas[v] = true;
             Pontas.insert(v);
         }
@@ -127,11 +120,9 @@ void Rodrigo::Oliveira()
         T.AdicionarVertice(u);
         T.AdicionarAresta(v,u);
 
-        //Pontas.push(make_pair(-1 * G.Grau(v), v));
         InPontas[v] = true;
         Pontas.insert(v);
 
-        //Pontas.push(make_pair(-1 * G.Grau(u), u));
         InPontas[u] = true;
         Pontas.insert(u);
     }
@@ -142,136 +133,69 @@ void Rodrigo::Oliveira()
         if(Pontas.empty() == false)
         {
             int v;
-            int grauMax = 0;
-
-            Roleta R = Roleta();
-
-            for(int i : Pontas)
-            {
-                if(G.Grau(i) > grauMax)
-                {
-                    grauMax = G.Grau(i);
-                }
-            }
-            grauMax = grauMax + 1;
-
+            int dPMin = G.n * 2;
+            int peso = 0;
+            int uAux;
             for(int p : Pontas)
             {
-                //double peso = G.n - G.Grau(p);
-                double peso = grauMax - G.Grau(p);
-                R.Adicionar(p, peso);
-            }
-            v = R.Sortear();
-            //Pontas.erase(v);
-            //InPontas[v] = false;
-
-            /*
-            do
-            {
-                pair<int,int> topo = Pontas.top();
-                v = topo.second;
-
-                if (RemPontas[v] == false)
+                for(int u : G.Adjacentes(p))
                 {
-                    break;
-                }
-                else
-                {
-					Pontas.pop();
-                    RemPontas[v] = false;
-					InPontas[v] = false; //Por segurança
-                    v = -1;
-                    continue;
-                }
-            }
-            while(Pontas.empty() == false);
-
-            if (v == -1) continue;*/
-
-            vector<pair<int,pair<int,int>>> Nv;
-            for(int u : G.Adjacentes(v))
-                if(T.BuscarVertice(u) == false || (T.CConexa(u) != T.CConexa(v) && (InBT[u] == 1 || T.Grau(u) == 1)))
-                    Nv.push_back(make_pair(u, make_pair(G.Grau(u), T.Grau(u))));
-
-            if(Nv.empty() == false)
-            {
-                int du_G;//= G.n + 1;
-                int du_T;// = G.n + 1;
-                int u;
-                int grauMax2 = 0;
-
-                Roleta R = Roleta();
-
-                for(pair<int,pair<int,int>> j : Nv)
-                {
-                    du_G = j.second.first;
-                    if(du_G > grauMax2)
+                    if(T.BuscarVertice(u) == false || (T.CConexa(u) != T.CConexa(p) && (InBT[u] == 1 || T.Grau(u) == 1)))
                     {
-                        grauMax2 = du_G;
-                    }
-                }
-                grauMax2 = grauMax2 + 1;
-
-                for(pair<int,pair<int,int>> i : Nv)
-                {
-                    u = i.first;
-                    du_G = i.second.first;
-                    du_T = i.second.second;
-
-                    if(du_T == 0)
-                    {
-                        du_G = du_G - 1;
-                    }
-                    double peso = grauMax2 - du_G;
-                    R.Adicionar(u, peso);
-
-                    /*
-                    if(i.second.first < du_G)
-                    {
-                        u = i.first;
-                        du_G = i.second.first;
-                        du_T = i.second.second;
-                    }
-                    else
-                    {
-                        if(i.second.first == du_G)
+                        peso = G.Grau(p) + G.Grau(u);
+                        if(peso < dPMin)
                         {
-                            if (i.second.second < du_T)
+                            dPMin = peso;
+                            v = p;
+                            uAux = u;
+                        }
+                        else
+                        {
+                            if(peso == dPMin)
                             {
-                                u = i.first;
-                                du_G = i.second.first;
-                                du_T = i.second.second;
+                                if(T.BuscarVertice(uAux) == true and T.BuscarVertice(u) == false)
+                                {
+                                    v = p;
+                                    uAux = u;
+                                }
                             }
                         }
-                    }*/
+                    }
                 }
-                u = R.Sortear();
-
-                T.AdicionarVertice(u);
-                T.AdicionarAresta(v,u);
-				if (T.Grau(u) == 1)
+            }
+            if(peso == 0)
+            {
+                for(int i : Pontas)
                 {
-                    //Pontas.push(make_pair(-1 * G.Grau(u), u));
+                    InPontas[i] = false;
+                }
+                Pontas.clear();
+            }
+            else
+            {
+                Pontas.erase(v);
+                InPontas[v] = false;
+                int u = uAux;
+
+                if(T.Grau(u) == 0)
+                {
+                    T.AdicionarVertice(u);
+                }
+                T.AdicionarAresta(v,u);
+
+                if(T.Grau(u) == 1)
+                {
                     InPontas[u] = true;
                     Pontas.insert(u);
                 }
 				else
                 {
-                    if(InPontas[u] == true and InBT[u] == 0)
+                    if(InPontas[u] == true)
                     {
-                        //RemPontas[u] = true; //Como pontas é lista de prioridade, não é possível remover diretamente
                         Pontas.erase(u);
-						//InPontas[v] = false;
-						InPontas[u] = false;
+                        InPontas[u] = false;
                     }
                 }
-            }
-
-            if(InBT[v] == 0 or Nv.empty())
-            {
-                //RemPontas[v] = true;
-				InPontas[v] = false;
-				Pontas.erase(v);
             }
         }
         else
@@ -310,9 +234,19 @@ void Rodrigo::Oliveira()
                 BT.push_back(v);
                 InBT[v] = 1;
 
-                //Pontas.push(make_pair(-1 * G.Grau(v), v));
-                InPontas[v] = true;
-                Pontas.insert(v);
+                for(int u : C)
+                {
+                    if(T.CConexa(u) != T.CConexa(v))
+                    {
+                        T.AdicionarVertice(u);
+                        T.AdicionarAresta(v,u);
+						if(T.Grau(u) == 1)
+                        {
+                            InPontas[u] = true;
+                            Pontas.insert(u);
+						}
+                    }
+                }
             }
             else
             {
@@ -344,6 +278,16 @@ void Rodrigo::Oliveira()
 
                 BT.push_back(v);
                 InBT[v] = 1;
+
+                for(int u : C)
+                {
+                    if(T.CConexa(u) != T.CConexa(v))
+                    {
+                        BT.push_back(u);
+						InBT[u] = 1;
+                        T.AdicionarAresta(v,u);
+                    }
+                }
             }
         }
     }

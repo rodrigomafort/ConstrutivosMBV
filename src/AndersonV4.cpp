@@ -144,11 +144,24 @@ void AndersonV4::Oliveira()
     {
         if(Pontas.empty() == false)
         {
-            Roleta R = Roleta();
             int v;
+            int grauMax = 0;
+
+            Roleta R = Roleta();
+
+            for(int i : Pontas)
+            {
+                if(G.Grau(i) > grauMax)
+                {
+                    grauMax = G.Grau(i);
+                }
+            }
+            grauMax = grauMax + 1;
+
             for(int p : Pontas)
             {
-                double peso = G.n - G.Grau(p);
+                //double peso = G.n - G.Grau(p);
+                double peso = grauMax - G.Grau(p);
                 R.Adicionar(p, peso);
             }
             v = R.Sortear();
@@ -185,10 +198,22 @@ void AndersonV4::Oliveira()
 
             if(Nv.empty() == false)
             {
-                int du_G = G.n + 1;
-                int du_T = G.n + 1;
+                int du_G;// = G.n + 1;
+                int du_T;// = G.n + 1;
                 int u;
+                int grauMax2 = 0;
+
                 Roleta R = Roleta();
+
+                for(pair<int,pair<int,int>> j : Nv)
+                {
+                    du_G = j.second.first;
+                    if(du_G > grauMax2)
+                    {
+                        grauMax2 = du_G;
+                    }
+                }
+                grauMax2 = grauMax2 + 1;
 
                 for(pair<int,pair<int,int>> i : Nv)
                 {
@@ -200,7 +225,7 @@ void AndersonV4::Oliveira()
                     {
                         du_G = du_G - 1;
                     }
-                    double peso = G.n - du_G;
+                    double peso = grauMax2 - du_G;
                     R.Adicionar(u, peso);
 
                     /*
