@@ -155,7 +155,7 @@
 	<queue>
 	"Grafo.h"
 
-1670521407 source:c:\construtivosmbv\src\andersonv4.cpp
+1670898501 source:c:\construtivosmbv\src\andersonv4.cpp
 	"AndersonV4.h"
 	<algorithm>
 	<iostream>
@@ -273,12 +273,23 @@
 1670344723 source:c:\construtivosmbv\src\roleta.cpp
 	"Roleta.h"
 
-1670541305 source:c:\construtivosmbv\src\algoritmo3.cpp
+1670542943 source:c:\construtivosmbv\src\algoritmo3.cpp
 	"Algoritmo3.h"
 	<algorithm>
 	<iostream>
 
 1670528424 c:\construtivosmbv\include\algoritmo3.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1670898099 source:c:\construtivosmbv\src\buscalocal.cpp
+	"BuscaLocal.h"
+	<algorithm>
+	<iostream>
+
+1670894379 c:\construtivosmbv\include\buscalocal.h
 	<set>
 	<vector>
 	<queue>

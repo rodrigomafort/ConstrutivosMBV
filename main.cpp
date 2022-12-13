@@ -10,6 +10,7 @@
 #include "AndersonV4.h"
 #include "Rodrigo.h"
 #include "Algoritmo3.h"
+#include "BuscaLocal.h"
 
 using namespace std;
 

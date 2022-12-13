@@ -87,7 +87,6 @@ void AndersonV4::Oliveira()
         }
     }
 
-
     //Tratar vértices marcados como ramificações da árvore:
     for(int v : BT)
     {
