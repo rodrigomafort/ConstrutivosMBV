@@ -19,9 +19,11 @@ class BuscaLocal
         void AtualizarCConexas(int v, int u);
 
     private:
+        vector<bool> InFolhas;
+        vector<bool> InBV;
 
     public:
-        BuscaLocal(const Grafo& pG, const Grafo& pT, vector<int> BV);
+        BuscaLocal(const Grafo& pG, const Grafo& pT, vector<int> B);
         virtual ~BuscaLocal();
 
         void ConectaFolhas();

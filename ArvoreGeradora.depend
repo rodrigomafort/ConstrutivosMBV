@@ -123,7 +123,7 @@
 	<algorithm>
 	<iostream>
 
-1670541770 source:c:\construtivosmbv\main.cpp
+1670899895 source:c:\construtivosmbv\main.cpp
 	<iostream>
 	<set>
 	<vector>
@@ -135,6 +135,7 @@
 	"AndersonV4.h"
 	"Rodrigo.h"
 	"Algoritmo3.h"
+	"BuscaLocal.h"
 
 1670435890 c:\construtivosmbv\include\andersonv4.h
 	<set>
@@ -289,7 +290,7 @@
 	<algorithm>
 	<iostream>
 
-1670894379 c:\construtivosmbv\include\buscalocal.h
+1671038549 c:\construtivosmbv\include\buscalocal.h
 	<set>
 	<vector>
 	<queue>
