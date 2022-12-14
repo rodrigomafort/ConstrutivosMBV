@@ -42,6 +42,7 @@ class Grafo
 
         void AdicionarVertice(int v);
         void AdicionarAresta(int v, int u);
+        void RemoverAresta(int v, int u);
 
         int CConexa(int v) const;
 
@@ -51,6 +52,8 @@ class Grafo
         int NumeroArestas() const;
 
         bool ValidarArvore() const;
+
+        void ImprimirListaAdj() const;
 
         string nome;
 

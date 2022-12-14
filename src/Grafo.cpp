@@ -1,5 +1,6 @@
 #include "Grafo.h"
 #include <iostream>
+#include <algorithm>
 
 Grafo::Grafo()
 {
@@ -173,10 +174,27 @@ void Grafo::AdicionarVertice(int v)
 
 void Grafo::AdicionarAresta(int v, int u)
 {
-    E.push_back(make_pair(v,u));
+    if (v < u)
+        E.push_back(make_pair(v,u));
+    else
+        E.push_back(make_pair(u,v));
+
     listaAdj[v].push_back(u);
     listaAdj[u].push_back(v);
     AtualizarCConexas(v, u);
+}
+
+void Grafo::RemoverAresta(int v, int u)
+{
+    vector<pair<int,int>>::iterator it = E.begin();
+    while (it < E.end() && it->first != v && it ->second != u)
+        it++;
+
+    if (it < E.end())
+        E.erase(it);
+
+    listaAdj[v].erase(std::remove(listaAdj[v].begin(), listaAdj[v].end(), u), listaAdj[v].end());
+    listaAdj[u].erase(std::remove(listaAdj[u].begin(), listaAdj[u].end(), v), listaAdj[u].end());
 }
 
 int Grafo::CConexa(int v) const
@@ -232,4 +250,16 @@ bool Grafo::ValidarArvore() const
         }
     }
     return true;
+}
+
+
+void Grafo::ImprimirListaAdj() const
+{
+    for (int i = 0; i < n; i++)
+    {
+        cout << i << " - ";
+        for (int u : listaAdj[i])
+            cout << u << " ";
+        cout << endl;
+    }
 }
