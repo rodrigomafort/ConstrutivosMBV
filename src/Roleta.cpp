@@ -27,18 +27,17 @@ void Roleta::Adicionar(int key, double probabilidade)
 		itens.push_back(ItemRoleta(key, probabilidade));
 }
 
-int Roleta::Sortear(mt19937_64 e2)
+int Roleta::Sortear()
 {
 	double soma = 0;
 	for (int i = 0; i < (int)itens.size(); i++)
 		soma = soma + itens[i].prob;
 
 	uniform_real_distribution<> rndInterval(0, 1);
-	//random_device rd;
-	//mt19937_64 e2(rd());
-	double d = rndInterval(e2);
+	random_device rd;
+	double d = rndInterval(rd);
 
-	cout << "d: " << d << endl;
+	//cout << "d: " << d << endl;
 
 	double step = 0;
 	for (int i = 0; i < (int)itens.size(); i++)

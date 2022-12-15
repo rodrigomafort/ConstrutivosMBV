@@ -60,7 +60,7 @@ int main(int argc, char *argv[]){
     vector<int> BT100c;
     int BTcMin = 1001;
     int BTcMax = 0;
-    for(int i=0; i<5; i++)
+    for(int i=0; i<100; i++)
     {
         AndersonV4 alg (G);// = AndersonV4(G);
         alg.Oliveira();
@@ -99,7 +99,7 @@ int main(int argc, char *argv[]){
     int soma = 0;
     for(int i : BT100a)
        soma = soma + i;
-    cout << "AndersonV4 - Min: " << BTaMin << " Max: " << BTaMax << " Media: " << soma/5 << endl;
+    cout << "AndersonV4 - Min: " << BTaMin << " Max: " << BTaMax << " Media: " << soma/100 << endl;
 /*
     soma = 0;
     for(int i : BT100b)
@@ -109,7 +109,7 @@ int main(int argc, char *argv[]){
     soma = 0;
     for(int i : BT100c)
        soma = soma + i;
-    cout << "Algoritmo3 - Min: " << BTcMin << " Max: " << BTcMax << " Media: " << soma/5 << endl << endl;
+    cout << "Algoritmo3 - Min: " << BTcMin << " Max: " << BTcMax << " Media: " << soma/100 << endl << endl;
 
     /*
     BuscaLocal bl = BuscaLocal(G, T, BT);

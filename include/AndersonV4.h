@@ -18,10 +18,6 @@ class AndersonV4
 
         vector<int> BT;
         void AtualizarCConexas(int v, int u);
-
-        random_device rd;
-        mt19937_64 e2;
-
     private:
         vector<bool> InBT;
         //priority_queue<pair<int, int>> Pontas; //Pontas indica caminhos possíveis

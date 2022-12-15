@@ -11,9 +11,6 @@ AndersonV4::AndersonV4(const Grafo& pG):
     //constructor
     G.nome = "G";
     T.nome = "T";
-
-	e2(rd());
-
 }
 
 AndersonV4::~AndersonV4()
@@ -166,7 +163,10 @@ void AndersonV4::Oliveira()
                 //cout << p << " - " << peso <<endl;
                 R.Adicionar(p, peso);
             }
-            v = R.Sortear(e2);
+            v = R.Sortear();
+
+            cout << v << " ";
+
             Pontas.erase(v);
             InPontas[v] = false;
             /*
@@ -250,7 +250,7 @@ void AndersonV4::Oliveira()
                         }
                     }*/
                 }
-                u = R.Sortear(e2);
+                u = R.Sortear();
 
                 T.AdicionarVertice(u);
                 T.AdicionarAresta(v,u);
@@ -366,4 +366,5 @@ void AndersonV4::Oliveira()
             }
         }
     }
+    cout << endl;
 }
