@@ -123,7 +123,7 @@
 	<algorithm>
 	<iostream>
 
-1670899895 source:c:\construtivosmbv\main.cpp
+1671074498 source:c:\construtivosmbv\main.cpp
 	<iostream>
 	<set>
 	<vector>
@@ -143,7 +143,7 @@
 	<queue>
 	"Grafo.h"
 
-1667954265 c:\construtivosmbv\include\grafo.h
+1671055862 c:\construtivosmbv\include\grafo.h
 	<set>
 	<vector>
 	<string>
@@ -162,9 +162,10 @@
 	<iostream>
 	"Roleta.h"
 
-1669408386 source:c:\construtivosmbv\src\grafo.cpp
+1671055862 source:c:\construtivosmbv\src\grafo.cpp
 	"Grafo.h"
 	<iostream>
+	<algorithm>
 
 1670525734 source:c:\construtivosmbv\src\rodrigo.cpp
 	"Rodrigo.h"
@@ -285,12 +286,12 @@
 	<queue>
 	"Grafo.h"
 
-1670898099 source:c:\construtivosmbv\src\buscalocal.cpp
+1671079171 source:c:\construtivosmbv\src\buscalocal.cpp
 	"BuscaLocal.h"
 	<algorithm>
 	<iostream>
 
-1671038549 c:\construtivosmbv\include\buscalocal.h
+1671073200 c:\construtivosmbv\include\buscalocal.h
 	<set>
 	<vector>
 	<queue>

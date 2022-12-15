@@ -16,6 +16,7 @@ class BuscaLocal
         Grafo NewT;
 
         vector<int> BT;
+        set<int> BV;
         void AtualizarCConexas(int v, int u);
 
     private:
@@ -29,7 +30,8 @@ class BuscaLocal
         void ConectaFolhas();
 
         Grafo ObterArvore() const;
-        vector<int> ObterBranches() const;
+        set<int> ObterBranches() const;
+        vector<int> ObterGrauBV() const;
 
 };
 

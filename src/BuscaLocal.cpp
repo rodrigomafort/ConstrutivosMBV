@@ -16,6 +16,26 @@ BuscaLocal::~BuscaLocal()
     //destructor
 }
 
+Grafo BuscaLocal::ObterArvore() const
+{
+    return NewT;
+}
+
+set<int> BuscaLocal::ObterBranches() const
+{
+    return BV;
+}
+
+vector<int> BuscaLocal::ObterGrauBV() const
+{
+    vector<int> GrauBV;
+    for (int v : BV)
+    {
+        GrauBV.push_back(NewT.Grau(v));
+    }
+    return GrauBV;
+}
+
 void BuscaLocal::ConectaFolhas()
 {
     vector<int> N(T.n);
@@ -43,22 +63,26 @@ void BuscaLocal::ConectaFolhas()
         Fila.pop();
         for(int u : T.Adjacentes(v))
         {
+            vector<int> auxiliar;
             if(u != Pai[v])
             {
-                N[v] = N[v] + 1;
+                N[u] = N[v] + 1;
                 Pai[u] = v;
                 for(int i : Cr[v])
                 {
-                    Cr[u].push_back(i);
+                    //Cr[u].push_back(i);
+                    auxiliar.push_back(i);
                 }
+                Cr[u] = auxiliar;
                 Cr[u].push_back(u);
                 Fila.push(u);
             }
         }
     }
 
-    vector<int> BV;// = BT - G.ArticulacoesW2;
+    //int BV = BT - G.ArticulacoesW2;
     bool obrigatorio;
+    G.DetectarArticulacoesEPontes();
     for(int i : BT)
     {
         obrigatorio = false;
@@ -67,11 +91,12 @@ void BuscaLocal::ConectaFolhas()
             if(i == j)
             {
                 obrigatorio = true;
+                break;
             }
         }
         if(obrigatorio == false)
         {
-            BV.push_back(i);
+            BV.insert(i);
             InBV[i] = 1;
         }
     }
@@ -79,33 +104,29 @@ void BuscaLocal::ConectaFolhas()
     set<int> Folhas;
     for(int v : T.V)
     {
-        if(T.Grau(v) == 1 and G.Grau(v) > 1)
+        if(T.Grau(v) == 1 && G.Grau(v) > 1)
         {
             Folhas.insert(v);
             InFolhas[v] = 1;
         }
     }
 
-    while(BV.empty() == false and Folhas.empty() == false)
+    while(BV.empty() == false && Folhas.empty() == false)
     {
-        int v;
-        for(int i : Folhas)
-        {
-            v = i;
-            break;
-        }
-        Folhas.erase(v);
+        int v = *Folhas.begin();
+        Folhas.erase(Folhas.begin());
         InFolhas[v] = 0;
+        int w;
         for(int u : G.Adjacentes(v))
         {
-            if(T.Grau(u) == 1)
+            if(NewT.Grau(u) == 1)
             {
                 if(InFolhas[u] == 1)
                 {
                     Folhas.erase(u);
                     InFolhas[u] = 0;
                 }
-                int w;
+
                 int maiorN = 0;
                 vector<int> Intersecao;
                 for(int i : Cr[v])
@@ -123,34 +144,35 @@ void BuscaLocal::ConectaFolhas()
                     if(N[i] > maiorN)
                     {
                         w = i;
+                        maiorN = N[i];
                     }
                 }
                 vector<int> Cwv;
                 vector<int> Cwu;
                 vector<int> C;
-                for(int i : Cr[v])
+                for(int i = Cr[v].size() - 1; i > -1; i--)
                 {
-                    if(i != w)
+                    if(Cr[v][i] != w)
                     {
-                        Cwv.push_back(i);
-                        C.push_back(i);
+                        Cwv.push_back(Cr[v][i]);
+                        C.push_back(Cr[v][i]);
                     }
                     else
                     {
-                        Cwv.push_back(i);
-                        C.push_back(i);
+                        Cwv.push_back(Cr[v][i]);
+                        C.push_back(Cr[v][i]);
                         break;
                     }
                 }
-                for(int i : Cr[u])
+                for(int i = Cr[u].size() - 1; i > -1; i--)
                 {
-                    if(i != w)
+                    if(Cr[u][i] != w)
                     {
-                        Cwu.push_back(i);
+                        Cwu.push_back(Cr[u][i]);
                     }
                     else
                     {
-                        Cwu.push_back(i);
+                        Cwu.push_back(Cr[u][i]);
                         break;
                     }
                 }
@@ -166,33 +188,116 @@ void BuscaLocal::ConectaFolhas()
                 for(int i : C)
                 {
                     posicao += 1;
-                    if(T.Grau(i) < menorC)
+                    if(NewT.Grau(i) < menorC && InBV[i] == 1)
                     {
-                        menorC = T.Grau(i);
-                        x = i
-                        if(i != x and i != u)
+                        menorC = NewT.Grau(i);
+                        x = i;
+                        if(i != v and i != u)
                         {
                             a = C[posicao - 1];
-                            b = C[posicao + 1]
+                            b = C[posicao + 1];
                         }
                     }
-                    if(T.Grau(i) == menorC)
+                    if(NewT.Grau(i) == menorC && InBV[i] == 1)
                     {
                         if(N[i] > N[x])
                         {
-                            menorC = T.Grau(i);
-                            x = i
-                            if(i != x and i != u)
+                            menorC = NewT.Grau(i);
+                            x = i;
+                            if(i != v and i != u)
                             {
                                 a = C[posicao - 1];
-                                b = C[posicao + 1]
+                                b = C[posicao + 1];
                             }
                         }
                     }
                 }
-
+                if(InBV[a] == 1 && InBV[b] == 1)
+                {
+                    if(NewT.Grau(a) <= NewT.Grau(b))
+                    {
+                        NewT.RemoverAresta(a, x);
+                    }
+                    else
+                    {
+                        NewT.RemoverAresta(b, x);
+                    }
+                }
+                else
+                {
+                    if(InBV[a] == 1)
+                    {
+                        NewT.RemoverAresta(a, x);
+                    }
+                    else
+                    {
+                        if(InBV[b] == 1)
+                        {
+                            NewT.RemoverAresta(b, x);
+                        }
+                        else
+                        {
+                            if(G.Grau(a) >= G.Grau(b))
+                            {
+                                NewT.RemoverAresta(a, x);
+                                Folhas.insert(a);
+                                InFolhas[a] = 1;
+                            }
+                            else
+                            {
+                                NewT.RemoverAresta(b, x);
+                                Folhas.insert(b);
+                                InFolhas[b] = 1;
+                            }
+                        }
+                    }
+                }
+                if(NewT.Grau(x) < 3 && InBV[x] == 1)
+                {
+                    BV.erase(x);
+                    InBV[x] = 0;
+                }
+                if(NewT.Grau(a) < 3 && InBV[a] == 1)
+                {
+                    BV.erase(a);
+                    InBV[a] = 0;
+                }
+                if(NewT.Grau(b) < 3 && InBV[b] == 1)
+                {
+                    BV.erase(b);
+                    InBV[b] = 0;
+                }
+                NewT.AdicionarAresta(v, u);
+                break;
+            }
+        }
+        Fila.push(w);
+        while(Fila.empty() == false)
+        {
+            int v = Fila.front();
+            Fila.pop();
+            for(int u : NewT.Adjacentes(v))
+            {
+                vector<int> auxiliar;
+                if(u != Pai[v])
+                {
+                    N[u] = N[v] + 1;
+                    Pai[u] = v;
+                    for(int i : Cr[v])
+                    {
+                        auxiliar.push_back(i);
+                    }
+                    Cr[u] = auxiliar;
+                    Cr[u].push_back(u);
+                    Fila.push(u);
+                }
             }
         }
     }
 
+    for(int i : G.ArticulacoesW2)
+    {
+        BV.insert(i);
+        InBV[i] = 1;
+    }
 }

@@ -21,8 +21,8 @@ int main(int argc, char *argv[]){
 	}
 
 	Grafo G = Grafo::LerArquivo(argv[1]);
-	Grafo G2 = Grafo::LerArquivo(argv[1]);
-	Grafo G3 = Grafo::LerArquivo(argv[1]);
+	//Grafo G2 = Grafo::LerArquivo(argv[1]);
+	//Grafo G3 = Grafo::LerArquivo(argv[1]);
 
     double time_spent = 0.0;
     clock_t start1 = clock();
@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
     double time_spent2 = 0.0;
     clock_t start2 = clock();
 
-    Rodrigo alg2 = Rodrigo(G2);
+    Rodrigo alg2 = Rodrigo(G);
     alg2.Oliveira();
 
     clock_t end2 = clock();
@@ -45,7 +45,7 @@ int main(int argc, char *argv[]){
     double time_spent3 = 0.0;
     clock_t start3 = clock();
 
-    Algoritmo3 alg3 = Algoritmo3(G3);
+    Algoritmo3 alg3 = Algoritmo3(G);
     alg3.Oliveira();
 
     clock_t end3 = clock();
@@ -62,6 +62,21 @@ int main(int argc, char *argv[]){
     Grafo T3 = alg3.ObterArvore();
     vector<int> BT3 = alg3.ObterBranches();
     vector<int> GrauBT3 = alg3.ObterGrauBT();
+
+    BuscaLocal bl = BuscaLocal(G, T, BT);
+    bl.ConectaFolhas();
+    set<int> BTL = bl.ObterBranches();
+    cout << BTL.size() << "\t ";
+
+    BuscaLocal bl2 = BuscaLocal(G, T2, BT2);
+    bl2.ConectaFolhas();
+    set<int> BTL2 = bl2.ObterBranches();
+    cout << BTL2.size() << "\t ";
+
+    BuscaLocal bl3 = BuscaLocal(G, T3, BT3);
+    bl3.ConectaFolhas();
+    set<int> BTL3 = bl3.ObterBranches();
+    cout << BTL3.size() << endl;
 
     vector<int> BV;
     vector<int> BV2;
@@ -131,12 +146,12 @@ int main(int argc, char *argv[]){
     else
        verificado = "False";
 
-    if(T2.ValidarArvore() == true && T2.V.size() == G2.V.size() && BT2.size() == BV2.size())
+    if(T2.ValidarArvore() == true && T2.V.size() == G.V.size() && BT2.size() == BV2.size())
         verificado2 = "True";
     else
        verificado2 = "False";
 
-    if(T3.ValidarArvore() == true && T3.V.size() == G3.V.size() && BT3.size() == BV3.size())
+    if(T3.ValidarArvore() == true && T3.V.size() == G.V.size() && BT3.size() == BV3.size())
         verificado3 = "True";
     else
        verificado3 = "False";
