@@ -12,6 +12,8 @@ AndersonV4::AndersonV4(const Grafo& pG):
     G.nome = "G";
     T.nome = "T";
 
+	e2(rd());
+
 }
 
 AndersonV4::~AndersonV4()
@@ -161,9 +163,10 @@ void AndersonV4::Oliveira()
             {
                 //double peso = G.n - G.Grau(p);
                 double peso = grauMax - G.Grau(p);
+                //cout << p << " - " << peso <<endl;
                 R.Adicionar(p, peso);
             }
-            v = R.Sortear();
+            v = R.Sortear(e2);
             Pontas.erase(v);
             InPontas[v] = false;
             /*
@@ -247,7 +250,7 @@ void AndersonV4::Oliveira()
                         }
                     }*/
                 }
-                u = R.Sortear();
+                u = R.Sortear(e2);
 
                 T.AdicionarVertice(u);
                 T.AdicionarAresta(v,u);

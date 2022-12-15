@@ -1,4 +1,5 @@
 #include "Roleta.h"
+#include <iostream>
 
 ItemRoleta::ItemRoleta(int k, double p)
 {
@@ -26,16 +27,18 @@ void Roleta::Adicionar(int key, double probabilidade)
 		itens.push_back(ItemRoleta(key, probabilidade));
 }
 
-int Roleta::Sortear()
+int Roleta::Sortear(mt19937_64 e2)
 {
 	double soma = 0;
 	for (int i = 0; i < (int)itens.size(); i++)
 		soma = soma + itens[i].prob;
 
 	uniform_real_distribution<> rndInterval(0, 1);
-	random_device rd;
-	mt19937_64 e2(rd());
+	//random_device rd;
+	//mt19937_64 e2(rd());
 	double d = rndInterval(e2);
+
+	cout << "d: " << d << endl;
 
 	double step = 0;
 	for (int i = 0; i < (int)itens.size(); i++)

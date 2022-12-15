@@ -23,7 +23,7 @@ int main(int argc, char *argv[]){
 	Grafo G = Grafo::LerArquivo(argv[1]);
 	//Grafo G2 = Grafo::LerArquivo(argv[1]);
 	//Grafo G3 = Grafo::LerArquivo(argv[1]);
-
+	/*
     double time_spent = 0.0;
     clock_t start1 = clock();
 
@@ -49,20 +49,69 @@ int main(int argc, char *argv[]){
     alg3.Oliveira();
 
     clock_t end3 = clock();
-    time_spent3 += (double)(end3 - start3) / CLOCKS_PER_SEC;
+    time_spent3 += (double)(end3 - start3) / CLOCKS_PER_SEC;*/
 
-    Grafo T = alg.ObterArvore();
-    vector<int> BT = alg.ObterBranches();
-    vector<int> GrauBT = alg.ObterGrauBT();
+    vector<int> BT100a;
+    int BTaMin = 1001;
+    int BTaMax = 0;
+    vector<int> BT100b;
+    int BTbMin = 1001;
+    int BTbMax = 0;
+    vector<int> BT100c;
+    int BTcMin = 1001;
+    int BTcMax = 0;
+    for(int i=0; i<5; i++)
+    {
+        AndersonV4 alg (G);// = AndersonV4(G);
+        alg.Oliveira();
+        //Grafo T = alg.ObterArvore();
+        vector<int> BT = alg.ObterBranches();
+        //vector<int> GrauBT = alg.ObterGrauBT();
+        BT100a.push_back(BT.size());
+        if(BT.size() < BTaMin)
+            BTaMin = BT.size();
+        if(BT.size() > BTaMax)
+            BTaMax = BT.size();
+/*
+        Rodrigo alg2 = Rodrigo(G);
+        alg2.Oliveira();
+        //Grafo T2 = alg2.ObterArvore();
+        vector<int> BT2 = alg2.ObterBranches();
+        //vector<int> GrauBT2 = alg2.ObterGrauBT();
+        BT100b.push_back(BT2.size());
+        if(BT2.size() < BTbMin)
+            BTbMin = BT2.size();
+        if(BT2.size() > BTbMax)
+            BTbMax = BT2.size();*/
 
-    Grafo T2 = alg2.ObterArvore();
-    vector<int> BT2 = alg2.ObterBranches();
-    vector<int> GrauBT2 = alg2.ObterGrauBT();
+        Algoritmo3 alg3 = Algoritmo3(G);
+        alg3.Oliveira();
+        //Grafo T3 = alg3.ObterArvore();
+        vector<int> BT3 = alg3.ObterBranches();
+        //vector<int> GrauBT3 = alg3.ObterGrauBT();
+        BT100c.push_back(BT3.size());
+        if(BT3.size() < BTcMin)
+            BTcMin = BT3.size();
+        if(BT3.size() > BTcMax)
+            BTcMax = BT3.size();
+    }
+    cout << argv[1] << endl;
+    int soma = 0;
+    for(int i : BT100a)
+       soma = soma + i;
+    cout << "AndersonV4 - Min: " << BTaMin << " Max: " << BTaMax << " Media: " << soma/5 << endl;
+/*
+    soma = 0;
+    for(int i : BT100b)
+       soma = soma + i;
+    cout << "Rodrigo - Min: " << BTbMin << " Max: " << BTbMax << " Media: " << soma/5 << endl;*/
 
-    Grafo T3 = alg3.ObterArvore();
-    vector<int> BT3 = alg3.ObterBranches();
-    vector<int> GrauBT3 = alg3.ObterGrauBT();
+    soma = 0;
+    for(int i : BT100c)
+       soma = soma + i;
+    cout << "Algoritmo3 - Min: " << BTcMin << " Max: " << BTcMax << " Media: " << soma/5 << endl << endl;
 
+    /*
     BuscaLocal bl = BuscaLocal(G, T, BT);
     bl.ConectaFolhas();
     set<int> BTL = bl.ObterBranches();
@@ -76,8 +125,9 @@ int main(int argc, char *argv[]){
     BuscaLocal bl3 = BuscaLocal(G, T3, BT3);
     bl3.ConectaFolhas();
     set<int> BTL3 = bl3.ObterBranches();
-    cout << BTL3.size() << endl;
+    cout << BTL3.size() << endl;*/
 
+    /*
     vector<int> BV;
     vector<int> BV2;
     vector<int> BV3;
@@ -208,6 +258,6 @@ int main(int argc, char *argv[]){
         float mediaGrau = somaGrau / GrauBT3.size();
         cout << mediaGrau;
     }
-    cout << endl;
+    cout << endl;*/
     return 0;
 }

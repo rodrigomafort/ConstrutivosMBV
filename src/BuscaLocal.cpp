@@ -268,29 +268,29 @@ void BuscaLocal::ConectaFolhas()
                     InBV[b] = 0;
                 }
                 NewT.AdicionarAresta(v, u);
-                break;
-            }
-        }
-        Fila.push(w);
-        while(Fila.empty() == false)
-        {
-            int v = Fila.front();
-            Fila.pop();
-            for(int u : NewT.Adjacentes(v))
-            {
-                vector<int> auxiliar;
-                if(u != Pai[v])
+                Fila.push(w);
+                while(Fila.empty() == false)
                 {
-                    N[u] = N[v] + 1;
-                    Pai[u] = v;
-                    for(int i : Cr[v])
+                    int v = Fila.front();
+                    Fila.pop();
+                    for(int u : NewT.Adjacentes(v))
                     {
-                        auxiliar.push_back(i);
+                        vector<int> auxiliar;
+                        if(u != Pai[v])
+                        {
+                            N[u] = N[v] + 1;
+                            Pai[u] = v;
+                            for(int i : Cr[v])
+                            {
+                                auxiliar.push_back(i);
+                            }
+                            Cr[u] = auxiliar;
+                            Cr[u].push_back(u);
+                            Fila.push(u);
+                        }
                     }
-                    Cr[u] = auxiliar;
-                    Cr[u].push_back(u);
-                    Fila.push(u);
                 }
+                break;
             }
         }
     }

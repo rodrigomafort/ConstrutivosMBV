@@ -31,7 +31,7 @@ class Roleta
         ~Roleta();
 
         void Adicionar(int key, double probalilidade);
-        int Sortear();
+        int Sortear(mt19937_64 e2);
 };
 
 #endif // ROLETA_H

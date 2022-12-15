@@ -4,6 +4,7 @@
 #include <set>
 #include <vector>
 #include <queue>
+#include <random>
 
 #include "Grafo.h"
 
@@ -17,6 +18,9 @@ class AndersonV4
 
         vector<int> BT;
         void AtualizarCConexas(int v, int u);
+
+        random_device rd;
+        mt19937_64 e2;
 
     private:
         vector<bool> InBT;
