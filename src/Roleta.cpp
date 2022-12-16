@@ -35,7 +35,13 @@ int Roleta::Sortear()
 
 	uniform_real_distribution<> rndInterval(0, 1);
 	random_device rd;
-	double d = rndInterval(rd);
+	mt19937_64 gen(rd());
+	double d = rndInterval(gen);/*
+
+	constexpr int FLOAT_MIN = 0;
+    constexpr int FLOAT_MAX = 1;
+    //srand(time(nullptr));
+    double d = FLOAT_MIN + (float)(rand()) / ((float)(RAND_MAX/(FLOAT_MAX - FLOAT_MIN)));*/
 
 	//cout << "d: " << d << endl;
 

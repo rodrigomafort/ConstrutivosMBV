@@ -123,7 +123,7 @@
 	<algorithm>
 	<iostream>
 
-1671106892 source:c:\construtivosmbv\main.cpp
+1671212563 source:c:\construtivosmbv\main.cpp
 	<iostream>
 	<set>
 	<vector>
@@ -137,11 +137,10 @@
 	"Algoritmo3.h"
 	"BuscaLocal.h"
 
-1671112561 c:\construtivosmbv\include\andersonv4.h
+1671148328 c:\construtivosmbv\include\andersonv4.h
 	<set>
 	<vector>
 	<queue>
-	<random>
 	"Grafo.h"
 
 1671055862 c:\construtivosmbv\include\grafo.h
@@ -157,7 +156,7 @@
 	<queue>
 	"Grafo.h"
 
-1671107647 source:c:\construtivosmbv\src\andersonv4.cpp
+1671151796 source:c:\construtivosmbv\src\andersonv4.cpp
 	"AndersonV4.h"
 	<algorithm>
 	<iostream>
@@ -268,12 +267,13 @@
 	<algorithm>
 	<iostream>
 
-1671112615 c:\construtivosmbv\include\roleta.h
+1671153525 c:\construtivosmbv\include\roleta.h
 	<vector>
 	<random>
+	<iomanip>
 	"Grafo.h"
 
-1671112593 source:c:\construtivosmbv\src\roleta.cpp
+1671212592 source:c:\construtivosmbv\src\roleta.cpp
 	"Roleta.h"
 	<iostream>
 
@@ -288,7 +288,7 @@
 	<queue>
 	"Grafo.h"
 
-1671102051 source:c:\construtivosmbv\src\buscalocal.cpp
+1671155056 source:c:\construtivosmbv\src\buscalocal.cpp
 	"BuscaLocal.h"
 	<algorithm>
 	<iostream>

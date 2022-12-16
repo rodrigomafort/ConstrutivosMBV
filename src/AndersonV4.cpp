@@ -165,7 +165,7 @@ void AndersonV4::Oliveira()
             }
             v = R.Sortear();
 
-            cout << v << " ";
+            //cout << v << " ";
 
             Pontas.erase(v);
             InPontas[v] = false;
@@ -366,5 +366,4 @@ void AndersonV4::Oliveira()
             }
         }
     }
-    cout << endl;
 }

@@ -4,7 +4,6 @@
 #include <set>
 #include <vector>
 #include <queue>
-#include <random>
 
 #include "Grafo.h"
 

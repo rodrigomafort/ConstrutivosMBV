@@ -180,6 +180,7 @@ void BuscaLocal::ConectaFolhas()
                 {
                     C.push_back(Cwu[i]);
                 }
+
                 int x;
                 int menorC = G.n;
                 int posicao = -1;
