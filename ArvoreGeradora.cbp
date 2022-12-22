@@ -12,7 +12,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="Instancias\Spd_RF2_100_144_1891.txt" />
+				<Option parameters="Instancias\Spd_RF2_140_157_2611.txt" />
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="include" />
@@ -23,7 +23,7 @@
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="Instancias\Spd_RF2_100_144_1891.txt" />
+				<Option parameters="Instancias\Spd_RF2_140_157_2611.txt" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />

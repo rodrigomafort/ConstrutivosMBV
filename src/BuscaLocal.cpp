@@ -118,19 +118,15 @@ void BuscaLocal::ConectaFolhas()
         int v = *Folhas.begin();
         Folhas.erase(Folhas.begin());
         InFolhas[v] = 0;
-        int w;
+        int w = -1;
         for(int u : G.Adjacentes(v))
         {
+            w = -1;
+            int maiorN = -1;
+            vector<int> Intersecao;
             if(NewT.Grau(u) == 1)
             {
-                if(InFolhas[u] == 1)
-                {
-                    Folhas.erase(u);
-                    InFolhas[u] = 0;
-                }
 
-                int maiorN = 0;
-                vector<int> Intersecao;
                 for(int i : Cr[v])
                 {
                     for(int j : Cr[u])
@@ -138,17 +134,28 @@ void BuscaLocal::ConectaFolhas()
                         if(i == j)
                         {
                             Intersecao.push_back(i);
+                            break;
                         }
                     }
                 }
                 for(int i : Intersecao)
                 {
-                    if(N[i] > maiorN)
+                    if(N[i] > maiorN && InBV[i] == 1)
                     {
                         w = i;
                         maiorN = N[i];
                     }
                 }
+                if(w == -1)
+                {
+                    break;
+                }
+                if(InFolhas[u] == 1)
+                {
+                    Folhas.erase(u);
+                    InFolhas[u] = 0;
+                }
+
                 vector<int> Cwv;
                 vector<int> Cwu;
                 vector<int> C;
@@ -190,12 +197,13 @@ void BuscaLocal::ConectaFolhas()
                 int b;
                 for(int i : C)
                 {
-                    posicao += 1;
+                    posicao = posicao + 1;
+                    //cout << NewT.Grau(w);
                     if(NewT.Grau(i) < menorC && InBV[i] == 1)
                     {
                         menorC = NewT.Grau(i);
                         x = i;
-                        if(i != v and i != u)
+                        if(i != v && i != u)
                         {
                             a = C[posicao - 1];
                             b = C[posicao + 1];
@@ -207,7 +215,7 @@ void BuscaLocal::ConectaFolhas()
                         {
                             menorC = NewT.Grau(i);
                             x = i;
-                            if(i != v and i != u)
+                            if(i != v && i != u)
                             {
                                 a = C[posicao - 1];
                                 b = C[posicao + 1];
@@ -215,6 +223,7 @@ void BuscaLocal::ConectaFolhas()
                         }
                     }
                 }
+
                 if(InBV[a] == 1 && InBV[b] == 1)
                 {
                     if(NewT.Grau(a) <= NewT.Grau(b))
