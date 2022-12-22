@@ -1,749 +1,739 @@
 File Branch_Vertices Time Verification Média_Grau_BV Branch_Vertices2 Time2 Verification2 Média_Grau_BV2 Branch_Vertices3 Time3 Verification3 Média_Grau_BV3 
 Instancias\Spd_RF2_1000_1047_6011.txt
-AndersonV4 - Min: 315 Max: 315 Media: 315
-Rodrigo - Min: 315 Max: 315 Media: 315
-Algoritmo3 - Min: 314 Max: 314 Media: 314
-
+AndersonV4 - Min: 315 Max: 315 Media: 315 Atual: 315
+Rodrigo - Min: 314 Max: 315 Media: 314 Atual: 315
+Algoritmo3 - Min: 314 Max: 314 Media: 314 Atual: 314
 315	 315	 314
+
 Instancias\Spd_RF2_1000_1047_6019.txt
-AndersonV4 - Min: 317 Max: 317 Media: 317
-Rodrigo - Min: 316 Max: 317 Media: 316
-Algoritmo3 - Min: 315 Max: 315 Media: 315
-
-317	 316	 315
-Instancias\Spd_RF2_1000_1047_6027.txt
-AndersonV4 - Min: 315 Max: 316 Media: 315
-Rodrigo - Min: 315 Max: 316 Media: 315
-Algoritmo3 - Min: 315 Max: 315 Media: 315
-
-316	 316	 315
-Instancias\Spd_RF2_1000_1047_6035.txt
-AndersonV4 - Min: 316 Max: 318 Media: 316
-Rodrigo - Min: 315 Max: 318 Media: 316
-Algoritmo3 - Min: 315 Max: 315 Media: 315
-
+AndersonV4 - Min: 315 Max: 317 Media: 316 Atual: 317
+Rodrigo - Min: 316 Max: 317 Media: 316 Atual: 317
+Algoritmo3 - Min: 315 Max: 315 Media: 315 Atual: 315
 317	 317	 315
+
+Instancias\Spd_RF2_1000_1047_6027.txt
+AndersonV4 - Min: 315 Max: 316 Media: 315 Atual: 316
+Rodrigo - Min: 315 Max: 316 Media: 315 Atual: 316
+Algoritmo3 - Min: 315 Max: 315 Media: 315 Atual: 315
+316	 316	 315
+
+Instancias\Spd_RF2_1000_1047_6035.txt
+AndersonV4 - Min: 315 Max: 318 Media: 316 Atual: 317
+Rodrigo - Min: 316 Max: 318 Media: 316 Atual: 318
+Algoritmo3 - Min: 315 Max: 315 Media: 315 Atual: 315
+317	 318	 315
+
 Instancias\Spd_RF2_1000_1047_6043.txt
-AndersonV4 - Min: 314 Max: 316 Media: 315
-Rodrigo - Min: 315 Max: 316 Media: 315
-Algoritmo3 - Min: 314 Max: 314 Media: 314
+AndersonV4 - Min: 314 Max: 316 Media: 315 Atual: 316
+Rodrigo - Min: 314 Max: 316 Media: 315 Atual: 314
+Algoritmo3 - Min: 314 Max: 314 Media: 314 Atual: 314
+316	 314	 314
 
-314	 316	 314
 Instancias\Spd_RF2_1000_1095_6051.txt
-AndersonV4 - Min: 296 Max: 298 Media: 296
-Rodrigo - Min: 296 Max: 298 Media: 296
-Algoritmo3 - Min: 297 Max: 297 Media: 297
+AndersonV4 - Min: 295 Max: 298 Media: 296 Atual: 297
+Rodrigo - Min: 296 Max: 298 Media: 297 Atual: 296
+Algoritmo3 - Min: 297 Max: 297 Media: 297 Atual: 297
+297	 296	 297
 
-296	 297	 297
 Instancias\Spd_RF2_1000_1095_6059.txt
-AndersonV4 - Min: 296 Max: 298 Media: 296
-Rodrigo - Min: 296 Max: 299 Media: 297
-Algoritmo3 - Min: 298 Max: 298 Media: 298
+AndersonV4 - Min: 296 Max: 299 Media: 297 Atual: 299
+Rodrigo - Min: 296 Max: 299 Media: 297 Atual: 297
+Algoritmo3 - Min: 298 Max: 298 Media: 298 Atual: 298
+299	 297	 298
 
-298	 297	 298
 Instancias\Spd_RF2_1000_1095_6067.txt
-AndersonV4 - Min: 295 Max: 297 Media: 296
-Rodrigo - Min: 295 Max: 297 Media: 296
-Algoritmo3 - Min: 296 Max: 296 Media: 296
+AndersonV4 - Min: 295 Max: 297 Media: 296 Atual: 296
+Rodrigo - Min: 295 Max: 297 Media: 296 Atual: 297
+Algoritmo3 - Min: 296 Max: 296 Media: 296 Atual: 296
+296	 297	 296
 
-296	 296	 296
 Instancias\Spd_RF2_1000_1095_6075.txt
-AndersonV4 - Min: 293 Max: 295 Media: 294
-Rodrigo - Min: 293 Max: 295 Media: 294
-Algoritmo3 - Min: 295 Max: 295 Media: 295
+AndersonV4 - Min: 293 Max: 296 Media: 294 Atual: 296
+Rodrigo - Min: 293 Max: 296 Media: 294 Atual: 293
+Algoritmo3 - Min: 295 Max: 295 Media: 295 Atual: 295
+296	 293	 295
 
-294	 295	 295
 Instancias\Spd_RF2_1000_1095_6083.txt
-AndersonV4 - Min: 294 Max: 296 Media: 295
-Rodrigo - Min: 294 Max: 296 Media: 295
-Algoritmo3 - Min: 294 Max: 294 Media: 294
+AndersonV4 - Min: 294 Max: 296 Media: 295 Atual: 295
+Rodrigo - Min: 294 Max: 296 Media: 295 Atual: 294
+Algoritmo3 - Min: 294 Max: 294 Media: 294 Atual: 294
+295	 294	 294
 
-295	 295	 294
 Instancias\Spd_RF2_1000_1143_6091.txt
-AndersonV4 - Min: 277 Max: 280 Media: 278
-Rodrigo - Min: 277 Max: 281 Media: 278
-Algoritmo3 - Min: 281 Max: 281 Media: 281
+AndersonV4 - Min: 276 Max: 279 Media: 278 Atual: 276
+Rodrigo - Min: 277 Max: 280 Media: 278 Atual: 278
+Algoritmo3 - Min: 281 Max: 281 Media: 281 Atual: 281
+276	 278	 281
 
-278	 278	 281
 Instancias\Spd_RF2_1000_1143_6099.txt
-AndersonV4 - Min: 276 Max: 279 Media: 277
-Rodrigo - Min: 276 Max: 278 Media: 277
-Algoritmo3 - Min: 276 Max: 276 Media: 276
+AndersonV4 - Min: 276 Max: 280 Media: 277 Atual: 278
+Rodrigo - Min: 276 Max: 280 Media: 277 Atual: 277
+Algoritmo3 - Min: 276 Max: 276 Media: 276 Atual: 276
+278	 277	 276
 
-278	 278	 276
 Instancias\Spd_RF2_1000_1143_6107.txt
-AndersonV4 - Min: 276 Max: 279 Media: 277
-Rodrigo - Min: 277 Max: 279 Media: 278
-Algoritmo3 - Min: 279 Max: 279 Media: 279
-
+AndersonV4 - Min: 277 Max: 280 Media: 278 Atual: 279
+Rodrigo - Min: 277 Max: 280 Media: 278 Atual: 279
+Algoritmo3 - Min: 279 Max: 279 Media: 279 Atual: 279
 279	 279	 279
+
 Instancias\Spd_RF2_1000_1143_6115.txt
-AndersonV4 - Min: 279 Max: 283 Media: 280
-Rodrigo - Min: 279 Max: 282 Media: 280
-Algoritmo3 - Min: 280 Max: 280 Media: 280
+AndersonV4 - Min: 280 Max: 282 Media: 280 Atual: 281
+Rodrigo - Min: 279 Max: 282 Media: 280 Atual: 281
+Algoritmo3 - Min: 280 Max: 280 Media: 280 Atual: 280
+281	 281	 280
 
-283	 281	 280
 Instancias\Spd_RF2_1000_1143_6123.txt
-AndersonV4 - Min: 274 Max: 276 Media: 275
-Rodrigo - Min: 275 Max: 277 Media: 275
-Algoritmo3 - Min: 276 Max: 276 Media: 276
+AndersonV4 - Min: 274 Max: 276 Media: 275 Atual: 275
+Rodrigo - Min: 274 Max: 277 Media: 275 Atual: 274
+Algoritmo3 - Min: 276 Max: 276 Media: 276 Atual: 276
+275	 274	 276
 
-276	 276	 276
 Instancias\Spd_RF2_1000_1191_6131.txt
-AndersonV4 - Min: 257 Max: 260 Media: 258
-Rodrigo - Min: 257 Max: 260 Media: 258
-Algoritmo3 - Min: 257 Max: 257 Media: 257
+AndersonV4 - Min: 257 Max: 261 Media: 259 Atual: 260
+Rodrigo - Min: 257 Max: 260 Media: 258 Atual: 259
+Algoritmo3 - Min: 257 Max: 257 Media: 257 Atual: 257
+260	 259	 257
 
-259	 258	 257
 Instancias\Spd_RF2_1000_1191_6139.txt
-AndersonV4 - Min: 258 Max: 260 Media: 258
-Rodrigo - Min: 257 Max: 260 Media: 259
-Algoritmo3 - Min: 259 Max: 259 Media: 259
+AndersonV4 - Min: 258 Max: 259 Media: 258 Atual: 259
+Rodrigo - Min: 257 Max: 260 Media: 258 Atual: 258
+Algoritmo3 - Min: 259 Max: 259 Media: 259 Atual: 259
+259	 258	 259
 
-260	 259	 259
 Instancias\Spd_RF2_1000_1191_6147.txt
-AndersonV4 - Min: 258 Max: 260 Media: 258
-Rodrigo - Min: 258 Max: 260 Media: 258
-Algoritmo3 - Min: 259 Max: 259 Media: 259
+AndersonV4 - Min: 258 Max: 262 Media: 259 Atual: 259
+Rodrigo - Min: 258 Max: 260 Media: 259 Atual: 258
+Algoritmo3 - Min: 259 Max: 259 Media: 259 Atual: 259
+259	 258	 259
 
-258	 258	 259
 Instancias\Spd_RF2_1000_1191_6155.txt
-AndersonV4 - Min: 261 Max: 264 Media: 262
-Rodrigo - Min: 259 Max: 264 Media: 262
-Algoritmo3 - Min: 260 Max: 260 Media: 260
+AndersonV4 - Min: 260 Max: 262 Media: 261 Atual: 261
+Rodrigo - Min: 258 Max: 264 Media: 261 Atual: 264
+Algoritmo3 - Min: 260 Max: 260 Media: 260 Atual: 260
+261	 264	 260
 
-262	 263	 260
 Instancias\Spd_RF2_1000_1191_6163.txt
-AndersonV4 - Min: 259 Max: 264 Media: 261
-Rodrigo - Min: 260 Max: 263 Media: 261
-Algoritmo3 - Min: 262 Max: 262 Media: 262
+AndersonV4 - Min: 260 Max: 262 Media: 261 Atual: 261
+Rodrigo - Min: 258 Max: 264 Media: 261 Atual: 262
+Algoritmo3 - Min: 262 Max: 262 Media: 262 Atual: 262
+261	 262	 262
 
-259	 260	 262
 Instancias\Spd_RF2_1000_1239_6171.txt
-AndersonV4 - Min: 239 Max: 241 Media: 240
-Rodrigo - Min: 239 Max: 242 Media: 240
-Algoritmo3 - Min: 239 Max: 239 Media: 239
+AndersonV4 - Min: 239 Max: 242 Media: 240 Atual: 240
+Rodrigo - Min: 239 Max: 243 Media: 240 Atual: 239
+Algoritmo3 - Min: 239 Max: 239 Media: 239 Atual: 239
+240	 239	 239
 
-241	 239	 239
 Instancias\Spd_RF2_1000_1239_6179.txt
-AndersonV4 - Min: 244 Max: 245 Media: 244
-Rodrigo - Min: 244 Max: 246 Media: 245
-Algoritmo3 - Min: 245 Max: 245 Media: 245
+AndersonV4 - Min: 242 Max: 247 Media: 245 Atual: 244
+Rodrigo - Min: 244 Max: 246 Media: 244 Atual: 246
+Algoritmo3 - Min: 245 Max: 245 Media: 245 Atual: 245
+244	 246	 245
 
-245	 245	 245
 Instancias\Spd_RF2_1000_1239_6187.txt
-AndersonV4 - Min: 241 Max: 244 Media: 242
-Rodrigo - Min: 241 Max: 245 Media: 242
-Algoritmo3 - Min: 243 Max: 243 Media: 243
+AndersonV4 - Min: 241 Max: 243 Media: 242 Atual: 241
+Rodrigo - Min: 240 Max: 244 Media: 242 Atual: 244
+Algoritmo3 - Min: 243 Max: 243 Media: 243 Atual: 243
+241	 244	 243
 
-241	 241	 243
 Instancias\Spd_RF2_1000_1239_6195.txt
-AndersonV4 - Min: 247 Max: 250 Media: 248
-Rodrigo - Min: 247 Max: 250 Media: 248
-Algoritmo3 - Min: 249 Max: 249 Media: 249
+AndersonV4 - Min: 247 Max: 251 Media: 248 Atual: 248
+Rodrigo - Min: 248 Max: 252 Media: 249 Atual: 248
+Algoritmo3 - Min: 249 Max: 249 Media: 249 Atual: 249
+248	 248	 249
 
-249	 247	 249
 Instancias\Spd_RF2_1000_1239_6203.txt
-AndersonV4 - Min: 246 Max: 250 Media: 247
-Rodrigo - Min: 244 Max: 250 Media: 246
-Algoritmo3 - Min: 246 Max: 246 Media: 246
+AndersonV4 - Min: 244 Max: 250 Media: 246 Atual: 247
+Rodrigo - Min: 243 Max: 249 Media: 246 Atual: 246
+Algoritmo3 - Min: 246 Max: 246 Media: 246 Atual: 246
+247	 246	 246
 
-248	 247	 246
 Instancias\Spd_RF2_100_114_1811.txt
-AndersonV4 - Min: 27 Max: 27 Media: 27
-Rodrigo - Min: 27 Max: 27 Media: 27
-Algoritmo3 - Min: 27 Max: 27 Media: 27
-
+AndersonV4 - Min: 27 Max: 27 Media: 27 Atual: 27
+Rodrigo - Min: 27 Max: 27 Media: 27 Atual: 27
+Algoritmo3 - Min: 27 Max: 27 Media: 27 Atual: 27
 26	 26	 26
+
 Instancias\Spd_RF2_100_114_1819.txt
-AndersonV4 - Min: 23 Max: 25 Media: 23
-Rodrigo - Min: 23 Max: 25 Media: 24
-Algoritmo3 - Min: 24 Max: 24 Media: 24
+AndersonV4 - Min: 23 Max: 26 Media: 24 Atual: 23
+Rodrigo - Min: 23 Max: 25 Media: 24 Atual: 24
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Atual: 24
+23	 24	 24
 
-24	 24	 24
 Instancias\Spd_RF2_100_114_1827.txt
-AndersonV4 - Min: 23 Max: 23 Media: 23
-Rodrigo - Min: 23 Max: 24 Media: 23
-Algoritmo3 - Min: 23 Max: 23 Media: 23
-
-23	 24	 23
-Instancias\Spd_RF2_100_114_1835.txt
-AndersonV4 - Min: 23 Max: 23 Media: 23
-Rodrigo - Min: 23 Max: 23 Media: 23
-Algoritmo3 - Min: 23 Max: 23 Media: 23
-
+AndersonV4 - Min: 23 Max: 24 Media: 23 Atual: 23
+Rodrigo - Min: 23 Max: 23 Media: 23 Atual: 23
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Atual: 23
 23	 23	 23
+
+Instancias\Spd_RF2_100_114_1835.txt
+AndersonV4 - Min: 23 Max: 23 Media: 23 Atual: 23
+Rodrigo - Min: 23 Max: 23 Media: 23 Atual: 23
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Atual: 23
+23	 23	 23
+
 Instancias\Spd_RF2_100_114_1843.txt
-AndersonV4 - Min: 25 Max: 25 Media: 25
-Rodrigo - Min: 25 Max: 26 Media: 25
-Algoritmo3 - Min: 25 Max: 25 Media: 25
+AndersonV4 - Min: 25 Max: 26 Media: 25 Atual: 25
+Rodrigo - Min: 25 Max: 26 Media: 25 Atual: 25
+Algoritmo3 - Min: 25 Max: 25 Media: 25 Atual: 25
+25	 25	 25
 
-25	 26	 25
 Instancias\Spd_RF2_100_129_1851.txt
-AndersonV4 - Min: 18 Max: 22 Media: 19
-Rodrigo - Min: 18 Max: 20 Media: 19
-Algoritmo3 - Min: 18 Max: 18 Media: 18
-
-19	 20	 18
-Instancias\Spd_RF2_100_129_1859.txt
-AndersonV4 - Min: 17 Max: 21 Media: 19
-Rodrigo - Min: 19 Max: 21 Media: 20
-Algoritmo3 - Min: 18 Max: 18 Media: 18
-
-17	 21	 18
-Instancias\Spd_RF2_100_129_1867.txt
-AndersonV4 - Min: 18 Max: 21 Media: 19
-Rodrigo - Min: 17 Max: 20 Media: 18
-Algoritmo3 - Min: 18 Max: 18 Media: 18
-
+AndersonV4 - Min: 19 Max: 21 Media: 19 Atual: 19
+Rodrigo - Min: 18 Max: 21 Media: 19 Atual: 19
+Algoritmo3 - Min: 18 Max: 18 Media: 18 Atual: 18
 19	 19	 18
+
+Instancias\Spd_RF2_100_129_1859.txt
+AndersonV4 - Min: 18 Max: 21 Media: 19 Atual: 19
+Rodrigo - Min: 18 Max: 20 Media: 19 Atual: 20
+Algoritmo3 - Min: 18 Max: 18 Media: 18 Atual: 18
+19	 20	 18
+
+Instancias\Spd_RF2_100_129_1867.txt
+AndersonV4 - Min: 17 Max: 20 Media: 18 Atual: 18
+Rodrigo - Min: 18 Max: 19 Media: 18 Atual: 19
+Algoritmo3 - Min: 18 Max: 18 Media: 18 Atual: 18
+18	 19	 18
+
 Instancias\Spd_RF2_100_129_1875.txt
-AndersonV4 - Min: 17 Max: 19 Media: 17
-Rodrigo - Min: 17 Max: 19 Media: 17
-Algoritmo3 - Min: 17 Max: 17 Media: 17
+AndersonV4 - Min: 17 Max: 19 Media: 17 Atual: 19
+Rodrigo - Min: 17 Max: 19 Media: 17 Atual: 18
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Atual: 17
+19	 18	 17
 
-17	 17	 17
 Instancias\Spd_RF2_100_129_1883.txt
-AndersonV4 - Min: 17 Max: 20 Media: 17
-Rodrigo - Min: 16 Max: 19 Media: 17
-Algoritmo3 - Min: 15 Max: 15 Media: 15
+AndersonV4 - Min: 16 Max: 20 Media: 18 Atual: 18
+Rodrigo - Min: 16 Max: 19 Media: 17 Atual: 18
+Algoritmo3 - Min: 15 Max: 15 Media: 15 Atual: 15
+18	 18	 15
 
-17	 17	 15
 Instancias\Spd_RF2_100_144_1891.txt
-AndersonV4 - Min: 15 Max: 17 Media: 16
-Rodrigo - Min: 15 Max: 18 Media: 16
-Algoritmo3 - Min: 15 Max: 15 Media: 15
-
+AndersonV4 - Min: 15 Max: 19 Media: 16 Atual: 15
+Rodrigo - Min: 15 Max: 18 Media: 16 Atual: 17
+Algoritmo3 - Min: 15 Max: 15 Media: 15 Atual: 15
 Instancias\Spd_RF2_100_144_1899.txt
-AndersonV4 - Min: 13 Max: 15 Media: 14
-Rodrigo - Min: 13 Max: 18 Media: 14
-Algoritmo3 - Min: 12 Max: 12 Media: 12
+AndersonV4 - Min: 14 Max: 16 Media: 14 Atual: 15
+Rodrigo - Min: 13 Max: 15 Media: 14 Atual: 14
+Algoritmo3 - Min: 12 Max: 12 Media: 12 Atual: 12
+15	 14	 12
 
-14	 15	 12
 Instancias\Spd_RF2_100_144_1907.txt
-AndersonV4 - Min: 15 Max: 20 Media: 17
-Rodrigo - Min: 16 Max: 19 Media: 17
-Algoritmo3 - Min: 15 Max: 15 Media: 15
+AndersonV4 - Min: 16 Max: 19 Media: 17 Atual: 16
+Rodrigo - Min: 16 Max: 19 Media: 17 Atual: 18
+Algoritmo3 - Min: 15 Max: 15 Media: 15 Atual: 15
+16	 18	 15
 
-17	 19	 15
 Instancias\Spd_RF2_100_144_1915.txt
-AndersonV4 - Min: 12 Max: 16 Media: 14
-Rodrigo - Min: 13 Max: 15 Media: 13
-Algoritmo3 - Min: 11 Max: 11 Media: 11
+AndersonV4 - Min: 12 Max: 15 Media: 13 Atual: 14
+Rodrigo - Min: 12 Max: 14 Media: 13 Atual: 13
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Atual: 11
+14	 13	 11
 
-14	 14	 11
 Instancias\Spd_RF2_100_144_1923.txt
-AndersonV4 - Min: 14 Max: 18 Media: 15
-Rodrigo - Min: 15 Max: 17 Media: 15
-Algoritmo3 - Min: 15 Max: 15 Media: 15
+AndersonV4 - Min: 14 Max: 17 Media: 15 Atual: 15
+Rodrigo - Min: 14 Max: 17 Media: 15 Atual: 16
+Algoritmo3 - Min: 15 Max: 15 Media: 15 Atual: 15
+15	 16	 15
 
-16	 17	 15
 Instancias\Spd_RF2_100_159_1931.txt
-AndersonV4 - Min: 11 Max: 14 Media: 12
-Rodrigo - Min: 10 Max: 15 Media: 12
-Algoritmo3 - Min: 11 Max: 11 Media: 11
+AndersonV4 - Min: 10 Max: 14 Media: 13 Atual: 14
+Rodrigo - Min: 11 Max: 13 Media: 12 Atual: 11
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Atual: 11
+14	 11	 11
 
-12	 12	 11
 Instancias\Spd_RF2_100_159_1939.txt
-AndersonV4 - Min: 12 Max: 15 Media: 13
-Rodrigo - Min: 11 Max: 16 Media: 13
-Algoritmo3 - Min: 11 Max: 11 Media: 11
-
+AndersonV4 - Min: 12 Max: 14 Media: 13 Atual: 14
+Rodrigo - Min: 12 Max: 15 Media: 13 Atual: 14
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Atual: 11
 Instancias\Spd_RF2_100_159_1947.txt
-AndersonV4 - Min: 10 Max: 13 Media: 11
-Rodrigo - Min: 10 Max: 14 Media: 11
-Algoritmo3 - Min: 8 Max: 8 Media: 8
+AndersonV4 - Min: 10 Max: 13 Media: 12 Atual: 12
+Rodrigo - Min: 10 Max: 12 Media: 11 Atual: 12
+Algoritmo3 - Min: 8 Max: 8 Media: 8 Atual: 8
+12	 12	 8
 
-13	 11	 8
 Instancias\Spd_RF2_100_159_1955.txt
-AndersonV4 - Min: 10 Max: 15 Media: 12
-Rodrigo - Min: 10 Max: 14 Media: 12
-Algoritmo3 - Min: 9 Max: 9 Media: 9
+AndersonV4 - Min: 11 Max: 14 Media: 12 Atual: 12
+Rodrigo - Min: 11 Max: 13 Media: 12 Atual: 12
+Algoritmo3 - Min: 9 Max: 9 Media: 9 Atual: 9
+12	 12	 9
 
-13	 11	 9
 Instancias\Spd_RF2_100_159_1963.txt
-AndersonV4 - Min: 13 Max: 15 Media: 14
-Rodrigo - Min: 13 Max: 16 Media: 14
-Algoritmo3 - Min: 12 Max: 12 Media: 12
+AndersonV4 - Min: 12 Max: 15 Media: 14 Atual: 15
+Rodrigo - Min: 13 Max: 15 Media: 14 Atual: 14
+Algoritmo3 - Min: 12 Max: 12 Media: 12 Atual: 12
+15	 14	 12
 
-14	 16	 12
 Instancias\Spd_RF2_100_174_1971.txt
-AndersonV4 - Min: 10 Max: 14 Media: 11
-Rodrigo - Min: 10 Max: 13 Media: 11
-Algoritmo3 - Min: 8 Max: 8 Media: 8
+AndersonV4 - Min: 10 Max: 12 Media: 11 Atual: 11
+Rodrigo - Min: 9 Max: 12 Media: 10 Atual: 9
+Algoritmo3 - Min: 8 Max: 8 Media: 8 Atual: 8
+11	 9	 7
 
-11	 13	 7
 Instancias\Spd_RF2_100_174_1979.txt
-AndersonV4 - Min: 11 Max: 13 Media: 11
-Rodrigo - Min: 10 Max: 13 Media: 11
-Algoritmo3 - Min: 9 Max: 9 Media: 9
+AndersonV4 - Min: 10 Max: 13 Media: 11 Atual: 13
+Rodrigo - Min: 10 Max: 12 Media: 11 Atual: 11
+Algoritmo3 - Min: 9 Max: 9 Media: 9 Atual: 9
+13	 11	 9
 
-13	 10	 9
 Instancias\Spd_RF2_100_174_1987.txt
-AndersonV4 - Min: 11 Max: 15 Media: 12
-Rodrigo - Min: 11 Max: 14 Media: 13
-Algoritmo3 - Min: 11 Max: 11 Media: 11
+AndersonV4 - Min: 12 Max: 16 Media: 13 Atual: 14
+Rodrigo - Min: 11 Max: 14 Media: 12 Atual: 14
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Atual: 11
+14	 14	 11
 
-12	 11	 11
 Instancias\Spd_RF2_100_174_1995.txt
-AndersonV4 - Min: 9 Max: 13 Media: 11
-Rodrigo - Min: 10 Max: 14 Media: 12
-Algoritmo3 - Min: 9 Max: 9 Media: 9
+AndersonV4 - Min: 10 Max: 13 Media: 11 Atual: 11
+Rodrigo - Min: 10 Max: 13 Media: 11 Atual: 11
+Algoritmo3 - Min: 9 Max: 9 Media: 9 Atual: 9
+11	 11	 9
 
-11	 12	 9
 Instancias\Spd_RF2_100_174_2003.txt
-AndersonV4 - Min: 9 Max: 13 Media: 10
-Rodrigo - Min: 9 Max: 13 Media: 10
-Algoritmo3 - Min: 7 Max: 7 Media: 7
+AndersonV4 - Min: 9 Max: 13 Media: 11 Atual: 10
+Rodrigo - Min: 8 Max: 13 Media: 10 Atual: 10
+Algoritmo3 - Min: 7 Max: 7 Media: 7 Atual: 7
+10	 10	 7
 
-13	 10	 7
 Instancias\Spd_RF2_120_136_2211.txt
-AndersonV4 - Min: 31 Max: 31 Media: 31
-Rodrigo - Min: 31 Max: 31 Media: 31
-Algoritmo3 - Min: 31 Max: 31 Media: 31
-
+AndersonV4 - Min: 31 Max: 31 Media: 31 Atual: 31
+Rodrigo - Min: 31 Max: 31 Media: 31 Atual: 31
+Algoritmo3 - Min: 31 Max: 31 Media: 31 Atual: 31
 Instancias\Spd_RF2_120_136_2219.txt
-AndersonV4 - Min: 29 Max: 30 Media: 29
-Rodrigo - Min: 29 Max: 30 Media: 29
-Algoritmo3 - Min: 29 Max: 29 Media: 29
+AndersonV4 - Min: 29 Max: 30 Media: 29 Atual: 30
+Rodrigo - Min: 29 Max: 30 Media: 29 Atual: 30
+Algoritmo3 - Min: 29 Max: 29 Media: 29 Atual: 29
+30	 30	 29
 
-29	 29	 29
 Instancias\Spd_RF2_120_136_2227.txt
-AndersonV4 - Min: 30 Max: 30 Media: 30
-Rodrigo - Min: 30 Max: 30 Media: 30
-Algoritmo3 - Min: 30 Max: 30 Media: 30
-
+AndersonV4 - Min: 30 Max: 30 Media: 30 Atual: 30
+Rodrigo - Min: 30 Max: 30 Media: 30 Atual: 30
+Algoritmo3 - Min: 30 Max: 30 Media: 30 Atual: 30
 Instancias\Spd_RF2_120_136_2235.txt
-AndersonV4 - Min: 30 Max: 31 Media: 30
-Rodrigo - Min: 30 Max: 31 Media: 30
-Algoritmo3 - Min: 30 Max: 30 Media: 30
+AndersonV4 - Min: 30 Max: 31 Media: 30 Atual: 30
+Rodrigo - Min: 30 Max: 31 Media: 30 Atual: 30
+Algoritmo3 - Min: 30 Max: 30 Media: 30 Atual: 30
+30	 30	 30
 
-31	 30	 30
 Instancias\Spd_RF2_120_136_2243.txt
-AndersonV4 - Min: 30 Max: 32 Media: 31
-Rodrigo - Min: 31 Max: 33 Media: 31
-Algoritmo3 - Min: 31 Max: 31 Media: 31
+AndersonV4 - Min: 31 Max: 32 Media: 31 Atual: 31
+Rodrigo - Min: 30 Max: 32 Media: 31 Atual: 31
+Algoritmo3 - Min: 31 Max: 31 Media: 31 Atual: 31
+31	 31	 31
 
-32	 32	 31
 Instancias\Spd_RF2_120_152_2251.txt
-AndersonV4 - Min: 21 Max: 23 Media: 22
-Rodrigo - Min: 22 Max: 24 Media: 22
-Algoritmo3 - Min: 22 Max: 22 Media: 22
-
+AndersonV4 - Min: 22 Max: 25 Media: 23 Atual: 24
+Rodrigo - Min: 22 Max: 24 Media: 22 Atual: 23
+Algoritmo3 - Min: 22 Max: 22 Media: 22 Atual: 22
 Instancias\Spd_RF2_120_152_2259.txt
-AndersonV4 - Min: 22 Max: 27 Media: 24
-Rodrigo - Min: 23 Max: 25 Media: 24
-Algoritmo3 - Min: 23 Max: 23 Media: 23
+AndersonV4 - Min: 22 Max: 27 Media: 24 Atual: 22
+Rodrigo - Min: 23 Max: 25 Media: 24 Atual: 24
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Atual: 23
+22	 24	 23
 
-24	 24	 23
 Instancias\Spd_RF2_120_152_2267.txt
-AndersonV4 - Min: 24 Max: 26 Media: 24
-Rodrigo - Min: 23 Max: 26 Media: 24
-Algoritmo3 - Min: 24 Max: 24 Media: 24
+AndersonV4 - Min: 24 Max: 26 Media: 24 Atual: 24
+Rodrigo - Min: 23 Max: 27 Media: 25 Atual: 25
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Atual: 24
+24	 25	 24
 
 Instancias\Spd_RF2_120_152_2275.txt
-AndersonV4 - Min: 23 Max: 25 Media: 24
-Rodrigo - Min: 23 Max: 25 Media: 24
-Algoritmo3 - Min: 23 Max: 23 Media: 23
+AndersonV4 - Min: 23 Max: 25 Media: 23 Atual: 25
+Rodrigo - Min: 23 Max: 25 Media: 23 Atual: 24
+Algoritmo3 - Min: 23 Max: 23 Media: 23 Atual: 23
+24	 23	 22
 
-23	 24	 22
 Instancias\Spd_RF2_120_152_2283.txt
-AndersonV4 - Min: 24 Max: 26 Media: 24
-Rodrigo - Min: 25 Max: 26 Media: 25
-Algoritmo3 - Min: 24 Max: 24 Media: 24
-
+AndersonV4 - Min: 24 Max: 26 Media: 24 Atual: 24
+Rodrigo - Min: 24 Max: 25 Media: 24 Atual: 25
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Atual: 24
 24	 25	 24
+
 Instancias\Spd_RF2_120_169_2291.txt
-AndersonV4 - Min: 19 Max: 22 Media: 20
-Rodrigo - Min: 19 Max: 21 Media: 19
-Algoritmo3 - Min: 19 Max: 19 Media: 19
+AndersonV4 - Min: 18 Max: 21 Media: 19 Atual: 19
+Rodrigo - Min: 19 Max: 21 Media: 19 Atual: 20
+Algoritmo3 - Min: 19 Max: 19 Media: 19 Atual: 19
+19	 20	 19
 
-20	 20	 19
 Instancias\Spd_RF2_120_169_2299.txt
-AndersonV4 - Min: 17 Max: 21 Media: 19
-Rodrigo - Min: 18 Max: 21 Media: 19
-Algoritmo3 - Min: 16 Max: 16 Media: 16
-
+AndersonV4 - Min: 18 Max: 21 Media: 20 Atual: 20
+Rodrigo - Min: 17 Max: 22 Media: 19 Atual: 21
+Algoritmo3 - Min: 16 Max: 16 Media: 16 Atual: 16
 Instancias\Spd_RF2_120_169_2307.txt
-AndersonV4 - Min: 16 Max: 20 Media: 18
-Rodrigo - Min: 15 Max: 20 Media: 17
-Algoritmo3 - Min: 17 Max: 17 Media: 17
+AndersonV4 - Min: 16 Max: 19 Media: 17 Atual: 17
+Rodrigo - Min: 16 Max: 19 Media: 18 Atual: 17
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Atual: 17
+17	 17	 17
 
-20	 17	 17
 Instancias\Spd_RF2_120_169_2315.txt
-AndersonV4 - Min: 20 Max: 22 Media: 20
-Rodrigo - Min: 19 Max: 21 Media: 20
-Algoritmo3 - Min: 19 Max: 19 Media: 19
+AndersonV4 - Min: 18 Max: 23 Media: 20 Atual: 20
+Rodrigo - Min: 19 Max: 21 Media: 20 Atual: 20
+Algoritmo3 - Min: 19 Max: 19 Media: 19 Atual: 19
+20	 20	 19
 
-22	 20	 19
 Instancias\Spd_RF2_120_169_2323.txt
-AndersonV4 - Min: 19 Max: 21 Media: 20
-Rodrigo - Min: 19 Max: 23 Media: 20
-Algoritmo3 - Min: 17 Max: 17 Media: 17
+AndersonV4 - Min: 19 Max: 22 Media: 20 Atual: 20
+Rodrigo - Min: 19 Max: 21 Media: 20 Atual: 19
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Atual: 17
+20	 19	 17
 
-20	 22	 17
 Instancias\Spd_RF2_120_185_2331.txt
-AndersonV4 - Min: 14 Max: 17 Media: 15
-Rodrigo - Min: 14 Max: 17 Media: 15
-Algoritmo3 - Min: 14 Max: 14 Media: 14
+AndersonV4 - Min: 15 Max: 20 Media: 16 Atual: 16
+Rodrigo - Min: 15 Max: 17 Media: 16 Atual: 17
+Algoritmo3 - Min: 14 Max: 14 Media: 14 Atual: 14
+16	 17	 14
 
-17	 16	 14
 Instancias\Spd_RF2_120_185_2339.txt
-AndersonV4 - Min: 16 Max: 18 Media: 17
-Rodrigo - Min: 14 Max: 20 Media: 17
-Algoritmo3 - Min: 13 Max: 13 Media: 13
+AndersonV4 - Min: 16 Max: 18 Media: 17 Atual: 18
+Rodrigo - Min: 16 Max: 18 Media: 16 Atual: 18
+Algoritmo3 - Min: 13 Max: 13 Media: 13 Atual: 13
+18	 18	 13
 
-16	 18	 13
 Instancias\Spd_RF2_120_185_2347.txt
-AndersonV4 - Min: 16 Max: 20 Media: 17
-Rodrigo - Min: 16 Max: 19 Media: 17
-Algoritmo3 - Min: 14 Max: 14 Media: 14
+AndersonV4 - Min: 15 Max: 20 Media: 17 Atual: 16
+Rodrigo - Min: 15 Max: 20 Media: 17 Atual: 17
+Algoritmo3 - Min: 14 Max: 14 Media: 14 Atual: 14
+16	 17	 14
 
-19	 19	 14
 Instancias\Spd_RF2_120_185_2355.txt
-AndersonV4 - Min: 11 Max: 16 Media: 14
-Rodrigo - Min: 12 Max: 15 Media: 13
-Algoritmo3 - Min: 11 Max: 11 Media: 11
+AndersonV4 - Min: 12 Max: 16 Media: 13 Atual: 15
+Rodrigo - Min: 13 Max: 15 Media: 13 Atual: 14
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Atual: 11
+15	 14	 11
 
-16	 13	 11
 Instancias\Spd_RF2_120_185_2363.txt
-AndersonV4 - Min: 14 Max: 17 Media: 15
-Rodrigo - Min: 14 Max: 17 Media: 15
-Algoritmo3 - Min: 13 Max: 13 Media: 13
+AndersonV4 - Min: 14 Max: 16 Media: 14 Atual: 16
+Rodrigo - Min: 13 Max: 17 Media: 15 Atual: 15
+Algoritmo3 - Min: 13 Max: 13 Media: 13 Atual: 13
+16	 15	 13
 
-15	 16	 13
 Instancias\Spd_RF2_120_202_2371.txt
-AndersonV4 - Min: 12 Max: 17 Media: 13
-Rodrigo - Min: 12 Max: 16 Media: 13
-Algoritmo3 - Min: 11 Max: 11 Media: 11
+AndersonV4 - Min: 13 Max: 16 Media: 13 Atual: 16
+Rodrigo - Min: 12 Max: 17 Media: 14 Atual: 12
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Atual: 11
+16	 12	 11
 
-12	 14	 11
 Instancias\Spd_RF2_120_202_2379.txt
-AndersonV4 - Min: 15 Max: 20 Media: 16
-Rodrigo - Min: 15 Max: 18 Media: 16
-Algoritmo3 - Min: 15 Max: 15 Media: 15
+AndersonV4 - Min: 15 Max: 19 Media: 17 Atual: 17
+Rodrigo - Min: 16 Max: 20 Media: 17 Atual: 20
+Algoritmo3 - Min: 15 Max: 15 Media: 15 Atual: 15
+17	 20	 15
 
-16	 17	 15
 Instancias\Spd_RF2_120_202_2387.txt
-AndersonV4 - Min: 13 Max: 15 Media: 13
-Rodrigo - Min: 12 Max: 16 Media: 13
-Algoritmo3 - Min: 11 Max: 11 Media: 11
+AndersonV4 - Min: 11 Max: 15 Media: 13 Atual: 14
+Rodrigo - Min: 12 Max: 15 Media: 13 Atual: 13
+Algoritmo3 - Min: 11 Max: 11 Media: 11 Atual: 11
+14	 13	 11
 
-13	 13	 11
 Instancias\Spd_RF2_120_202_2395.txt
-AndersonV4 - Min: 11 Max: 15 Media: 13
-Rodrigo - Min: 12 Max: 17 Media: 14
-Algoritmo3 - Min: 9 Max: 9 Media: 9
+AndersonV4 - Min: 11 Max: 14 Media: 12 Atual: 13
+Rodrigo - Min: 11 Max: 15 Media: 13 Atual: 14
+Algoritmo3 - Min: 9 Max: 9 Media: 9 Atual: 9
+13	 14	 9
 
-12	 17	 9
 Instancias\Spd_RF2_120_202_2403.txt
-AndersonV4 - Min: 14 Max: 18 Media: 15
-Rodrigo - Min: 14 Max: 17 Media: 15
-Algoritmo3 - Min: 10 Max: 10 Media: 10
+AndersonV4 - Min: 14 Max: 18 Media: 15 Atual: 17
+Rodrigo - Min: 13 Max: 17 Media: 15 Atual: 16
+Algoritmo3 - Min: 10 Max: 10 Media: 10 Atual: 10
+17	 16	 10
 
-14	 15	 10
 Instancias\Spd_RF2_140_157_2611.txt
-AndersonV4 - Min: 35 Max: 36 Media: 35
-Rodrigo - Min: 35 Max: 37 Media: 35
-Algoritmo3 - Min: 36 Max: 36 Media: 36
-
+AndersonV4 - Min: 35 Max: 37 Media: 35 Atual: 35
+Rodrigo - Min: 35 Max: 36 Media: 35 Atual: 36
+Algoritmo3 - Min: 36 Max: 36 Media: 36 Atual: 36
 Instancias\Spd_RF2_140_157_2619.txt
-AndersonV4 - Min: 34 Max: 35 Media: 34
-Rodrigo - Min: 34 Max: 35 Media: 34
-Algoritmo3 - Min: 34 Max: 34 Media: 34
-
+AndersonV4 - Min: 34 Max: 35 Media: 34 Atual: 34
+Rodrigo - Min: 34 Max: 35 Media: 34 Atual: 34
+Algoritmo3 - Min: 34 Max: 34 Media: 34 Atual: 34
 34	 34	 34
+
 Instancias\Spd_RF2_140_157_2627.txt
-AndersonV4 - Min: 35 Max: 37 Media: 35
-Rodrigo - Min: 36 Max: 37 Media: 36
-Algoritmo3 - Min: 36 Max: 36 Media: 36
+AndersonV4 - Min: 35 Max: 37 Media: 36 Atual: 35
+Rodrigo - Min: 35 Max: 37 Media: 36 Atual: 37
+Algoritmo3 - Min: 36 Max: 36 Media: 36 Atual: 36
+35	 37	 36
 
-37	 37	 36
 Instancias\Spd_RF2_140_157_2635.txt
-AndersonV4 - Min: 34 Max: 35 Media: 34
-Rodrigo - Min: 34 Max: 35 Media: 34
-Algoritmo3 - Min: 34 Max: 34 Media: 34
-
-35	 35	 34
-Instancias\Spd_RF2_140_157_2643.txt
-AndersonV4 - Min: 34 Max: 34 Media: 34
-Rodrigo - Min: 34 Max: 35 Media: 34
-Algoritmo3 - Min: 34 Max: 34 Media: 34
-
+AndersonV4 - Min: 34 Max: 35 Media: 34 Atual: 34
+Rodrigo - Min: 34 Max: 35 Media: 34 Atual: 34
+Algoritmo3 - Min: 34 Max: 34 Media: 34 Atual: 34
 34	 34	 34
+
+Instancias\Spd_RF2_140_157_2643.txt
+AndersonV4 - Min: 34 Max: 35 Media: 34 Atual: 34
+Rodrigo - Min: 34 Max: 35 Media: 34 Atual: 34
+Algoritmo3 - Min: 34 Max: 34 Media: 34 Atual: 34
+34	 34	 34
+
 Instancias\Spd_RF2_140_175_2651.txt
-AndersonV4 - Min: 25 Max: 29 Media: 27
-Rodrigo - Min: 25 Max: 29 Media: 27
-Algoritmo3 - Min: 25 Max: 25 Media: 25
+AndersonV4 - Min: 26 Max: 29 Media: 27 Atual: 28
+Rodrigo - Min: 25 Max: 28 Media: 26 Atual: 25
+Algoritmo3 - Min: 25 Max: 25 Media: 25 Atual: 25
+28	 25	 25
 
-27	 27	 25
 Instancias\Spd_RF2_140_175_2659.txt
-AndersonV4 - Min: 29 Max: 31 Media: 30
-Rodrigo - Min: 29 Max: 31 Media: 30
-Algoritmo3 - Min: 30 Max: 30 Media: 30
+AndersonV4 - Min: 29 Max: 31 Media: 30 Atual: 30
+Rodrigo - Min: 30 Max: 32 Media: 30 Atual: 30
+Algoritmo3 - Min: 30 Max: 30 Media: 30 Atual: 30
+30	 30	 30
 
-31	 31	 30
 Instancias\Spd_RF2_140_175_2667.txt
-AndersonV4 - Min: 26 Max: 29 Media: 27
-Rodrigo - Min: 26 Max: 29 Media: 27
-Algoritmo3 - Min: 26 Max: 26 Media: 26
-
+AndersonV4 - Min: 26 Max: 30 Media: 27 Atual: 26
+Rodrigo - Min: 27 Max: 30 Media: 27 Atual: 27
+Algoritmo3 - Min: 26 Max: 26 Media: 26 Atual: 26
 26	 27	 26
+
 Instancias\Spd_RF2_140_175_2675.txt
-AndersonV4 - Min: 26 Max: 28 Media: 27
-Rodrigo - Min: 27 Max: 28 Media: 27
-Algoritmo3 - Min: 26 Max: 26 Media: 26
+AndersonV4 - Min: 27 Max: 28 Media: 27 Atual: 28
+Rodrigo - Min: 25 Max: 28 Media: 27 Atual: 28
+Algoritmo3 - Min: 26 Max: 26 Media: 26 Atual: 26
+28	 28	 26
 
-26	 27	 26
 Instancias\Spd_RF2_140_175_2683.txt
-AndersonV4 - Min: 30 Max: 32 Media: 30
-Rodrigo - Min: 29 Max: 32 Media: 30
-Algoritmo3 - Min: 29 Max: 29 Media: 29
-
+AndersonV4 - Min: 30 Max: 32 Media: 30 Atual: 30
+Rodrigo - Min: 29 Max: 32 Media: 30 Atual: 29
+Algoritmo3 - Min: 29 Max: 29 Media: 29 Atual: 29
 Instancias\Spd_RF2_140_193_2691.txt
-AndersonV4 - Min: 21 Max: 22 Media: 21
-Rodrigo - Min: 21 Max: 24 Media: 22
-Algoritmo3 - Min: 20 Max: 20 Media: 20
-
+AndersonV4 - Min: 20 Max: 23 Media: 21 Atual: 23
+Rodrigo - Min: 21 Max: 24 Media: 22 Atual: 22
+Algoritmo3 - Min: 20 Max: 20 Media: 20 Atual: 20
 Instancias\Spd_RF2_140_193_2699.txt
-AndersonV4 - Min: 20 Max: 25 Media: 22
-Rodrigo - Min: 21 Max: 25 Media: 23
-Algoritmo3 - Min: 21 Max: 21 Media: 21
+AndersonV4 - Min: 21 Max: 26 Media: 23 Atual: 26
+Rodrigo - Min: 22 Max: 26 Media: 23 Atual: 25
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Atual: 21
+26	 25	 21
 
-23	 23	 21
 Instancias\Spd_RF2_140_193_2707.txt
-AndersonV4 - Min: 22 Max: 26 Media: 23
-Rodrigo - Min: 22 Max: 25 Media: 23
-Algoritmo3 - Min: 21 Max: 21 Media: 21
-
+AndersonV4 - Min: 22 Max: 25 Media: 23 Atual: 22
+Rodrigo - Min: 21 Max: 24 Media: 22 Atual: 23
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Atual: 21
 Instancias\Spd_RF2_140_193_2715.txt
-AndersonV4 - Min: 22 Max: 26 Media: 24
-Rodrigo - Min: 23 Max: 25 Media: 23
-Algoritmo3 - Min: 22 Max: 22 Media: 22
+AndersonV4 - Min: 22 Max: 27 Media: 24 Atual: 26
+Rodrigo - Min: 23 Max: 27 Media: 24 Atual: 25
+Algoritmo3 - Min: 22 Max: 22 Media: 22 Atual: 22
+26	 25	 22
 
-25	 24	 22
 Instancias\Spd_RF2_140_193_2723.txt
-AndersonV4 - Min: 22 Max: 24 Media: 23
-Rodrigo - Min: 20 Max: 26 Media: 23
-Algoritmo3 - Min: 21 Max: 21 Media: 21
+AndersonV4 - Min: 21 Max: 26 Media: 23 Atual: 22
+Rodrigo - Min: 22 Max: 27 Media: 23 Atual: 24
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Atual: 21
+22	 24	 21
 
-24	 24	 21
 Instancias\Spd_RF2_140_211_2731.txt
-AndersonV4 - Min: 18 Max: 22 Media: 19
-Rodrigo - Min: 18 Max: 21 Media: 19
-Algoritmo3 - Min: 16 Max: 16 Media: 16
+AndersonV4 - Min: 17 Max: 21 Media: 19 Atual: 18
+Rodrigo - Min: 18 Max: 21 Media: 19 Atual: 18
+Algoritmo3 - Min: 16 Max: 16 Media: 16 Atual: 16
+18	 18	 16
 
-22	 20	 16
 Instancias\Spd_RF2_140_211_2739.txt
-AndersonV4 - Min: 21 Max: 24 Media: 22
-Rodrigo - Min: 21 Max: 24 Media: 22
-Algoritmo3 - Min: 21 Max: 21 Media: 21
+AndersonV4 - Min: 20 Max: 23 Media: 21 Atual: 22
+Rodrigo - Min: 21 Max: 25 Media: 22 Atual: 21
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Atual: 21
+22	 21	 21
 
-22	 23	 21
 Instancias\Spd_RF2_140_211_2747.txt
-AndersonV4 - Min: 19 Max: 23 Media: 21
-Rodrigo - Min: 19 Max: 24 Media: 21
-Algoritmo3 - Min: 17 Max: 17 Media: 17
-
+AndersonV4 - Min: 20 Max: 23 Media: 21 Atual: 21
+Rodrigo - Min: 19 Max: 23 Media: 21 Atual: 19
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Atual: 17
 21	 19	 17
+
 Instancias\Spd_RF2_140_211_2755.txt
-AndersonV4 - Min: 18 Max: 22 Media: 19
-Rodrigo - Min: 17 Max: 21 Media: 18
-Algoritmo3 - Min: 16 Max: 16 Media: 16
+AndersonV4 - Min: 18 Max: 22 Media: 19 Atual: 20
+Rodrigo - Min: 16 Max: 20 Media: 18 Atual: 18
+Algoritmo3 - Min: 16 Max: 16 Media: 16 Atual: 16
+20	 18	 16
 
-19	 21	 16
 Instancias\Spd_RF2_140_211_2763.txt
-AndersonV4 - Min: 18 Max: 22 Media: 20
-Rodrigo - Min: 18 Max: 23 Media: 20
-Algoritmo3 - Min: 17 Max: 17 Media: 17
+AndersonV4 - Min: 19 Max: 22 Media: 20 Atual: 21
+Rodrigo - Min: 17 Max: 23 Media: 20 Atual: 22
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Atual: 17
+20	 22	 17
 
-22	 18	 17
 Instancias\Spd_RF2_140_229_2771.txt
-AndersonV4 - Min: 16 Max: 19 Media: 17
-Rodrigo - Min: 14 Max: 19 Media: 15
-Algoritmo3 - Min: 13 Max: 13 Media: 13
+AndersonV4 - Min: 16 Max: 19 Media: 17 Atual: 19
+Rodrigo - Min: 15 Max: 20 Media: 17 Atual: 19
+Algoritmo3 - Min: 13 Max: 13 Media: 13 Atual: 13
+19	 19	 13
 
-18	 16	 13
 Instancias\Spd_RF2_140_229_2779.txt
-AndersonV4 - Min: 15 Max: 20 Media: 17
-Rodrigo - Min: 15 Max: 19 Media: 17
-Algoritmo3 - Min: 13 Max: 13 Media: 13
+AndersonV4 - Min: 15 Max: 18 Media: 16 Atual: 17
+Rodrigo - Min: 15 Max: 18 Media: 16 Atual: 17
+Algoritmo3 - Min: 13 Max: 13 Media: 13 Atual: 13
+17	 17	 13
 
-20	 16	 13
 Instancias\Spd_RF2_140_229_2787.txt
-AndersonV4 - Min: 16 Max: 19 Media: 17
-Rodrigo - Min: 16 Max: 20 Media: 18
-Algoritmo3 - Min: 14 Max: 14 Media: 14
+AndersonV4 - Min: 16 Max: 19 Media: 17 Atual: 16
+Rodrigo - Min: 16 Max: 21 Media: 17 Atual: 16
+Algoritmo3 - Min: 14 Max: 14 Media: 14 Atual: 14
+16	 16	 14
 
-19	 20	 14
 Instancias\Spd_RF2_140_229_2795.txt
-AndersonV4 - Min: 16 Max: 19 Media: 17
-Rodrigo - Min: 15 Max: 18 Media: 16
-Algoritmo3 - Min: 16 Max: 16 Media: 16
+AndersonV4 - Min: 16 Max: 20 Media: 18 Atual: 18
+Rodrigo - Min: 16 Max: 21 Media: 17 Atual: 16
+Algoritmo3 - Min: 16 Max: 16 Media: 16 Atual: 16
+18	 16	 16
 
-19	 18	 16
 Instancias\Spd_RF2_140_229_2803.txt
-AndersonV4 - Min: 16 Max: 20 Media: 18
-Rodrigo - Min: 17 Max: 20 Media: 18
-Algoritmo3 - Min: 16 Max: 16 Media: 16
+AndersonV4 - Min: 15 Max: 20 Media: 17 Atual: 18
+Rodrigo - Min: 16 Max: 20 Media: 17 Atual: 16
+Algoritmo3 - Min: 16 Max: 16 Media: 16 Atual: 16
+18	 16	 16
 
-18	 17	 16
 Instancias\Spd_RF2_160_179_3011.txt
-AndersonV4 - Min: 39 Max: 40 Media: 39
-Rodrigo - Min: 39 Max: 41 Media: 39
-Algoritmo3 - Min: 40 Max: 40 Media: 40
+AndersonV4 - Min: 39 Max: 40 Media: 39 Atual: 40
+Rodrigo - Min: 39 Max: 41 Media: 39 Atual: 39
+Algoritmo3 - Min: 40 Max: 40 Media: 40 Atual: 40
+40	 39	 40
 
-39	 39	 40
 Instancias\Spd_RF2_160_179_3019.txt
-AndersonV4 - Min: 40 Max: 41 Media: 40
-Rodrigo - Min: 40 Max: 41 Media: 40
-Algoritmo3 - Min: 40 Max: 40 Media: 40
+AndersonV4 - Min: 40 Max: 41 Media: 40 Atual: 40
+Rodrigo - Min: 40 Max: 41 Media: 40 Atual: 41
+Algoritmo3 - Min: 40 Max: 40 Media: 40 Atual: 40
+40	 41	 40
 
-41	 41	 40
 Instancias\Spd_RF2_160_179_3027.txt
-AndersonV4 - Min: 42 Max: 44 Media: 43
-Rodrigo - Min: 43 Max: 44 Media: 43
-Algoritmo3 - Min: 43 Max: 43 Media: 43
-
+AndersonV4 - Min: 43 Max: 43 Media: 43 Atual: 43
+Rodrigo - Min: 42 Max: 43 Media: 42 Atual: 43
+Algoritmo3 - Min: 43 Max: 43 Media: 43 Atual: 43
 43	 43	 43
+
 Instancias\Spd_RF2_160_179_3035.txt
-AndersonV4 - Min: 40 Max: 42 Media: 41
-Rodrigo - Min: 40 Max: 42 Media: 41
-Algoritmo3 - Min: 40 Max: 40 Media: 40
-
+AndersonV4 - Min: 40 Max: 42 Media: 41 Atual: 40
+Rodrigo - Min: 40 Max: 42 Media: 41 Atual: 42
+Algoritmo3 - Min: 40 Max: 40 Media: 40 Atual: 40
 40	 42	 40
+
 Instancias\Spd_RF2_160_179_3043.txt
-AndersonV4 - Min: 40 Max: 42 Media: 41
-Rodrigo - Min: 40 Max: 42 Media: 40
-Algoritmo3 - Min: 41 Max: 41 Media: 41
+AndersonV4 - Min: 40 Max: 42 Media: 40 Atual: 40
+Rodrigo - Min: 40 Max: 42 Media: 41 Atual: 41
+Algoritmo3 - Min: 41 Max: 41 Media: 41 Atual: 41
+40	 41	 41
 
-40	 40	 41
 Instancias\Spd_RF2_160_198_3051.txt
-AndersonV4 - Min: 33 Max: 36 Media: 34
-Rodrigo - Min: 33 Max: 36 Media: 34
-Algoritmo3 - Min: 35 Max: 35 Media: 35
-
+AndersonV4 - Min: 34 Max: 35 Media: 34 Atual: 35
+Rodrigo - Min: 33 Max: 36 Media: 34 Atual: 34
+Algoritmo3 - Min: 35 Max: 35 Media: 35 Atual: 35
 35	 34	 35
+
 Instancias\Spd_RF2_160_198_3059.txt
-AndersonV4 - Min: 30 Max: 34 Media: 32
-Rodrigo - Min: 31 Max: 35 Media: 33
-Algoritmo3 - Min: 30 Max: 30 Media: 30
+AndersonV4 - Min: 32 Max: 33 Media: 32 Atual: 32
+Rodrigo - Min: 31 Max: 35 Media: 33 Atual: 34
+Algoritmo3 - Min: 30 Max: 30 Media: 30 Atual: 30
+32	 34	 30
 
-32	 33	 30
 Instancias\Spd_RF2_160_198_3067.txt
-AndersonV4 - Min: 33 Max: 34 Media: 33
-Rodrigo - Min: 33 Max: 35 Media: 33
-Algoritmo3 - Min: 33 Max: 33 Media: 33
-
+AndersonV4 - Min: 32 Max: 34 Media: 33 Atual: 34
+Rodrigo - Min: 33 Max: 34 Media: 33 Atual: 33
+Algoritmo3 - Min: 33 Max: 33 Media: 33 Atual: 33
 34	 33	 33
+
 Instancias\Spd_RF2_160_198_3075.txt
-AndersonV4 - Min: 33 Max: 36 Media: 33
-Rodrigo - Min: 32 Max: 35 Media: 33
-Algoritmo3 - Min: 32 Max: 32 Media: 32
+AndersonV4 - Min: 32 Max: 35 Media: 33 Atual: 32
+Rodrigo - Min: 32 Max: 35 Media: 33 Atual: 32
+Algoritmo3 - Min: 32 Max: 32 Media: 32 Atual: 32
+32	 32	 32
 
-34	 33	 32
 Instancias\Spd_RF2_160_198_3083.txt
-AndersonV4 - Min: 34 Max: 36 Media: 34
-Rodrigo - Min: 33 Max: 35 Media: 34
-Algoritmo3 - Min: 34 Max: 34 Media: 34
+AndersonV4 - Min: 34 Max: 35 Media: 34 Atual: 35
+Rodrigo - Min: 33 Max: 35 Media: 34 Atual: 35
+Algoritmo3 - Min: 34 Max: 34 Media: 34 Atual: 34
+34	 35	 33
 
-35	 35	 33
 Instancias\Spd_RF2_160_218_3091.txt
-AndersonV4 - Min: 26 Max: 28 Media: 27
-Rodrigo - Min: 27 Max: 29 Media: 27
-Algoritmo3 - Min: 24 Max: 24 Media: 24
+AndersonV4 - Min: 25 Max: 28 Media: 26 Atual: 25
+Rodrigo - Min: 26 Max: 28 Media: 27 Atual: 28
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Atual: 24
+25	 28	 24
 
-26	 29	 24
 Instancias\Spd_RF2_160_218_3099.txt
-AndersonV4 - Min: 28 Max: 31 Media: 29
-Rodrigo - Min: 29 Max: 31 Media: 29
-Algoritmo3 - Min: 27 Max: 27 Media: 27
-
+AndersonV4 - Min: 28 Max: 31 Media: 29 Atual: 30
+Rodrigo - Min: 29 Max: 30 Media: 29 Atual: 29
+Algoritmo3 - Min: 27 Max: 27 Media: 27 Atual: 27
 Instancias\Spd_RF2_160_218_3107.txt
-AndersonV4 - Min: 25 Max: 28 Media: 26
-Rodrigo - Min: 24 Max: 28 Media: 26
-Algoritmo3 - Min: 24 Max: 24 Media: 24
+AndersonV4 - Min: 24 Max: 28 Media: 26 Atual: 24
+Rodrigo - Min: 25 Max: 28 Media: 26 Atual: 27
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Atual: 24
+24	 27	 24
 
-27	 26	 24
 Instancias\Spd_RF2_160_218_3115.txt
-AndersonV4 - Min: 25 Max: 30 Media: 26
-Rodrigo - Min: 25 Max: 29 Media: 27
-Algoritmo3 - Min: 26 Max: 26 Media: 26
+AndersonV4 - Min: 25 Max: 30 Media: 27 Atual: 28
+Rodrigo - Min: 25 Max: 29 Media: 27 Atual: 26
+Algoritmo3 - Min: 26 Max: 26 Media: 26 Atual: 26
+28	 26	 26
 
 Instancias\Spd_RF2_160_218_3123.txt
-AndersonV4 - Min: 28 Max: 31 Media: 28
-Rodrigo - Min: 27 Max: 30 Media: 28
-Algoritmo3 - Min: 27 Max: 27 Media: 27
+AndersonV4 - Min: 26 Max: 29 Media: 27 Atual: 28
+Rodrigo - Min: 27 Max: 29 Media: 28 Atual: 29
+Algoritmo3 - Min: 27 Max: 27 Media: 27 Atual: 27
+28	 29	 27
 
-28	 28	 27
 Instancias\Spd_RF2_160_237_3131.txt
-AndersonV4 - Min: 23 Max: 27 Media: 25
-Rodrigo - Min: 24 Max: 27 Media: 25
-Algoritmo3 - Min: 24 Max: 24 Media: 24
+AndersonV4 - Min: 24 Max: 26 Media: 25 Atual: 25
+Rodrigo - Min: 23 Max: 26 Media: 24 Atual: 25
+Algoritmo3 - Min: 24 Max: 24 Media: 24 Atual: 24
+25	 25	 24
 
-26	 26	 24
 Instancias\Spd_RF2_160_237_3139.txt
-AndersonV4 - Min: 20 Max: 25 Media: 22
-Rodrigo - Min: 20 Max: 24 Media: 22
-Algoritmo3 - Min: 20 Max: 20 Media: 20
-
+AndersonV4 - Min: 20 Max: 23 Media: 21 Atual: 22
+Rodrigo - Min: 21 Max: 25 Media: 22 Atual: 23
+Algoritmo3 - Min: 20 Max: 20 Media: 20 Atual: 20
 22	 23	 20
+
 Instancias\Spd_RF2_160_237_3147.txt
-AndersonV4 - Min: 22 Max: 28 Media: 24
-Rodrigo - Min: 22 Max: 27 Media: 23
-Algoritmo3 - Min: 21 Max: 21 Media: 21
+AndersonV4 - Min: 22 Max: 26 Media: 23 Atual: 24
+Rodrigo - Min: 22 Max: 26 Media: 24 Atual: 22
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Atual: 21
+24	 22	 21
 
-24	 24	 21
 Instancias\Spd_RF2_160_237_3155.txt
-AndersonV4 - Min: 22 Max: 25 Media: 23
-Rodrigo - Min: 21 Max: 25 Media: 23
-Algoritmo3 - Min: 21 Max: 21 Media: 21
-
-23	 23	 21
-Instancias\Spd_RF2_160_237_3163.txt
-AndersonV4 - Min: 22 Max: 25 Media: 23
-Rodrigo - Min: 23 Max: 26 Media: 24
-Algoritmo3 - Min: 20 Max: 20 Media: 20
-
-23	 26	 20
-Instancias\Spd_RF2_160_257_3171.txt
-AndersonV4 - Min: 21 Max: 23 Media: 22
-Rodrigo - Min: 20 Max: 24 Media: 22
-Algoritmo3 - Min: 21 Max: 21 Media: 21
-
+AndersonV4 - Min: 21 Max: 24 Media: 22 Atual: 23
+Rodrigo - Min: 20 Max: 25 Media: 23 Atual: 22
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Atual: 21
 23	 22	 21
+
+Instancias\Spd_RF2_160_237_3163.txt
+AndersonV4 - Min: 23 Max: 26 Media: 24 Atual: 23
+Rodrigo - Min: 22 Max: 26 Media: 24 Atual: 25
+Algoritmo3 - Min: 20 Max: 20 Media: 20 Atual: 20
+23	 25	 20
+
+Instancias\Spd_RF2_160_257_3171.txt
+AndersonV4 - Min: 21 Max: 24 Media: 22 Atual: 24
+Rodrigo - Min: 18 Max: 24 Media: 21 Atual: 21
+Algoritmo3 - Min: 21 Max: 21 Media: 21 Atual: 21
+24	 21	 21
+
 Instancias\Spd_RF2_160_257_3179.txt
-AndersonV4 - Min: 19 Max: 21 Media: 19
-Rodrigo - Min: 18 Max: 23 Media: 20
-Algoritmo3 - Min: 17 Max: 17 Media: 17
+AndersonV4 - Min: 16 Max: 22 Media: 19 Atual: 20
+Rodrigo - Min: 18 Max: 22 Media: 19 Atual: 19
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Atual: 17
+20	 19	 17
 
-19	 18	 17
 Instancias\Spd_RF2_160_257_3187.txt
-AndersonV4 - Min: 18 Max: 22 Media: 20
-Rodrigo - Min: 18 Max: 21 Media: 19
-Algoritmo3 - Min: 17 Max: 17 Media: 17
+AndersonV4 - Min: 19 Max: 22 Media: 20 Atual: 21
+Rodrigo - Min: 18 Max: 24 Media: 20 Atual: 21
+Algoritmo3 - Min: 17 Max: 17 Media: 17 Atual: 17
+21	 21	 17
 
-20	 21	 17
 Instancias\Spd_RF2_160_257_3195.txt
-AndersonV4 - Min: 19 Max: 24 Media: 21
-Rodrigo - Min: 20 Max: 24 Media: 21
-Algoritmo3 - Min: 19 Max: 19 Media: 19
-
+AndersonV4 - Min: 19 Max: 25 Media: 21 Atual: 22
+Rodrigo - Min: 19 Max: 22 Media: 20 Atual: 21
+Algoritmo3 - Min: 19 Max: 19 Media: 19 Atual: 19
 22	 21	 19
+
 Instancias\Spd_RF2_160_257_3203.txt
-AndersonV4 - Min: 19 Max: 23 Media: 20
-Rodrigo - Min: 19 Max: 24 Media: 21
-Algoritmo3 - Min: 14 Max: 14 Media: 14
+AndersonV4 - Min: 19 Max: 22 Media: 20 Atual: 21
+Rodrigo - Min: 17 Max: 24 Media: 20 Atual: 24
+Algoritmo3 - Min: 14 Max: 14 Media: 14 Atual: 14
+21	 24	 14
 
-22	 19	 14
 Instancias\Spd_RF2_180_200_3411.txt
-AndersonV4 - Min: 47 Max: 49 Media: 48
-Rodrigo - Min: 48 Max: 49 Media: 48
-Algoritmo3 - Min: 48 Max: 48 Media: 48
+AndersonV4 - Min: 47 Max: 49 Media: 48 Atual: 49
+Rodrigo - Min: 47 Max: 49 Media: 48 Atual: 48
+Algoritmo3 - Min: 48 Max: 48 Media: 48 Atual: 48
+49	 48	 48
 
-49	 49	 48
 Instancias\Spd_RF2_180_200_3419.txt
-AndersonV4 - Min: 48 Max: 50 Media: 49
-Rodrigo - Min: 48 Max: 50 Media: 48
-Algoritmo3 - Min: 49 Max: 49 Media: 49
-
+AndersonV4 - Min: 48 Max: 50 Media: 49 Atual: 50
+Rodrigo - Min: 48 Max: 51 Media: 49 Atual: 49
+Algoritmo3 - Min: 49 Max: 49 Media: 49 Atual: 49

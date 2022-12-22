@@ -116,7 +116,7 @@ int main(int argc, char *argv[]){
     soma = 0;
     for(int i : BT100c)
        soma = soma + i;
-    cout << "Algoritmo3 - Min: " << BTcMin << " Max: " << BTcMax << " Media: " << soma/10 << " Atual: " << BT3.size() << endl << endl;
+    cout << "Algoritmo3 - Min: " << BTcMin << " Max: " << BTcMax << " Media: " << soma/10 << " Atual: " << BT3.size() << endl;
 
 
     BuscaLocal bl = BuscaLocal(G, T, BT);
@@ -132,7 +132,7 @@ int main(int argc, char *argv[]){
     BuscaLocal bl3 = BuscaLocal(G, T3, BT3);
     bl3.ConectaFolhas();
     set<int> BTL3 = bl3.ObterBranches();
-    cout << BTL3.size() << endl;
+    cout << BTL3.size() << endl << endl;
 
     /*
     vector<int> BV;

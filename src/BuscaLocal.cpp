@@ -42,9 +42,9 @@ void BuscaLocal::ConectaFolhas()
     vector<int> Pai(T.n);
     vector<vector<int>> Cr(T.n);
     queue<int> Fila;
-    int r = 0;
-    int d = 0;
-    for(int v : T.V)
+    int r;
+    int d = -1;
+    for(int v : G.V)
     {
         if(T.Grau(v) > d)
         {
@@ -56,6 +56,8 @@ void BuscaLocal::ConectaFolhas()
     Fila.push(r);
     N[r] = 0;
     Cr[r].push_back(r);
+    Pai[r] = r;
+    //cout << r << ":";
 
     while(Fila.empty() == false)
     {
@@ -63,17 +65,17 @@ void BuscaLocal::ConectaFolhas()
         Fila.pop();
         for(int u : T.Adjacentes(v))
         {
-            vector<int> auxiliar;
+            //vector<int> auxiliar;
             if(u != Pai[v])
             {
                 N[u] = N[v] + 1;
                 Pai[u] = v;
                 for(int i : Cr[v])
                 {
-                    //Cr[u].push_back(i);
-                    auxiliar.push_back(i);
+                    //auxiliar.push_back(i);
+                    Cr[u].push_back(i);
                 }
-                Cr[u] = auxiliar;
+                //Cr[u] = auxiliar;
                 Cr[u].push_back(u);
                 Fila.push(u);
             }
@@ -270,6 +272,7 @@ void BuscaLocal::ConectaFolhas()
                 }
                 NewT.AdicionarAresta(v, u);
                 Fila.push(w);
+
                 while(Fila.empty() == false)
                 {
                     int v = Fila.front();
@@ -281,9 +284,11 @@ void BuscaLocal::ConectaFolhas()
                         {
                             N[u] = N[v] + 1;
                             Pai[u] = v;
+                            //Cr[u].clear();
                             for(int i : Cr[v])
                             {
                                 auxiliar.push_back(i);
+                                //Cr[u].push_back(i);
                             }
                             Cr[u] = auxiliar;
                             Cr[u].push_back(u);
