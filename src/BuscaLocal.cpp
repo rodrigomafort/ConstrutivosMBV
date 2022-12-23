@@ -52,6 +52,7 @@ void BuscaLocal::ConectaFolhas()
             r = v;
         }
         N[v] = -1;
+        //Pai[v] = -1;
     }
     Fila.push(r);
     N[r] = 0;
@@ -118,10 +119,10 @@ void BuscaLocal::ConectaFolhas()
         int v = *Folhas.begin();
         Folhas.erase(Folhas.begin());
         InFolhas[v] = 0;
-        int w = -1;
+        int w;
+
         for(int u : G.Adjacentes(v))
         {
-            w = -1;
             int maiorN = -1;
             vector<int> Intersecao;
             if(NewT.Grau(u) == 1)
@@ -140,20 +141,11 @@ void BuscaLocal::ConectaFolhas()
                 }
                 for(int i : Intersecao)
                 {
-                    if(N[i] > maiorN && InBV[i] == 1)
+                    if(N[i] > maiorN)
                     {
                         w = i;
                         maiorN = N[i];
                     }
-                }
-                if(w == -1)
-                {
-                    break;
-                }
-                if(InFolhas[u] == 1)
-                {
-                    Folhas.erase(u);
-                    InFolhas[u] = 0;
                 }
 
                 vector<int> Cwv;
@@ -190,7 +182,7 @@ void BuscaLocal::ConectaFolhas()
                     C.push_back(Cwu[i]);
                 }
 
-                int x;
+                int x = -1;
                 int menorC = G.n;
                 int posicao = -1;
                 int a;
@@ -198,7 +190,6 @@ void BuscaLocal::ConectaFolhas()
                 for(int i : C)
                 {
                     posicao = posicao + 1;
-                    //cout << NewT.Grau(w);
                     if(NewT.Grau(i) < menorC && InBV[i] == 1)
                     {
                         menorC = NewT.Grau(i);
@@ -222,6 +213,17 @@ void BuscaLocal::ConectaFolhas()
                             }
                         }
                     }
+                }
+
+                if(x == -1)
+                {
+                    continue;
+                }
+
+                if(InFolhas[u] == 1)
+                {
+                    Folhas.erase(u);
+                    InFolhas[u] = 0;
                 }
 
                 if(InBV[a] == 1 && InBV[b] == 1)
