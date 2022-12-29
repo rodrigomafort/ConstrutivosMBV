@@ -117,7 +117,7 @@ void BuscaLocal::ConectaFolhas()
             //cout << v << " ";
         }
     }
-    while(AdicaoAW2 != true)
+    while((BV.empty() == false && Folhas.empty() == false) || AdicaoAW2 == false)
     {
         while(BV.empty() == false && Folhas.empty() == false)
         {
