@@ -21,8 +21,6 @@ int main(int argc, char *argv[]){
 	}
 
 	Grafo G = Grafo::LerArquivo(argv[1]);
-	//Grafo G2 = Grafo::LerArquivo(argv[1]);
-	//Grafo G3 = Grafo::LerArquivo(argv[1]);
 	/*
     double time_spent = 0.0;
     clock_t start1 = clock();

@@ -6,14 +6,20 @@ Algoritmo3 - Min: 1 Max: 1 Media: 1 Atual: 1
 1	 1	 1
 
 Instancias2\Grafo_ExemploDenso.txt
-AndersonV4 - Min: 1 Max: 1 Media: 1 Atual: 1
-Rodrigo - Min: 0 Max: 1 Media: 0 Atual: 0
+AndersonV4 - Min: 0 Max: 1 Media: 0 Atual: 1
+Rodrigo - Min: 0 Max: 1 Media: 0 Atual: 1
 Algoritmo3 - Min: 0 Max: 0 Media: 0 Atual: 0
-1	 0	 0
+1	 1	 0
 
 Instancias2\Grafo_ExemploSem14.txt
 AndersonV4 - Min: 2 Max: 2 Media: 2 Atual: 2
 Rodrigo - Min: 2 Max: 2 Media: 2 Atual: 2
 Algoritmo3 - Min: 2 Max: 2 Media: 2 Atual: 2
 2	 2	 2
+
+Instancias2\Grafo_Teste.txt
+AndersonV4 - Min: 0 Max: 0 Media: 0 Atual: 0
+Rodrigo - Min: 0 Max: 0 Media: 0 Atual: 0
+Algoritmo3 - Min: 0 Max: 0 Media: 0 Atual: 0
+0	 0	 0
 

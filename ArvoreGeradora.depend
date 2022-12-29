@@ -123,7 +123,7 @@
 	<algorithm>
 	<iostream>
 
-1671653092 source:c:\construtivosmbv\main.cpp
+1672181250 source:c:\construtivosmbv\main.cpp
 	<iostream>
 	<set>
 	<vector>
@@ -288,7 +288,7 @@
 	<queue>
 	"Grafo.h"
 
-1671724003 source:c:\construtivosmbv\src\buscalocal.cpp
+1672283820 source:c:\construtivosmbv\src\buscalocal.cpp
 	"BuscaLocal.h"
 	<algorithm>
 	<iostream>
