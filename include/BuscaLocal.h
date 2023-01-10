@@ -28,6 +28,7 @@ class BuscaLocal
         virtual ~BuscaLocal();
 
         void ConectaFolhas();
+        void Caso2(vector<int> n, vector<int> pai, vector<vector<int>> cr, queue<int> fila);
 
         Grafo ObterArvore() const;
         set<int> ObterBranches() const;

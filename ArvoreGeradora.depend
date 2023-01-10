@@ -288,12 +288,12 @@
 	<queue>
 	"Grafo.h"
 
-1672338551 source:c:\construtivosmbv\src\buscalocal.cpp
+1673366379 source:c:\construtivosmbv\src\buscalocal.cpp
 	"BuscaLocal.h"
 	<algorithm>
 	<iostream>
 
-1671073200 c:\construtivosmbv\include\buscalocal.h
+1673376690 c:\construtivosmbv\include\buscalocal.h
 	<set>
 	<vector>
 	<queue>
