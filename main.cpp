@@ -52,12 +52,15 @@ int main(int argc, char *argv[]){
     vector<int> BT100a;
     int BTaMin = 1001;
     int BTaMax = 0;
+    int BTLaMin = 1001;
     vector<int> BT100b;
     int BTbMin = 1001;
     int BTbMax = 0;
+    int BTLbMin = 1001;
     vector<int> BT100c;
     int BTcMin = 1001;
     int BTcMax = 0;
+    int BTLcMin = 1001;
 
     Grafo T;
     vector<int> BT;
@@ -71,66 +74,62 @@ int main(int argc, char *argv[]){
         alg.Oliveira();
         T = alg.ObterArvore();
         BT = alg.ObterBranches();
-        //vector<int> GrauBT = alg.ObterGrauBT();
         BT100a.push_back(BT.size());
         if(BT.size() < BTaMin)
             BTaMin = BT.size();
         if(BT.size() > BTaMax)
             BTaMax = BT.size();
+        BuscaLocal bl = BuscaLocal(G, T, BT);
+        bl.ConectaFolhas();
+        set<int> BTL = bl.ObterBranches();
+        if(BTL.size() < BTLaMin)
+           BTLaMin = BTL.size();
 
         Rodrigo alg2 = Rodrigo(G);
         alg2.Oliveira();
         T2 = alg2.ObterArvore();
         BT2 = alg2.ObterBranches();
-        //vector<int> GrauBT2 = alg2.ObterGrauBT();
         BT100b.push_back(BT2.size());
         if(BT2.size() < BTbMin)
             BTbMin = BT2.size();
         if(BT2.size() > BTbMax)
             BTbMax = BT2.size();
+        BuscaLocal bl2 = BuscaLocal(G, T2, BT2);
+        bl2.ConectaFolhas();
+        set<int> BTL2 = bl2.ObterBranches();
+        if(BTL2.size() < BTLbMin)
+           BTLbMin = BTL2.size();
 
         Algoritmo3 alg3 = Algoritmo3(G);
         alg3.Oliveira();
         T3 = alg3.ObterArvore();
         BT3 = alg3.ObterBranches();
-        //vector<int> GrauBT3 = alg3.ObterGrauBT();
         BT100c.push_back(BT3.size());
         if(BT3.size() < BTcMin)
             BTcMin = BT3.size();
         if(BT3.size() > BTcMax)
             BTcMax = BT3.size();
+        BuscaLocal bl3 = BuscaLocal(G, T3, BT3);
+        bl3.ConectaFolhas();
+        set<int> BTL3 = bl3.ObterBranches();
+        if(BTL3.size() < BTLcMin)
+           BTLcMin = BTL3.size();
     }
     cout << argv[1] << endl;
     int soma = 0;
     for(int i : BT100a)
        soma = soma + i;
-    cout << "AndersonV4 - Min: " << BTaMin << " Max: " << BTaMax << " Media: " << soma/10 << " Atual: " << BT.size() << endl;
+    cout << "AndersonV4 - Min: " << BTaMin << " Max: " << BTaMax << " Media: " << soma/10 << " Busca Local Min: " << BTLaMin << endl;
 
     soma = 0;
     for(int i : BT100b)
        soma = soma + i;
-    cout << "Rodrigo - Min: " << BTbMin << " Max: " << BTbMax << " Media: " << soma/10 << " Atual: " << BT2.size() << endl;
+    cout << "Rodrigo - Min: " << BTbMin << " Max: " << BTbMax << " Media: " << soma/10 << " Busca Local Min: " << BTLbMin << endl;
 
     soma = 0;
     for(int i : BT100c)
        soma = soma + i;
-    cout << "Algoritmo3 - Min: " << BTcMin << " Max: " << BTcMax << " Media: " << soma/10 << " Atual: " << BT3.size() << endl;
-
-
-    BuscaLocal bl = BuscaLocal(G, T, BT);
-    bl.ConectaFolhas();
-    set<int> BTL = bl.ObterBranches();
-    cout << BTL.size() << "\t ";
-
-    BuscaLocal bl2 = BuscaLocal(G, T2, BT2);
-    bl2.ConectaFolhas();
-    set<int> BTL2 = bl2.ObterBranches();
-    cout << BTL2.size() << "\t ";
-
-    BuscaLocal bl3 = BuscaLocal(G, T3, BT3);
-    bl3.ConectaFolhas();
-    set<int> BTL3 = bl3.ObterBranches();
-    cout << BTL3.size() << endl << endl;
+    cout << "Algoritmo3 - Min: " << BTcMin << " Max: " << BTcMax << " Media: " << soma/10 << " Busca Local Min: " << BTLcMin << endl << endl;
 
     /*
     vector<int> BV;

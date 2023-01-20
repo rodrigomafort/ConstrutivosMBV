@@ -1,25 +1,21 @@
-File Branch_Vertices Time Verification Média_Grau_BV Branch_Vertices2 Time2 Verification2 Média_Grau_BV2 Branch_Vertices3 Time3 Verification3 Média_Grau_BV3 
+File Branch_Vertices Time Verification Média_Grau_BV Branch_Vertices2 Time2 Verification2 Média_Grau_BV2 
 Instancias2\Grafo_Exemplo14.txt
-AndersonV4 - Min: 1 Max: 2 Media: 1 Atual: 1
-Rodrigo - Min: 1 Max: 1 Media: 1 Atual: 1
-Algoritmo3 - Min: 1 Max: 1 Media: 1 Atual: 1
-1	 1	 1
+AndersonV4 - Min: 1 Max: 2 Media: 1 Busca Local Min: 1
+Rodrigo - Min: 1 Max: 2 Media: 1 Busca Local Min: 1
+Algoritmo3 - Min: 1 Max: 1 Media: 1 Busca Local Min: 1
 
 Instancias2\Grafo_ExemploDenso.txt
-AndersonV4 - Min: 0 Max: 1 Media: 0 Atual: 1
-Rodrigo - Min: 1 Max: 1 Media: 1 Atual: 1
-Algoritmo3 - Min: 0 Max: 0 Media: 0 Atual: 0
-0	 1	 0
+AndersonV4 - Min: 0 Max: 1 Media: 0 Busca Local Min: 0
+Rodrigo - Min: 0 Max: 1 Media: 0 Busca Local Min: 0
+Algoritmo3 - Min: 0 Max: 0 Media: 0 Busca Local Min: 0
 
 Instancias2\Grafo_ExemploSem14.txt
-AndersonV4 - Min: 2 Max: 2 Media: 2 Atual: 2
-Rodrigo - Min: 2 Max: 2 Media: 2 Atual: 2
-Algoritmo3 - Min: 2 Max: 2 Media: 2 Atual: 2
-2	 2	 2
+AndersonV4 - Min: 2 Max: 2 Media: 2 Busca Local Min: 2
+Rodrigo - Min: 2 Max: 2 Media: 2 Busca Local Min: 2
+Algoritmo3 - Min: 2 Max: 2 Media: 2 Busca Local Min: 2
 
 Instancias2\Grafo_Teste.txt
-AndersonV4 - Min: 0 Max: 0 Media: 0 Atual: 0
-Rodrigo - Min: 0 Max: 0 Media: 0 Atual: 0
-Algoritmo3 - Min: 0 Max: 0 Media: 0 Atual: 0
-0	 0	 0
+AndersonV4 - Min: 0 Max: 0 Media: 0 Busca Local Min: 0
+Rodrigo - Min: 0 Max: 0 Media: 0 Busca Local Min: 0
+Algoritmo3 - Min: 0 Max: 0 Media: 0 Busca Local Min: 0
 
