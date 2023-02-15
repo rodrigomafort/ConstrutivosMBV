@@ -11,6 +11,7 @@
 #include "Rodrigo.h"
 #include "Algoritmo3.h"
 #include "BuscaLocal.h"
+#include "BEP.h"
 
 using namespace std;
 
