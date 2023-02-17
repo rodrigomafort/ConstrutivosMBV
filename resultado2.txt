@@ -1,21 +1,33 @@
-File Branch_Vertices Time Verification Média_Grau_BV Branch_Vertices2 Time2 Verification2 Média_Grau_BV2 
+File Branch_Vertices Time Verification 
 Instancias2\Grafo_Exemplo14.txt
-AndersonV4 - Min: 1 Max: 2 Media: 1 Busca Local Min: 1
-Rodrigo - Min: 1 Max: 2 Media: 1 Busca Local Min: 1
-Algoritmo3 - Min: 1 Max: 1 Media: 1 Busca Local Min: 1
+BEP- BV: 1 Time: 0.0000000000 True
+CEP- BV: 1 Time: 0.0000000000 True
+EEP- BV: 1 Time: 0.0000000000 True
+BEP- Min: 1 Max: 2 Media: 1 Tempo_Medio: 0.0002200000 True
+RCEP- Min: 1 Max: 2 Media: 1 Tempo_Medio: 0.0002100000 True
+REEP- Min: 1 Max: 2 Media: 1 Tempo_Medio: 0.0001300000 True
 
 Instancias2\Grafo_ExemploDenso.txt
-AndersonV4 - Min: 0 Max: 1 Media: 0 Busca Local Min: 0
-Rodrigo - Min: 0 Max: 1 Media: 0 Busca Local Min: 0
-Algoritmo3 - Min: 0 Max: 0 Media: 0 Busca Local Min: 0
+BEP- BV: 0 Time: 0.0000000000 True
+CEP- BV: 0 Time: 0.0000000000 True
+EEP- BV: 0 Time: 0.0000000000 True
+BEP- Min: 0 Max: 1 Media: 0 Tempo_Medio: 0.0001500000 True
+RCEP- Min: 0 Max: 1 Media: 0 Tempo_Medio: 0.0001800000 True
+REEP- Min: 0 Max: 1 Media: 0 Tempo_Medio: 0.0001800000 True
 
 Instancias2\Grafo_ExemploSem14.txt
-AndersonV4 - Min: 2 Max: 2 Media: 2 Busca Local Min: 2
-Rodrigo - Min: 2 Max: 2 Media: 2 Busca Local Min: 2
-Algoritmo3 - Min: 2 Max: 2 Media: 2 Busca Local Min: 2
+BEP- BV: 2 Time: 0.0000000000 True
+CEP- BV: 2 Time: 0.0000000000 True
+EEP- BV: 2 Time: 0.0000000000 True
+BEP- Min: 2 Max: 2 Media: 2 Tempo_Medio: 0.0001000000 True
+RCEP- Min: 2 Max: 2 Media: 2 Tempo_Medio: 0.0000500000 True
+REEP- Min: 2 Max: 2 Media: 2 Tempo_Medio: 0.0000800000 True
 
 Instancias2\Grafo_Teste.txt
-AndersonV4 - Min: 0 Max: 0 Media: 0 Busca Local Min: 0
-Rodrigo - Min: 0 Max: 0 Media: 0 Busca Local Min: 0
-Algoritmo3 - Min: 0 Max: 0 Media: 0 Busca Local Min: 0
+BEP- BV: 0 Time: 0.0000000000 True
+CEP- BV: 0 Time: 0.0000000000 True
+EEP- BV: 0 Time: 0.0000000000 True
+BEP- Min: 0 Max: 0 Media: 0 Tempo_Medio: 0.0001400000 True
+RCEP- Min: 0 Max: 0 Media: 0 Tempo_Medio: 0.0000700000 True
+REEP- Min: 0 Max: 0 Media: 0 Tempo_Medio: 0.0000500000 True
 

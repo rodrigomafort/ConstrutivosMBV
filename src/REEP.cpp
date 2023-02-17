@@ -135,6 +135,7 @@ void REEP::Oliveira()
         if(Pontas.empty() == false)
         {
             int v;
+
             int pesoMax = 0;
 
             Roleta R = Roleta();
@@ -157,7 +158,7 @@ void REEP::Oliveira()
                     }
                 }
             }
-            pesoMax = pesoMax + 1
+            pesoMax = pesoMax + 1;
 
             vector<pair<int, int>> Arestas;
 
@@ -186,10 +187,7 @@ void REEP::Oliveira()
                     }
                 }
             }
-            int posAresta = R.Sortear();
-            pair<int, int> sorteada = Arestas[posAresta];
-            v = sorteada.first;
-            int u = sorteada.second;
+
             /*
             for(int p : Pontas)
             {
@@ -228,6 +226,11 @@ void REEP::Oliveira()
             }
             else
             {
+                int posAresta = R.Sortear();
+                pair<int, int> sorteada = Arestas[posAresta];
+                v = sorteada.first;
+                int u = sorteada.second;
+
                 Pontas.erase(v);
                 InPontas[v] = false;
                 //int u = uAux;
