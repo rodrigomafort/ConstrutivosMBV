@@ -7,6 +7,8 @@
 #include <fstream>
 #include <string>
 
+#include <iostream>
+
 //#include "AndersonV4.h"
 //#include "Rodrigo.h"
 //#include "Algoritmo3.h"
@@ -140,10 +142,18 @@ int main(int argc, char *argv[]){
     else
        verificado3 = "False";
 
+    ofstream BEP("BEP.txt", std::ios_base::app);
+    ofstream CEP("CEP.txt", std::ios_base::app);
+    ofstream EEP("EEP.txt", std::ios_base::app);
+
     cout << argv[1] << endl;
-    cout << "BEP- BV: " << BT.size() << " Time: " << std::fixed << std::setprecision(10) << time_spent << " " << verificado <<endl;
-    cout << "CEP- BV: " << BT2.size() << " Time: " << std::fixed << std::setprecision(10) << time_spent2 << " " <<verificado2 <<endl;
-    cout << "EEP- BV: " << BT3.size() << " Time: " << std::fixed << std::setprecision(10) << time_spent3 << " " <<verificado3 <<endl;
+    BEP << argv[1] << "\t" << BT.size() << "\t" << std::fixed << std::setprecision(10) << time_spent << "\t" << verificado <<endl;
+    CEP << argv[1] << "\t" << BT2.size() << "\t" << std::fixed << std::setprecision(10) << time_spent2 << "\t" <<verificado2 <<endl;
+    EEP << argv[1] << "\t" << BT3.size() << "\t" << std::fixed << std::setprecision(10) << time_spent3 << "\t" <<verificado3 <<endl;
+
+    BEP.close();
+    CEP.close();
+    EEP.close();
 
     Grafo T4;
     vector<int> BT4;
@@ -238,20 +248,29 @@ int main(int argc, char *argv[]){
             verificado6 = "False";
     }
 
+
+    ofstream RBEP("R-BEP.txt", std::ios_base::app);
+    ofstream RCEP("R-CEP.txt", std::ios_base::app);
+    ofstream REEP("R-EEP.txt", std::ios_base::app);
+
     int soma = 0;
     for(int i : BT4v)
        soma = soma + i;
-    cout << "BEP- Min: " << BT4Min << " Max: " << BT4Max << " Media: " << soma/100 << " Tempo_Medio: " << std::fixed << std::setprecision(10) << Time4/100 << " " << verificado4 << endl;
+    RBEP << argv[1] <<  "\t" << BT4Min << "\t" << BT4Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time4/100 << "\t" << verificado4 << endl;
 
     soma = 0;
     for(int i : BT5v)
        soma = soma + i;
-    cout << "RCEP- Min: " << BT5Min << " Max: " << BT5Max << " Media: " << soma/100 << " Tempo_Medio: " << std::fixed << std::setprecision(10) << Time5/100 << " " << verificado5 << endl;
+    RCEP << argv[1] <<  "\t" << BT5Min << "\t" << BT5Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time5/100 << "\t" << verificado5 << endl;
 
     soma = 0;
     for(int i : BT6v)
        soma = soma + i;
-    cout << "REEP- Min: " << BT6Min << " Max: " << BT6Max << " Media: " << soma/100 << " Tempo_Medio: " << std::fixed << std::setprecision(10) << Time6/100 << " " << verificado6 << endl <<endl;
+    REEP << argv[1] <<  "\t" << BT6Min << "\t" << BT6Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time6/100 << "\t" << verificado6 << endl;
+
+    RBEP.close();
+    RCEP.close();
+    REEP.close();
 
     /*
     vector<int> BT100a;

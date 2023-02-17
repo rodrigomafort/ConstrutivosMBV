@@ -193,7 +193,7 @@
 	<queue>
 	"Grafo.h"
 
-1669294544 d:\testesanderson\construtivosmbv\include\grafo.h
+1671053164 d:\testesanderson\construtivosmbv\include\grafo.h
 	<set>
 	<vector>
 	<string>
@@ -211,9 +211,10 @@
 	<algorithm>
 	<iostream>
 
-1669294544 source:d:\testesanderson\construtivosmbv\src\grafo.cpp
+1671113042 source:d:\testesanderson\construtivosmbv\src\grafo.cpp
 	"Grafo.h"
 	<iostream>
+	<algorithm>
 
 1669294544 D
 
@@ -369,4 +370,83 @@
 	<algorithm>
 	<iostream>
 	"Roleta.h"
+
+1671213148 source:d:\testesanderson\construtivosmbv\src\roleta.cpp
+	"Roleta.h"
+	<iostream>
+
+1671213148 d:\testesanderson\construtivosmbv\include\roleta.h
+	<vector>
+	<random>
+	<iomanip>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\bep.cpp
+	"BEP.h"
+	<algorithm>
+	<iostream>
+
+1676638518 d:\testesanderson\construtivosmbv\include\bep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\cep.cpp
+	"CEP.h"
+	<algorithm>
+	<iostream>
+
+1676638518 d:\testesanderson\construtivosmbv\include\cep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\eep.cpp
+	"EEP.h"
+	<algorithm>
+	<iostream>
+
+1676638518 d:\testesanderson\construtivosmbv\include\eep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\rbep.cpp
+	"RBEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1676638518 d:\testesanderson\construtivosmbv\include\rbep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\rcep.cpp
+	"RCEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1676638518 d:\testesanderson\construtivosmbv\include\rcep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676638518 source:d:\testesanderson\construtivosmbv\src\reep.cpp
+	"REEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1676638518 d:\testesanderson\construtivosmbv\include\reep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
 
