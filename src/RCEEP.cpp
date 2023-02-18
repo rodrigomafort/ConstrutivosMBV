@@ -1,33 +1,33 @@
-#include "RCEP.h"
+#include "RCEEP.h"
 #include <algorithm>
 #include <iostream>
 
 #include "Roleta.h"
 
-RCEP::RCEP(const Grafo& pG):
-    G(pG), T(pG.n,pG.m), InBT(G.n, 0), InPontas(G.n, false)//, RemPontas(G.n, false)
+RCEEP::RCEEP(const Grafo& pG):
+    G(pG), T(pG.n,pG.m), InBT(G.n, 0), InPontas(G.n, false)
 {
     //constructor
     G.nome = "G";
     T.nome = "T";
 }
 
-RCEP::~RCEP()
+RCEEP::~RCEEP()
 {
     //destructor
 }
 
-Grafo RCEP::ObterArvore() const
+Grafo RCEEP::ObterArvore() const
 {
     return T;
 }
 
-vector<int> RCEP::ObterBranches() const
+vector<int> RCEEP::ObterBranches() const
 {
     return BT;
 }
 
-vector<int> RCEP::ObterGrauBT() const
+vector<int> RCEEP::ObterGrauBT() const
 {
     vector<int> GrauBT;
     for (int v : BT)
@@ -37,11 +37,10 @@ vector<int> RCEP::ObterGrauBT() const
     return GrauBT;
 }
 
-//Algoritmo Árvore Geradora - Segunda Heurística Randomizada
-void RCEP::Oliveira()
+//Algoritmo Árvore Geradora - Quarta Heurística Randomizada
+void RCEEP::Oliveira()
 {
     BT.clear();
-    //while (!Pontas.empty()) Pontas.pop();
 
     for (int i = 0; i < G.n; i++)
     {
@@ -111,7 +110,6 @@ void RCEP::Oliveira()
 
         if(T.Grau(v) == 1 && G.Grau(v) > 1)
         {
-            //Pontas.push(make_pair(-1 * G.Grau(v), v));
             InPontas[v] = true;
             Pontas.insert(v);
         }
@@ -127,11 +125,9 @@ void RCEP::Oliveira()
         T.AdicionarVertice(u);
         T.AdicionarAresta(v,u);
 
-        //Pontas.push(make_pair(-1 * G.Grau(v), v));
         InPontas[v] = true;
         Pontas.insert(v);
 
-        //Pontas.push(make_pair(-1 * G.Grau(u), u));
         InPontas[u] = true;
         Pontas.insert(u);
     }
@@ -142,116 +138,83 @@ void RCEP::Oliveira()
         if(Pontas.empty() == false)
         {
             int v;
-            int grauMax = 0;
+
+            int pesoMax = 0;
 
             Roleta R = Roleta();
 
-            for(int i : Pontas)
-            {
-                if(G.Grau(i) > grauMax)
-                {
-                    grauMax = G.Grau(i);
-                }
-            }
-            grauMax = grauMax + 1;
+            int somaGraus = 0; //antiga variável peso
 
             for(int p : Pontas)
             {
-                //double peso = G.n - G.Grau(p);
-                double peso = grauMax - G.Grau(p);
-                R.Adicionar(p, peso);
-            }
-            v = R.Sortear();
-            //Pontas.erase(v);
-            //InPontas[v] = false;
-
-            /*
-            do
-            {
-                pair<int,int> topo = Pontas.top();
-                v = topo.second;
-
-                if (RemPontas[v] == false)
+                for(int u : G.Adjacentes(p))
                 {
-                    break;
-                }
-                else
-                {
-					Pontas.pop();
-                    RemPontas[v] = false;
-					InPontas[v] = false; //Por segurança
-                    v = -1;
-                    continue;
-                }
-            }
-            while(Pontas.empty() == false);
-
-            if (v == -1) continue;*/
-
-            vector<pair<int,pair<int,int>>> Nv;
-            for(int u : G.Adjacentes(v))
-                if(T.BuscarVertice(u) == false || (T.CConexa(u) != T.CConexa(v) && (InBT[u] == 1 || T.Grau(u) == 1)))
-                    Nv.push_back(make_pair(u, make_pair(G.Grau(u), T.Grau(u))));
-
-            if(Nv.empty() == false)
-            {
-                int du_G;//= G.n + 1;
-                int du_T;// = G.n + 1;
-                int u;
-                int grauMax2 = 0;
-
-                Roleta R = Roleta();
-
-                for(pair<int,pair<int,int>> j : Nv)
-                {
-                    du_G = j.second.first;
-                    if(du_G > grauMax2)
+                    if(T.BuscarVertice(u) == false || (T.CConexa(u) != T.CConexa(p) && (InBT[u] == 1 || T.Grau(u) == 1)))
                     {
-                        grauMax2 = du_G;
+                        somaGraus = G.Grau(p) + G.Grau(u);
+                        if(somaGraus > pesoMax)
+                        {
+                           pesoMax = somaGraus;
+                        }
                     }
                 }
-                grauMax2 = grauMax2 + 1;
+            }
+            pesoMax = pesoMax + 1;
 
-                for(pair<int,pair<int,int>> i : Nv)
+            vector<pair<int, int>> Arestas;
+
+            for(int p : Pontas)
+            {
+                for(int u : G.Adjacentes(p))
                 {
-                    u = i.first;
-                    du_G = i.second.first;
-                    du_T = i.second.second;
-
-                    if(du_T == 0)
+                    if(T.BuscarVertice(u) == false)
                     {
-                        du_G = du_G - 1;
-                    }
-                    double peso = grauMax2 - du_G;
-                    R.Adicionar(u, peso);
-
-                    /*
-                    if(i.second.first < du_G)
-                    {
-                        u = i.first;
-                        du_G = i.second.first;
-                        du_T = i.second.second;
+                        somaGraus = G.Grau(p) + G.Grau(u);
+                        double peso = pesoMax - somaGraus + 1;
+                        Arestas.push_back(make_pair(p, u));
+                        int chave = Arestas.size() - 1;
+                        R.Adicionar(chave, peso);
                     }
                     else
                     {
-                        if(i.second.first == du_G)
+                        if(T.CConexa(u) != T.CConexa(p) && (InBT[u] == 1 || T.Grau(u) == 1))
                         {
-                            if (i.second.second < du_T)
-                            {
-                                u = i.first;
-                                du_G = i.second.first;
-                                du_T = i.second.second;
-                            }
+                            somaGraus = G.Grau(p) + G.Grau(u);
+                            double peso = pesoMax - somaGraus;
+                            Arestas.push_back(make_pair(p, u));
+                            int chave = Arestas.size() - 1;
+                            R.Adicionar(chave, peso);
                         }
-                    }*/
+                    }
                 }
-                u = R.Sortear();
+            }
+
+            if(somaGraus == 0)
+            {
+                for(int i : Pontas)
+                {
+                    InPontas[i] = false;
+                }
+                Pontas.clear();
+            }
+            else
+            {
+                int posAresta = R.Sortear();
+                pair<int, int> sorteada = Arestas[posAresta];
+                v = sorteada.first;
+                int u = sorteada.second;
+
+                if(InBT[v] == 0)
+                {
+                    Pontas.erase(v);
+                    InPontas[v] = false;
+                }
 
                 T.AdicionarVertice(u);
                 T.AdicionarAresta(v,u);
-				if (T.Grau(u) == 1)
+
+                if(T.Grau(u) == 1)
                 {
-                    //Pontas.push(make_pair(-1 * G.Grau(u), u));
                     InPontas[u] = true;
                     Pontas.insert(u);
                 }
@@ -259,19 +222,10 @@ void RCEP::Oliveira()
                 {
                     if(InPontas[u] == true && InBT[u] == 0)
                     {
-                        //RemPontas[u] = true; //Como pontas é lista de prioridade, não é possível remover diretamente
                         Pontas.erase(u);
-						//InPontas[v] = false;
-						InPontas[u] = false;
+                        InPontas[u] = false;
                     }
                 }
-            }
-
-            if(InBT[v] == 0 || Nv.empty())
-            {
-                //RemPontas[v] = true;
-				InPontas[v] = false;
-				Pontas.erase(v);
             }
         }
         else
@@ -310,7 +264,6 @@ void RCEP::Oliveira()
                 BT.push_back(v);
                 InBT[v] = 1;
 
-                //Pontas.push(make_pair(-1 * G.Grau(v), v));
                 InPontas[v] = true;
                 Pontas.insert(v);
             }
@@ -348,3 +301,4 @@ void RCEP::Oliveira()
         }
     }
 }
+

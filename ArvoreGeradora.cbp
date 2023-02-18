@@ -38,19 +38,23 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/BEP.h" />
+		<Unit filename="include/CEEP.h" />
 		<Unit filename="include/CEP.h" />
 		<Unit filename="include/EEP.h" />
 		<Unit filename="include/Grafo.h" />
 		<Unit filename="include/RBEP.h" />
+		<Unit filename="include/RCEEP.h" />
 		<Unit filename="include/RCEP.h" />
 		<Unit filename="include/REEP.h" />
 		<Unit filename="include/Roleta.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/BEP.cpp" />
+		<Unit filename="src/CEEP.cpp" />
 		<Unit filename="src/CEP.cpp" />
 		<Unit filename="src/EEP.cpp" />
 		<Unit filename="src/Grafo.cpp" />
 		<Unit filename="src/RBEP.cpp" />
+		<Unit filename="src/RCEEP.cpp" />
 		<Unit filename="src/RCEP.cpp" />
 		<Unit filename="src/REEP.cpp" />
 		<Unit filename="src/Roleta.cpp" />

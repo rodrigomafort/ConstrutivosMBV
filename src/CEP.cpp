@@ -201,7 +201,7 @@ void CEP::Oliveira()
                 }
 				else
                 {
-                    if(InPontas[u] == true and InBT[u] == 0)
+                    if(InPontas[u] == true && InBT[u] == 0)
                     {
                         RemPontas[u] = true; //Como pontas é lista de prioridade, não é possível remover diretamente
 						InPontas[v] = false;

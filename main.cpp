@@ -19,6 +19,8 @@
 #include "RCEP.h"
 #include "EEP.h"
 #include "REEP.h"
+#include "CEEP.h"
+#include "RCEEP.h"
 
 using namespace std;
 
@@ -57,16 +59,28 @@ int main(int argc, char *argv[]){
     clock_t end3 = clock();
     time_spent3 += (double)(end3 - start3) / CLOCKS_PER_SEC;
 
+    double time_spent7 = 0.0;
+    clock_t start7 = clock();
+
+    CEEP alg7 = CEEP(G);
+    alg7.Oliveira();
+
+    clock_t end7 = clock();
+    time_spent7 += (double)(end7 - start7) / CLOCKS_PER_SEC;
+
     Grafo T = alg.ObterArvore();
     vector<int> BT = alg.ObterBranches();
     Grafo T2 = alg2.ObterArvore();
     vector<int> BT2 = alg2.ObterBranches();
     Grafo T3 = alg3.ObterArvore();
     vector<int> BT3 = alg3.ObterBranches();
+    Grafo T7 = alg7.ObterArvore();
+    vector<int> BT7 = alg7.ObterBranches();
 
     vector<int> BV;
     vector<int> BV2;
     vector<int> BV3;
+    vector<int> BV7;
 
     int grau;
     for(int v : T.V)
@@ -76,7 +90,7 @@ int main(int argc, char *argv[]){
         {
             int i = ij.first;
             int j = ij.second;
-            if(i == v or j == v)
+            if(i == v || j == v)
             {
                 grau += 1;
             }
@@ -94,7 +108,7 @@ int main(int argc, char *argv[]){
         {
             int i = ij.first;
             int j = ij.second;
-            if(i == v or j == v)
+            if(i == v || j == v)
             {
                 grau += 1;
             }
@@ -112,7 +126,7 @@ int main(int argc, char *argv[]){
         {
             int i = ij.first;
             int j = ij.second;
-            if(i == v or j == v)
+            if(i == v || j == v)
             {
                 grau += 1;
             }
@@ -122,10 +136,29 @@ int main(int argc, char *argv[]){
             BV3.push_back(v);
         }
     }
+    grau = 0;
+    for(int v : T7.V)
+    {
+        grau = 0;
+        for(pair<int,int> ij : T7.E)
+        {
+            int i = ij.first;
+            int j = ij.second;
+            if(i == v || j == v)
+            {
+                grau += 1;
+            }
+        }
+        if(grau > 2)
+        {
+            BV7.push_back(v);
+        }
+    }
 
     string verificado;
     string verificado2;
     string verificado3;
+    string verificado7;
 
     if(T.ValidarArvore() == true && T.V.size() == G.V.size() && BT.size() == BV.size())
         verificado = "True";
@@ -142,18 +175,26 @@ int main(int argc, char *argv[]){
     else
        verificado3 = "False";
 
+    if(T7.ValidarArvore() == true && T7.V.size() == G.V.size() && BT7.size() == BV7.size())
+        verificado7 = "True";
+    else
+       verificado7 = "False";
+
     ofstream BEP("BEP.txt", std::ios_base::app);
     ofstream CEP("CEP.txt", std::ios_base::app);
     ofstream EEP("EEP.txt", std::ios_base::app);
+    ofstream CEEP("CEEP.txt", std::ios_base::app);
 
     cout << argv[1] << endl;
     BEP << argv[1] << "\t" << BT.size() << "\t" << std::fixed << std::setprecision(10) << time_spent << "\t" << verificado <<endl;
     CEP << argv[1] << "\t" << BT2.size() << "\t" << std::fixed << std::setprecision(10) << time_spent2 << "\t" <<verificado2 <<endl;
     EEP << argv[1] << "\t" << BT3.size() << "\t" << std::fixed << std::setprecision(10) << time_spent3 << "\t" <<verificado3 <<endl;
+    CEEP << argv[1] << "\t" << BT7.size() << "\t" << std::fixed << std::setprecision(10) << time_spent7 << "\t" <<verificado7 <<endl;
 
     BEP.close();
     CEP.close();
     EEP.close();
+    CEEP.close();
 
     Grafo T4;
     vector<int> BT4;
@@ -161,6 +202,8 @@ int main(int argc, char *argv[]){
     vector<int> BT5;
     Grafo T6;
     vector<int> BT6;
+    Grafo T8;
+    vector<int> BT8;
 
     vector<int> BT4v;
     int BT4Min = 1001;
@@ -174,10 +217,15 @@ int main(int argc, char *argv[]){
     int BT6Min = 1001;
     int BT6Max = 0;
     double Time6 = 0.0;
+    vector<int> BT8v;
+    int BT8Min = 1001;
+    int BT8Max = 0;
+    double Time8 = 0.0;
 
     string verificado4 = "True";
     string verificado5 = "True";
     string verificado6 = "True";
+    string verificado8 = "True";
 
     for(int i=0; i<100; i++)
     {
@@ -246,12 +294,35 @@ int main(int argc, char *argv[]){
 
         if(T6.ValidarArvore() != true || T6.V.size() != G.V.size())
             verificado6 = "False";
+
+        double time_spent8 = 0.0;
+        clock_t start8 = clock();
+
+        RCEEP alg8 = RCEEP(G);
+        alg8.Oliveira();
+
+        clock_t end8 = clock();
+        time_spent8 += (double)(end8 - start8) / CLOCKS_PER_SEC;
+
+        Time8 += time_spent8;
+
+        T8 = alg8.ObterArvore();
+        BT8 = alg8.ObterBranches();
+        BT8v.push_back(BT8.size());
+        if(BT8.size() < BT8Min)
+            BT8Min = BT8.size();
+        if(BT8.size() > BT8Max)
+            BT8Max = BT8.size();
+
+        if(T8.ValidarArvore() != true || T8.V.size() != G.V.size())
+            verificado8 = "False";
     }
 
 
     ofstream RBEP("R-BEP.txt", std::ios_base::app);
     ofstream RCEP("R-CEP.txt", std::ios_base::app);
     ofstream REEP("R-EEP.txt", std::ios_base::app);
+    ofstream RCEEP("R-CEEP.txt", std::ios_base::app);
 
     int soma = 0;
     for(int i : BT4v)
@@ -268,9 +339,16 @@ int main(int argc, char *argv[]){
        soma = soma + i;
     REEP << argv[1] <<  "\t" << BT6Min << "\t" << BT6Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time6/100 << "\t" << verificado6 << endl;
 
+    soma = 0;
+    for(int i : BT8v)
+       soma = soma + i;
+    RCEEP << argv[1] <<  "\t" << BT8Min << "\t" << BT8Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time8/100 << "\t" << verificado8 << endl;
+
+
     RBEP.close();
     RCEP.close();
     REEP.close();
+    RCEEP.close();
 
     /*
     vector<int> BT100a;

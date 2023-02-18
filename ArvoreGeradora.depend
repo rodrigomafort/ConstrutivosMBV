@@ -123,7 +123,7 @@
 	<algorithm>
 	<iostream>
 
-1676616645 source:c:\construtivosmbv\main.cpp
+1676677052 source:c:\construtivosmbv\main.cpp
 	<iostream>
 	<set>
 	<vector>
@@ -132,12 +132,15 @@
 	<sstream>
 	<fstream>
 	<string>
+	<iostream>
 	"BEP.h"
 	"RBEP.h"
 	"CEP.h"
 	"RCEP.h"
 	"EEP.h"
 	"REEP.h"
+	"CEEP.h"
+	"RCEEP.h"
 
 1671148328 c:\construtivosmbv\include\andersonv4.h
 	<set>
@@ -348,7 +351,7 @@
 	<algorithm>
 	<iostream>
 
-1676605919 source:c:\construtivosmbv\src\eep.cpp
+1676695228 source:c:\construtivosmbv\src\eep.cpp
 	"EEP.h"
 	<algorithm>
 	<iostream>
@@ -359,13 +362,13 @@
 	<iostream>
 	"Roleta.h"
 
-1676606110 source:c:\construtivosmbv\src\rcep.cpp
+1676680759 source:c:\construtivosmbv\src\rcep.cpp
 	"RCEP.h"
 	<algorithm>
 	<iostream>
 	"Roleta.h"
 
-1676610370 source:c:\construtivosmbv\src\reep.cpp
+1676695188 source:c:\construtivosmbv\src\reep.cpp
 	"REEP.h"
 	<algorithm>
 	<iostream>
@@ -445,6 +448,29 @@
 	"Roleta.h"
 
 1676638518 d:\testesanderson\construtivosmbv\include\reep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676695109 source:c:\construtivosmbv\src\ceep.cpp
+	"CEEP.h"
+	<algorithm>
+	<iostream>
+
+1676658237 c:\construtivosmbv\include\ceep.h
+	<set>
+	<vector>
+	<queue>
+	"Grafo.h"
+
+1676695157 source:c:\construtivosmbv\src\rceep.cpp
+	"RCEEP.h"
+	<algorithm>
+	<iostream>
+	"Roleta.h"
+
+1676661491 c:\construtivosmbv\include\rceep.h
 	<set>
 	<vector>
 	<queue>

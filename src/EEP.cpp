@@ -177,10 +177,9 @@ void EEP::Oliveira()
                 InPontas[v] = false;
                 int u = uAux;
 
-                if(T.Grau(u) == 0)
-                {
-                    T.AdicionarVertice(u);
-                }
+                //if(T.Grau(u) == 0)
+                T.AdicionarVertice(u);
+
                 T.AdicionarAresta(v,u);
 
                 if(T.Grau(u) == 1)
