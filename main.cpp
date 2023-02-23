@@ -180,21 +180,21 @@ int main(int argc, char *argv[]){
     else
        verificado7 = "False";
 
-    ofstream BEP("BEP.txt", std::ios_base::app);
-    ofstream CEP("CEP.txt", std::ios_base::app);
-    ofstream EEP("EEP.txt", std::ios_base::app);
-    ofstream CEEP("CEEP.txt", std::ios_base::app);
+    ofstream BEP1("BEP.txt", std::ios_base::app);
+    ofstream CEP1("CEP.txt", std::ios_base::app);
+    ofstream EEP1("EEP.txt", std::ios_base::app);
+    ofstream CEEP1("CEEP.txt", std::ios_base::app);
 
     cout << argv[1] << endl;
-    BEP << argv[1] << "\t" << BT.size() << "\t" << std::fixed << std::setprecision(10) << time_spent << "\t" << verificado <<endl;
-    CEP << argv[1] << "\t" << BT2.size() << "\t" << std::fixed << std::setprecision(10) << time_spent2 << "\t" <<verificado2 <<endl;
-    EEP << argv[1] << "\t" << BT3.size() << "\t" << std::fixed << std::setprecision(10) << time_spent3 << "\t" <<verificado3 <<endl;
-    CEEP << argv[1] << "\t" << BT7.size() << "\t" << std::fixed << std::setprecision(10) << time_spent7 << "\t" <<verificado7 <<endl;
+    BEP1 << argv[1] << "\t" << BT.size() << "\t" << std::fixed << std::setprecision(10) << time_spent << "\t" << verificado <<endl;
+    CEP1 << argv[1] << "\t" << BT2.size() << "\t" << std::fixed << std::setprecision(10) << time_spent2 << "\t" <<verificado2 <<endl;
+    EEP1 << argv[1] << "\t" << BT3.size() << "\t" << std::fixed << std::setprecision(10) << time_spent3 << "\t" <<verificado3 <<endl;
+    CEEP1 << argv[1] << "\t" << BT7.size() << "\t" << std::fixed << std::setprecision(10) << time_spent7 << "\t" <<verificado7 <<endl;
 
-    BEP.close();
-    CEP.close();
-    EEP.close();
-    CEEP.close();
+    BEP1.close();
+    CEP1.close();
+    EEP1.close();
+    CEEP1.close();
 
     Grafo T4;
     vector<int> BT4;
@@ -227,6 +227,11 @@ int main(int argc, char *argv[]){
     string verificado6 = "True";
     string verificado8 = "True";
 
+    ofstream RBEP100("R-BEP.txt", std::ios_base::app);
+    ofstream RCEP100("R-CEP.txt", std::ios_base::app);
+    ofstream REEP100("R-EEP.txt", std::ios_base::app);
+    ofstream RCEEP100("R-CEEP.txt", std::ios_base::app);
+
     for(int i=0; i<100; i++)
     {
         double time_spent4 = 0.0;
@@ -247,9 +252,10 @@ int main(int argc, char *argv[]){
             BT4Min = BT4.size();
         if(BT4.size() > BT4Max)
             BT4Max = BT4.size();
-
         if(T4.ValidarArvore() != true || T4.V.size() != G.V.size())
             verificado4 = "False";
+
+        RBEP100 << argv[1] <<  "\t" << BT4.size() << "\t" << std::fixed << std::setprecision(10) << time_spent4 << "\t" << verificado4 << endl;
 
         double time_spent5 = 0.0;
         clock_t start5 = clock();
@@ -269,9 +275,10 @@ int main(int argc, char *argv[]){
             BT5Min = BT5.size();
         if(BT5.size() > BT5Max)
             BT5Max = BT5.size();
-
         if(T5.ValidarArvore() != true || T5.V.size() != G.V.size())
             verificado5 = "False";
+
+        RCEP100 << argv[1] <<  "\t" << BT5.size() << "\t" << std::fixed << std::setprecision(10) << time_spent5 << "\t" << verificado5 << endl;
 
         double time_spent6 = 0.0;
         clock_t start6 = clock();
@@ -291,9 +298,10 @@ int main(int argc, char *argv[]){
             BT6Min = BT6.size();
         if(BT6.size() > BT6Max)
             BT6Max = BT6.size();
-
         if(T6.ValidarArvore() != true || T6.V.size() != G.V.size())
             verificado6 = "False";
+
+        REEP100 << argv[1] <<  "\t" << BT6.size() << "\t" << std::fixed << std::setprecision(10) << time_spent6 << "\t" << verificado6 << endl;
 
         double time_spent8 = 0.0;
         clock_t start8 = clock();
@@ -313,12 +321,13 @@ int main(int argc, char *argv[]){
             BT8Min = BT8.size();
         if(BT8.size() > BT8Max)
             BT8Max = BT8.size();
-
         if(T8.ValidarArvore() != true || T8.V.size() != G.V.size())
             verificado8 = "False";
+
+        RCEEP100 << argv[1] <<  "\t" << BT8.size() << "\t" << std::fixed << std::setprecision(10) << time_spent8 << "\t" << verificado8 << endl;
     }
 
-
+    /*
     ofstream RBEP("R-BEP.txt", std::ios_base::app);
     ofstream RCEP("R-CEP.txt", std::ios_base::app);
     ofstream REEP("R-EEP.txt", std::ios_base::app);
@@ -343,12 +352,12 @@ int main(int argc, char *argv[]){
     for(int i : BT8v)
        soma = soma + i;
     RCEEP << argv[1] <<  "\t" << BT8Min << "\t" << BT8Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time8/100 << "\t" << verificado8 << endl;
+    */
 
-
-    RBEP.close();
-    RCEP.close();
-    REEP.close();
-    RCEEP.close();
+    RBEP100.close();
+    RCEP100.close();
+    REEP100.close();
+    RCEEP100.close();
 
     /*
     vector<int> BT100a;
