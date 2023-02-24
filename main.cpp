@@ -227,10 +227,10 @@ int main(int argc, char *argv[]){
     string verificado6 = "True";
     string verificado8 = "True";
 
-    ofstream RBEP100("R-BEP.txt", std::ios_base::app);
-    ofstream RCEP100("R-CEP.txt", std::ios_base::app);
-    ofstream REEP100("R-EEP.txt", std::ios_base::app);
-    ofstream RCEEP100("R-CEEP.txt", std::ios_base::app);
+    ofstream RBEP100("R-BEP100.txt", std::ios_base::app);
+    ofstream RCEP100("R-CEP100.txt", std::ios_base::app);
+    ofstream REEP100("R-EEP100.txt", std::ios_base::app);
+    ofstream RCEEP100("R-CEEP100.txt", std::ios_base::app);
 
     for(int i=0; i<100; i++)
     {
@@ -327,37 +327,41 @@ int main(int argc, char *argv[]){
         RCEEP100 << argv[1] <<  "\t" << BT8.size() << "\t" << std::fixed << std::setprecision(10) << time_spent8 << "\t" << verificado8 << endl;
     }
 
-    /*
-    ofstream RBEP("R-BEP.txt", std::ios_base::app);
-    ofstream RCEP("R-CEP.txt", std::ios_base::app);
-    ofstream REEP("R-EEP.txt", std::ios_base::app);
-    ofstream RCEEP("R-CEEP.txt", std::ios_base::app);
-
-    int soma = 0;
-    for(int i : BT4v)
-       soma = soma + i;
-    RBEP << argv[1] <<  "\t" << BT4Min << "\t" << BT4Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time4/100 << "\t" << verificado4 << endl;
-
-    soma = 0;
-    for(int i : BT5v)
-       soma = soma + i;
-    RCEP << argv[1] <<  "\t" << BT5Min << "\t" << BT5Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time5/100 << "\t" << verificado5 << endl;
-
-    soma = 0;
-    for(int i : BT6v)
-       soma = soma + i;
-    REEP << argv[1] <<  "\t" << BT6Min << "\t" << BT6Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time6/100 << "\t" << verificado6 << endl;
-
-    soma = 0;
-    for(int i : BT8v)
-       soma = soma + i;
-    RCEEP << argv[1] <<  "\t" << BT8Min << "\t" << BT8Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time8/100 << "\t" << verificado8 << endl;
-    */
-
     RBEP100.close();
     RCEP100.close();
     REEP100.close();
     RCEEP100.close();
+
+    ofstream RBEPm("R-BEP.txt", std::ios_base::app);
+    ofstream RCEPm("R-CEP.txt", std::ios_base::app);
+    ofstream REEPm("R-EEP.txt", std::ios_base::app);
+    ofstream RCEEPm("R-CEEP.txt", std::ios_base::app);
+
+    float soma = 0.0;
+    for(int i : BT4v)
+       soma = soma + i;
+    RBEPm << argv[1] <<  "\t" << BT4Min << "\t" << BT4Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time4/100 << "\t" << verificado4 << endl;
+
+    soma = 0.0;
+    for(int i : BT5v)
+       soma = soma + i;
+    RCEPm << argv[1] <<  "\t" << BT5Min << "\t" << BT5Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time5/100 << "\t" << verificado5 << endl;
+
+    soma = 0.0;
+    for(int i : BT6v)
+       soma = soma + i;
+    REEPm << argv[1] <<  "\t" << BT6Min << "\t" << BT6Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time6/100 << "\t" << verificado6 << endl;
+
+    soma = 0.0;
+    for(int i : BT8v)
+       soma = soma + i;
+    RCEEPm << argv[1] <<  "\t" << BT8Min << "\t" << BT8Max << "\t" << soma/100 << "\t" << std::fixed << std::setprecision(10) << Time8/100 << "\t" << verificado8 << endl;
+
+
+    RBEPm.close();
+    RCEPm.close();
+    REEPm.close();
+    RCEEPm.close();
 
     /*
     vector<int> BT100a;
