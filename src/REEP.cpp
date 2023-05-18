@@ -334,6 +334,7 @@ void REEP::Oliveira()
                 BT.push_back(v);
                 InBT[v] = 1;
 
+                /*
                 for(int u : C)
                 {
                     if(T.CConexa(u) != T.CConexa(v))
@@ -343,6 +344,7 @@ void REEP::Oliveira()
                         T.AdicionarAresta(v,u);
                     }
                 }
+                */
             }
         }
     }

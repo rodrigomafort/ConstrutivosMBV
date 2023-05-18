@@ -277,7 +277,7 @@ void EEP::Oliveira()
 
                 BT.push_back(v);
                 InBT[v] = 1;
-
+                /*
                 for(int u : C)
                 {
                     if(T.CConexa(u) != T.CConexa(v))
@@ -287,6 +287,7 @@ void EEP::Oliveira()
                         T.AdicionarAresta(v,u);
                     }
                 }
+                */
             }
         }
     }

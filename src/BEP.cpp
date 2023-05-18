@@ -293,6 +293,7 @@ void BEP::Oliveira()
                 BT.push_back(v);
                 InBT[v] = 1;
 
+                /*
                 for(int u : C)
                 {
                     if(T.CConexa(u) != T.CConexa(v))
@@ -302,6 +303,7 @@ void BEP::Oliveira()
                         T.AdicionarAresta(v,u);
                     }
                 }
+                */
             }
         }
     }

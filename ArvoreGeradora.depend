@@ -123,7 +123,7 @@
 	<algorithm>
 	<iostream>
 
-1676677052 source:c:\construtivosmbv\main.cpp
+1677264464 source:c:\construtivosmbv\main.cpp
 	<iostream>
 	<set>
 	<vector>
@@ -341,34 +341,34 @@
 	<queue>
 	"Grafo.h"
 
-1676606034 source:c:\construtivosmbv\src\bep.cpp
+1684342257 source:c:\construtivosmbv\src\bep.cpp
 	"BEP.h"
 	<algorithm>
 	<iostream>
 
-1676696416 source:c:\construtivosmbv\src\cep.cpp
+1679022700 source:c:\construtivosmbv\src\cep.cpp
 	"CEP.h"
 	<algorithm>
 	<iostream>
 
-1676695228 source:c:\construtivosmbv\src\eep.cpp
+1684342235 source:c:\construtivosmbv\src\eep.cpp
 	"EEP.h"
 	<algorithm>
 	<iostream>
 
-1676604306 source:c:\construtivosmbv\src\rbep.cpp
+1684342286 source:c:\construtivosmbv\src\rbep.cpp
 	"RBEP.h"
 	<algorithm>
 	<iostream>
 	"Roleta.h"
 
-1676680759 source:c:\construtivosmbv\src\rcep.cpp
+1679022759 source:c:\construtivosmbv\src\rcep.cpp
 	"RCEP.h"
 	<algorithm>
 	<iostream>
 	"Roleta.h"
 
-1676695188 source:c:\construtivosmbv\src\reep.cpp
+1684342311 source:c:\construtivosmbv\src\reep.cpp
 	"REEP.h"
 	<algorithm>
 	<iostream>
@@ -453,7 +453,7 @@
 	<queue>
 	"Grafo.h"
 
-1676695109 source:c:\construtivosmbv\src\ceep.cpp
+1679022732 source:c:\construtivosmbv\src\ceep.cpp
 	"CEEP.h"
 	<algorithm>
 	<iostream>
@@ -464,7 +464,7 @@
 	<queue>
 	"Grafo.h"
 
-1676695157 source:c:\construtivosmbv\src\rceep.cpp
+1679022788 source:c:\construtivosmbv\src\rceep.cpp
 	"RCEEP.h"
 	<algorithm>
 	<iostream>
